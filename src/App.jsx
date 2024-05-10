@@ -14,7 +14,8 @@ function App() {
           <div className='triangulo'></div>
         </div>
         <div className='Textos'>
-          {/* <p className='terapia'>Terapia 2</p> */}
+          <p className='terapia'>Terapia 2</p>
+          <p className='ejercicio'>Ejercicios pelvicos</p>
         </div>
       </div>
     </>
