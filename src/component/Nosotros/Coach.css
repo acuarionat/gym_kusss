@@ -1,0 +1,39 @@
+.card {
+    width: 300px;
+    /* Ancho de la tarjeta */
+    height: 435px;
+    margin: 0 10px;
+    background-color: var(--Dark);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.card-images {
+    width: 100%;
+    height: 276px;
+    /* Altura de la imagen */
+    object-fit: cover;
+    /* Ajustar la imagen al contenedor */
+    display: block;
+}
+
+.card-info {
+    padding: 15px;
+    color: var(--Blanco);
+    text-align: center;
+    font-family: var(--Parrafo);
+    font-size: 20px;
+}
+
+.card-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.card-info p {
+    margin: 0;
+    color: var(--Granate);
+}
