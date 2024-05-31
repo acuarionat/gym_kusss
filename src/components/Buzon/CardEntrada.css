@@ -1,0 +1,30 @@
+.card1{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Grey);
+  width: 100%; /* Asegura que la tarjeta ocupe todo el ancho */
+  max-width: none; /* Elimina el ancho máximo para permitir que la tarjeta ocupe todo el ancho */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+.teko-titulo{
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  color: var(--Dark-red);
+}
+/* Ajustes adicionales para pantallas grandes */
+@media screen and (min-width: 1440px) {
+  .card1 {
+    padding: 3.5rem;
+    border-radius: 1rem;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (min-width: 375px) {
+  .card1 {
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+}

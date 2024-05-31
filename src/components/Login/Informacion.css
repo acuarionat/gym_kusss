@@ -1,0 +1,54 @@
+.contenedor {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    gap: 10px; /* Agregar espacio entre los elementos */
+  }
+  
+  input[type="text"] {
+    padding: 12px 16px; /* Aumentar el padding para hacer el input más grande */
+    border: 1px solid #D9D9D9; /* Asegúrate de que el color del borde sea visible */
+    border-radius: 4px;
+    width: 90%; /* Ajusta el ancho del input al contenedor */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    height: 80px; /* Establece una altura específica si es necesario */
+  }
+  #input {
+    border: none;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(221, 64, 64, 0.5), rgba(255, 218, 218, 0.2));
+    color: black; /* Color de texto */
+    font-size: 18px;
+    outline: none;
+  }
+  
+  
+  
+  .button-container {
+    gap: 20px; /* Agregar espacio entre los elementos */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 100px; /* Agregar margen superior al botón */
+  }
+  
+  .button {
+    border-radius: 8px;
+    width: 70%;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--Dark-red); /* Usa la variable CSS para el color de fondo */
+    color: var(--White); /* Usa la variable CSS para el color del texto */
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  .button:hover {
+    border-color: var(--White); /* Cambia el color del borde al pasar el cursor */
+  }
+  

@@ -1,0 +1,115 @@
+:root {
+  /* Primario */
+  --Dark-red: #920525;
+  /* Neutral */
+  --light-red: #DD4040;
+  --light1-red: #ED6262;
+  --light2-red: #EAAFAF;
+  --light3-red: #FFDADA;
+  --White: #ffffff;
+  --Black: #000000;
+  --Grey: #302D3C;
+  --light-grey: #D9D9D9;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Hace que el contenedor principal tenga la altura completa de la ventana */
+  justify-content: space-between; /* Asegura que el contenido esté espaciado */
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: var(--White);
+  margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; font-style: normal; }
+.poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; font-style: normal; }
+.poppins-light { font-family: "Poppins", sans-serif; font-weight: 300; font-style: normal; }
+.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; }
+.poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; font-style: normal; }
+.poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; font-style: normal; }
+.poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; font-style: normal; }
+.poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; font-style: normal; }
+.poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; font-style: normal; }
+.poppins-thin-italic { font-family: "Poppins", sans-serif; font-weight: 100; font-style: italic; }
+.poppins-extralight-italic { font-family: "Poppins", sans-serif; font-weight: 200; font-style: italic; }
+.poppins-light-italic { font-family: "Poppins", sans-serif; font-weight: 300; font-style: italic; }
+.poppins-regular-italic { font-family: "Poppins", sans-serif; font-weight: 400; font-style: italic; }
+.poppins-medium-italic { font-family: "Poppins", sans-serif; font-weight: 500; font-style: italic; }
+.poppins-semibold-italic { font-family: "Poppins", sans-serif; font-weight: 600; font-style: italic; }
+.poppins-bold-italic { font-family: "Poppins", sans-serif; font-weight: 700; font-style: italic; }
+.poppins-extrabold-italic { font-family: "Poppins", sans-serif; font-weight: 800; font-style: italic; }
+.poppins-black-italic { font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic; }
+.teko-regular { font-family: 'Teko', sans-serif; font-weight: 400; }
+.teko-italic { font-family: 'Teko', sans-serif; font-weight: 400; font-style: italic; }
+.teko-300 { font-family: 'Teko', sans-serif; font-weight: 300; }
+.teko-300-italic { font-family: 'Teko', sans-serif; font-weight: 300; font-style: italic; }
+.teko-500 { font-family: 'Teko', sans-serif; font-weight: 500; }
+.teko-500-italic { font-family: 'Teko', sans-serif; font-weight: 500; font-style: italic; }
+.teko-700 { font-family: 'Teko', sans-serif; font-weight: 700; }
+.teko-700-italic { font-family: 'Teko', sans-serif; font-weight: 700; font-style: italic; }
+.poppins-15 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.poppins-24 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--light-grey);
+  }
+  a:hover {
+    color: var(--White);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+  #root {
+    align-items: stretch;
+  }
+
+  a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

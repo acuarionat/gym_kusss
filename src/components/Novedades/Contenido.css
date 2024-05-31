@@ -1,0 +1,58 @@
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .poppins-semibold1 {
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+  }
+  .poppins-medium1 {
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+  }
+  .poppins-regular1 {
+    text-align: left;
+    font-size: 15px;
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  .button-container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Cambiado de 'column' a 'row' */
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0px; /* Agregar margen superior al botón */
+  }
+  
+  .button1 {
+    border-radius: 8px;
+    width: auto;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    background-color: var(--light-grey); /* Usa la variable CSS para el color de fondo */
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  .button1:hover {
+    border-color: var(--White); /* Cambia el color del borde al pasar el cursor */
+  }
+  @media screen and (min-width: 768px) {
+    .red-social img {
+      width: 50px;
+      height: 50px;
+    }
+  }
