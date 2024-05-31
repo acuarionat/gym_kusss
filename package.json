@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "project",
+=======
+  "name": "gym_kuss",
+>>>>>>> 25dd468fbef07ac908f6b4e82c72a8c892ec405e
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +14,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "google-maps-react": "^2.0.6",
+=======
+>>>>>>> 25dd468fbef07ac908f6b4e82c72a8c892ec405e
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
