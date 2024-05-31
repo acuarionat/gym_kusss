@@ -1,0 +1,49 @@
+.card-i {
+  flex: 0 0 auto;
+  width: 210px;
+  height: 250px;
+  padding: 30px;
+  margin: 20px;
+  margin-right: 10px;
+  text-align: center;
+  border: 3px solid var(--PlomoClaro);
+  border-radius: 0px;
+  background: linear-gradient(var(--Blanco) 40%, var(--PlomoClaro) 110%);
+}
+
+.icon-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-i img {
+  width: 85px;
+}
+
+.title {
+  font-family: var(--Titulo);
+  font-size: 28px;
+  line-height: 1.1;
+  margin: 10px 0;
+  color: var(--Plomo);
+}
+
+.description {
+  font-family: var(--Parrafo);
+  font-size: 14px;
+  color: var(--Plomo);
+  line-height: 1.1;
+}
+
+.carousel-container {
+  width: 300px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,50 @@
+.card {
+  flex: 0 0 auto;
+  width: 240px;
+  height: auto;
+  padding: 30px;
+  margin: 0px;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  color: var(--Blanco); 
+  background: var(--Plomo); 
+}
+
+.form-group {
+  margin-bottom: 2px;
+  text-align: left;
+  position: initial;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: var(--Titulo); 
+  font-size: 20px;
+}
+
+.form-control {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--PlomoClaro);
+  border-radius: 10px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--Granate); 
+  color: var(--Blanco); 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--Titulo); 
+}
+
+.submit-btn:hover {
+  background-color: var(--GranateMedio);
+}
