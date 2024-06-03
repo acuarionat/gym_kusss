@@ -14,8 +14,8 @@
 .teko-titulo1{
   font-family: "Teko", sans-serif;
   font-weight: 400;
-  font-size: 100px;
-  color: var(--White);
+  font-size: 80px;
+  color: var(--Blanco);
 }
 /* Ajustes adicionales para pantallas grandes */
 @media screen and (min-width: 1440px) {

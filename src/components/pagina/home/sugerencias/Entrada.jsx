@@ -4,12 +4,12 @@ import "./Entrada.css";
 const Entrada = () => {
   return (
     <div className='contenedor'>
-      <h1 className="teko-regular">SUGERENCIAS:</h1>
+      <h2 className="titulo">SUGERENCIAS:</h2>
       <input type="text" />
-      <h1 className="teko-regular">QUEJAS:</h1>
+      <h2 className="titulo">QUEJAS:</h2>
       <input type="text" />
       <div className='button-container'>
-        <button className='button'><h2 className="teko-regular">Enviar</h2></button>
+        <button className='button'><h2 className="titulo">Enviar</h2></button>
       </div>
     </div>
   );

@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Card from './components/Footer/Card'
-import CardEntrada from './components/Buzon/CardEntrada'
-import Entrada from './components/Buzon/Entrada'
-import CardLogin from './components/Login/CardLogin'
-import CardNovedades from './components/Novedades/CardNovedades'
+import Card from './components/general/footer/Card'
+import CardEntrada from './components/pagina/home/sugerencias/CardEntrada'
+import CardLogin from './components/formularios/formulario ingresar/CardLogin'
+import CardNovedades from './components/pagina/home/novedades/CardNovedades'
 
 function App() {
   const [count, setCount] = useState(0)

@@ -1,21 +1,28 @@
-.card1{
+.cardno {
   display: flex;
-  flex-direction: column;
-  background-color: var(--Grey);
+  background-color: rgba(255, 218, 218, 0.2);
   width: 100%; /* Asegura que la tarjeta ocupe todo el ancho */
   max-width: none; /* Elimina el ancho máximo para permitir que la tarjeta ocupe todo el ancho */
   padding: 2rem;
   border-radius: 0.5rem;
   box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  justify-content: space-between; /* Ajusta el espacio entre los elementos */
+  align-items: center; /* Alinea los elementos verticalmente */
 }
-.teko-titulo{
-  font-family: "Teko", sans-serif;
-  font-weight: 400;
-  color: var(--Dark-red);
+
+.contenido {
+  margin-left: 20px; /* Agrega un margen entre el bloque y el contenido */
 }
+.bloque {
+  width: 150px;
+  height: 150px;
+  background-color: var(--Granate);
+  border-bottom-right-radius: 30px; /* Puedes ajustar este valor para cambiar la curvatura */
+}
+
 /* Ajustes adicionales para pantallas grandes */
 @media screen and (min-width: 1440px) {
-  .card1 {
+  .cardno {
     padding: 3.5rem;
     border-radius: 1rem;
   }
@@ -23,7 +30,7 @@
 
 /* Ajustes para pantallas pequeñas */
 @media screen and (min-width: 375px) {
-  .card1 {
+  .cardno {
     padding: 2.5rem;
     border-radius: 1rem;
   }

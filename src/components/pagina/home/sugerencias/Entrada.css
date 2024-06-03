@@ -6,10 +6,22 @@
   justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
   gap: 50px; /* Agregar espacio entre los elementos */
 }
+.titulo
+{
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Blanco);
+}
+.parrafo
+{
+  font-family: var(--Parrafo);
+  font-weight: 400;
+  color: var(--Blanco);
+}
 
 input[type="text"] {
   padding: 12px 16px; /* Aumentar el padding para hacer el input más grande */
-  border: 1px solid #D9D9D9; /* Asegúrate de que el color del borde sea visible */
+  border: 1px var(--PlomoClaro); /* Asegúrate de que el color del borde sea visible */
   border-radius: 4px;
   width: 90%; /* Ajusta el ancho del input al contenedor */
   font-size: 1.2em; /* Aumenta el tamaño de la fuente */
@@ -29,13 +41,12 @@ input[type="text"] {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: var(--Dark-red); /* Usa la variable CSS para el color de fondo */
-  color: var(--White); /* Usa la variable CSS para el color del texto */
+  background-color: var(--Granate); /* Usa la variable CSS para el color de fondo */
+  color: var(--Blanco); /* Usa la variable CSS para el color del texto */
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 .button:hover {
-  border-color: var(--White); /* Cambia el color del borde al pasar el cursor */
+  border-color: var(--Blanco); /* Cambia el color del borde al pasar el cursor */
 }
