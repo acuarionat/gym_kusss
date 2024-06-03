@@ -1,9 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between; 
-}
-
 :root {
   --Negro: rgb(0, 0, 0);
   --Plomo: rgb(48, 45, 60);
