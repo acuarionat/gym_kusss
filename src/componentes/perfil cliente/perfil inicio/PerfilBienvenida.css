@@ -1,7 +1,6 @@
 .bienvenida
 {
     margin: 0px 25px 0px 25px;
-    padding: 3px 3px 20px 3px;
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -28,7 +27,7 @@
 }
 .bienvenida .texto p
 {
-    font-size: 9px;
+    font-size: 10px;
 }
 .bienvenida .imagen
 {
