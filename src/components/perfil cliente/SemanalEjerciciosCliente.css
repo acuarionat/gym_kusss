@@ -1,42 +1,3 @@
-:root {
-    --Plomo: rgb(48, 45, 60);
-    --Granate: rgb(146, 5, 37);
-    --PlomoClaro: rgb(217, 217, 217);
-    --Blanco: rgb(255, 255, 255);
-}
-
-.principalRutinas {
-    width: 375px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.headRutinas {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: var(--Granate);
-}
-
-.icoRutinas {
-    width: 30px;
-    height: 30px;
-}
-
-.tituloRutinas {
-    display: flex;
-    align-items: center;
-    font-family: "Teko", sans-serif;
-    font-size: 35px;
-    height: 40px;
-    margin: 10px;
-}
-
 .semanal {
     width: 100%;
     display: flex;
@@ -51,7 +12,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(217, 217, 217);
+    background-color: var(--PlomoClaro);
     border-bottom: 1px solid black;
 }
 

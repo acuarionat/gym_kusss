@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -46,9 +47,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,38 +62,44 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
-body
-{
+
+body {
   margin: 0px;
-  width: 100%;
+  width: 100vw;
   height: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#root
-{
+
+#root {
   margin: 0px;
   width: 100vw;
   height: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content:space-between;
+  align-self: start;
 }
-:root
-{
-  --Plomo:rgb(48, 45, 60);
-  --Granate:rgb(146, 5, 37);
-  --PlomoClaro:rgb(217, 217, 217 );
-  --Blanco:rgb(255, 255, 255);
-  --Titulo:"Teko", sans-serif;
-  --Parrafo:"Poppins", sans-serif;
+
+:root {
+  --Negro: rgb(0, 0, 0);
+  --Plomo: rgb(48, 45, 60);
+  --PlomoClaro: rgb(217, 217, 217);
+  --Blanco: rgb(255, 255, 255);
+  --Granate: rgb(146, 5, 37);
+  --GranateClaro: rgb(221, 64, 64);
+  --GranateMedio: rgb(221, 98, 98);
+  --RosaClaro: rgb(234, 175, 175);
+  --RosaMuyClaro: rgb(236, 233, 233);
+  --Titulo: "Teko", sans-serif;
+  --Parrafo: "Poppins", sans-serif;
 }

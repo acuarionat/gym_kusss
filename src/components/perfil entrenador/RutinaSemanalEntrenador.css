@@ -1,0 +1,42 @@
+.principalRutinaEntrenador {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.clientePaEntrenador {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.textoClienteEntre {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botonRutinaEntre {
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: var(--RosaMuyClaro);
+    border-radius: 18px;
+    box-shadow: 0 4px rgb(0, 0, 0, 0.2);
+}
+
+.textoBotonEditarRutina {
+    color: var(--Granate);
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}

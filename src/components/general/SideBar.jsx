@@ -1,11 +1,11 @@
 import './SideBar.css'
-import KussLogo from '../assets/KussLogo.png'
-import Close from '../assets/Close.png'
-import Contac from '../assets/Contactanos.png'
-import Ingre from '../assets/Ingresar.png'
-import Nove from '../assets/Novedades.png'
-import Regist from '../assets/Registrate.png'
-import Sobre from '../assets/SobreNosotros.png'
+import KussLogo from './imagenes/KussLogo.png'
+import Close from './imagenes/Close.png'
+import Contac from './imagenes/Contactanos.png'
+import Ingre from './imagenes/Ingresar.png'
+import Nove from './imagenes/Novedades.png'
+import Regist from './imagenes/Registrate.png'
+import Sobre from './imagenes/SobreNosotros.png'
 
 function SideBar() {
     return (

@@ -1,43 +1,4 @@
-:root {
-    --Plomo: rgb(48, 45, 60);
-    --Granate: rgb(146, 5, 37);
-    --PlomoClaro: rgb(217, 217, 217);
-    --Blanco: rgb(255, 255, 255);
-}
-
-.principalDetalle {
-    width: 375px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.headDetalle {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: var(--Granate);
-}
-
-.icoDetalle {
-    width: 30px;
-    height: 30px;
-}
-
-.tituloDetalles {
-    display: flex;
-    align-items: center;
-    font-family: "Teko", sans-serif;
-    font-size: 35px;
-    height: 40px;
-    margin: 10px;
-}
-
-.tarjeta {
+.tarjetaConsejo {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -48,7 +9,7 @@
     margin: 0px;
 }
 
-.tituloTarjeta {
+.tituloTarjetaConsejo {
     display: flex;
     width: 100%;
     height: 40px;
@@ -59,12 +20,20 @@
     background-color: rgb(160, 160, 160);
 }
 
-.icoTitulos {
+.ecoDetallesConsejo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50px;
+}
+
+.icoTitulosConsejo {
     width: 20px;
     height: 25px;
 }
 
-.textoTitular {
+.textoTitularConsejo {
     display: flex;
     align-items: center;
     justify-content: first baseline;
@@ -73,15 +42,7 @@
     font-size: 20px;
 }
 
-.ecoDetalles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 50px;
-}
-
-.cajaDetalles {
+.cajaDetallesConsejo {
     width: 100%;
     height: fit-content;
     padding-top: 30px;
@@ -99,8 +60,4 @@
     font-family: "Teko", sans-serif;
     font-size: 18px;
     font-weight: 500;
-}
-
-.videoExplica{
-    width: 80%;
 }
