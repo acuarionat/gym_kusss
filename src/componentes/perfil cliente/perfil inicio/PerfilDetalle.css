@@ -1,13 +1,15 @@
 .tarjeta-detalle
 {
     margin: 0px 0px 50px 0px;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
-    padding: 2px 30px 10px 30px;
+    padding: 2px 0px 10px 0px;
     background-color: var(--Plomo);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .tarjeta-detalle .detalle
 {

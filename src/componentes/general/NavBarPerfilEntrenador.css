@@ -1,0 +1,22 @@
+.navbar-entrenador
+{
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--Plomo);
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-entrenador button
+{
+    background-color: transparent;
+    border-style: none;
+}
+.navbar-entrenador img
+{
+    width: 35px;
+    height: 35px;
+}

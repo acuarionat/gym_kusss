@@ -1,5 +1,5 @@
 import React from "react";
-
+import './PerfilProgreso.css';
 const PerfilProgreso = () => {
   return (
       <div className="detalle-progreso">
