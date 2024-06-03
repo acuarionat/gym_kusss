@@ -3,11 +3,8 @@ import "./PerfilInfo.css";
 
 const PerfilInfo = () => {
   return (
-    <div className="informacion">
-      <div className="detalle">
-        <div className="titulo">
-          <h4>Informacion General</h4>
-        </div>
+      <div className="detalle-informacion">
+        <h4>Informacion General</h4>
         <div className="parrafo">
           <p>
             <span className="rojo">Meta &nbsp;&nbsp;&nbsp;&nbsp;: </span>{" "}
@@ -22,15 +19,6 @@ const PerfilInfo = () => {
           </p>
         </div>
       </div>
-      <div className="detalle">
-        <div className="titulo">
-          <h4>Progreso General</h4>
-        </div>
-          <div className="grafica">
-            <span className="valor-progreso">0%</span>
-          </div>
-      </div>
-    </div>
   );
 };
 
