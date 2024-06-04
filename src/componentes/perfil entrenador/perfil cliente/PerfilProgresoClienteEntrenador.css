@@ -1,0 +1,45 @@
+.detalle-progreso
+{
+    padding: 5px 0px 5px 0px;
+    width: 150px;
+    height: 140px;
+    border-radius: 12px;
+    box-shadow: #000 3px 3px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detalle-progreso h4
+{
+    width: 100%;
+    text-align: center;
+    color: var(--Granate);
+    font-size: 11px;
+}
+
+.grafica
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(var(--Granate) 130deg, var(--PlomoClaro) 0deg);
+    border-radius: 50%;
+}
+
+.grafica::before
+{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.valor-progreso
+{
+    position: relative;
+}

@@ -1,9 +1,10 @@
-html {
+html
+{
   height: 100%;
 }
+
 body
 {
-
   margin: 0px;
   width: 100%;
   height: 100%;
@@ -11,6 +12,7 @@ body
   align-items: center;
   justify-content: center;
 }
+
 #root
 {
   margin: 0px;
@@ -18,9 +20,9 @@ body
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-self: start
 }
+
 :root
 {
   --Negro: rgb(0, 0, 0);
@@ -31,7 +33,8 @@ body
   --GranateClaro: rgb(221, 64, 64);
   --GranateMedio: rgb(237, 98, 98);
   --RosaClaro: rgb(234, 175, 175);
-  --RosaMuyClaro: rgb(255, 218, 218);
+  --RosaMuyClaro: rgb(236, 233,233);
+  --PlomoMedio: rgb(160, 160,160);
   --Titulo: "Teko", sans-serif;
-  --Parrafo: "Poppins", sans-serif;
+  --Parrafo: "Poppins",sans-serif;
 }

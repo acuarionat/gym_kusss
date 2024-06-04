@@ -1,5 +1,7 @@
 .navbar-entrenador
 {
+    position: fixed;
+    bottom: 0%;
     width: 100%;
     height: fit-content;
     background-color: var(--Plomo);

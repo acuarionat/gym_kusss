@@ -1,0 +1,29 @@
+.detalle-informacion
+{
+    font-family: var(--Parrafo);
+    padding: 5px 0px 5px 0px;
+    width: 150px;
+    height: 140px;
+    border-radius: 12px;
+    box-shadow: #000 3px 3px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detalle-informacion .rojo
+{
+    color: var(--Granate);
+    font-family: var(--Parrafo);
+    font-weight: 600;
+}
+
+.detalle-informacion .parrafo
+{
+    width: 88%;
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+    font-size: 11px;  
+    font-weight: bold;
+}
+
