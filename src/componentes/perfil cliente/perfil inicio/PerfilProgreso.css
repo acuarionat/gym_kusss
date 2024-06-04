@@ -29,17 +29,13 @@
     border-radius: 50%;
 }
 
-.grafica::before
+.valor-progreso
 {
-    content: "";
-    position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #fff;
-}
-
-.valor-progreso
-{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

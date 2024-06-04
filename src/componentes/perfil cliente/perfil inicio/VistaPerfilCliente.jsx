@@ -7,9 +7,11 @@ import NavBarPerfil from "../../general/NavBarPerfil";
 const VistaPerfilCliente = () => {
   return (
     <div className="vista-perfil">
+      <div className="superior">
       <PerfilDetalle />
       <PerfilBienvenida />
       <InformacionGeneral />
+    </div>
       <NavBarPerfil />
     </div>
   );

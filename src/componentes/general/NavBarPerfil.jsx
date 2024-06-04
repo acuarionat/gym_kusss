@@ -12,7 +12,7 @@ const NavBarPerfil = () => {
       </button>
       <button>
         <img src={"/imagenes/grafica_blanco.png"} alt="grafica" />
-      </button>{" "}
+      </button>
     </div>
   );
 };

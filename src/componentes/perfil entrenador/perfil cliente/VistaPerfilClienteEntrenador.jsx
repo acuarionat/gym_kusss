@@ -1,5 +1,5 @@
 import React from "react";
-import './VistaPerfilClienteEntrenador.css'
+import "./VistaPerfilClienteEntrenador.css";
 import PerfilDetalleClienteEntrenador from "./PerfilDetalleClienteEntrenador";
 import InformacionGeneralClienteEntrenador from "./InformacionGeneralClienteEntrenador";
 import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
@@ -8,11 +8,13 @@ import BotonRutina from "./BotonRutina";
 const VistaPerfilClienteEntrenador = () => {
   return (
     <div className="vista-cliente-entrenador">
-      <PerfilDetalleClienteEntrenador />
-      <InformacionGeneralClienteEntrenador />
+      <div className="superior">
+        <PerfilDetalleClienteEntrenador />
+        <InformacionGeneralClienteEntrenador />
+        <BotonProgreso />
+        <BotonRutina />
+      </div>
       <NavBarPerfilEntrenador />
-      <BotonProgreso/>
-      <BotonRutina/>
     </div>
   );
 };
