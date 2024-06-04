@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 body 
 {
   margin: 0;
@@ -26,7 +29,8 @@ body
   --GranateClaro: rgb(221, 64, 64);
   --GranateMedio: rgb(237, 98, 98);
   --RosaClaro: rgb(234, 175, 175);
-  --RosaMuyClaro: rgb(255, 218, 218);
+  --RosaMuyClaro: rgb(236, 233,233);  
+  --PlomoMedio: rgb(160, 160, 160);
   --Titulo: "Teko",sans-serif;
   --Parrafo: "Poppins",sans-serif;
 }

@@ -1,9 +1,5 @@
 import React from 'react';
 import "./RedesSociales.css";
-// import Facebook from '.../public/images/facebook1.png';
-// import WhatsApp from '.../public/images/whatsapp1.png';
-// import Instagram from '.../public/images/instagram1.png';
-// import XTwitter from '.../public/images/twitter1.png';
 
 const RedesSociales = () => {
   return (
@@ -15,7 +11,7 @@ const RedesSociales = () => {
 
       <div className="red-social">
         <div className="red-social-item">
-          <img src="/images/facebook1.png" alt="Facebook Logo" />
+          <img src="/imagenes/facebook1.png" alt="Facebook Logo" />
           <h3 className="parrafo">Facebook</h3>
         </div>
         <h3 className="parrafo red-social-text">Inicio</h3>
@@ -23,31 +19,30 @@ const RedesSociales = () => {
 
       <div className="red-social">
         <div className="red-social-item">
-          <img src="/images/whatsapp1.png" alt="WhatsApp Logo" />
+          <img src="/imagenes/whatsapp1.png" alt="WhatsApp Logo" />
           <h3 className="parrafo">WhatsApp</h3>
         </div>
-        <h4 className="parrafo red-social-text">Sobre nosotros</h4>
+        <h5 className="parrafo red-social-text">Sobre nosotros</h5>
       </div>
 
       <div className="red-social">
         <div className="red-social-item">
-          <img src="/images/instagram1.png" alt="Instagram Logo" />
+          <img src="/imagenes/instagram1.png" alt="Instagram Logo" />
           <h3 className="parrafo">Instagram</h3>
         </div>
-        <h3 className="parrafo red-social-text">Contáctanos</h3>
+        <h4 className="parrafo red-social-text">Contáctanos</h4>
       </div>
 
       <div className="red-social">
         <div className="red-social-item">
-          <img src="/images/twitter1.png" alt="Twitter Logo" />
+          <img src="/imagenes/twitter1.png" alt="Twitter Logo" />
           <h3 className="parrafo">X-Twitter</h3>
         </div>
-        <h3 className="parrafo red-social-text"></h3>
+
       </div>
 
       <div className="red-social">
         <div className="red-social-item">
-          <h3 className="parrafo"></h3>
         </div>
       </div>
       

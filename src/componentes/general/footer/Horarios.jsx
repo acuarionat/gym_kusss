@@ -14,7 +14,7 @@ const Horarios = () => {
       </div>
       <div className="red-social">
         <h3 className="parrafo">Miercoles</h3>
-        <h3 className="parrafo">9:00 am - 10:00 pm</h3>
+        <h4 className="parrafo">9:00 am - 10:00 pm</h4>
       </div>
       <div className="red-social">
         <h3 className="parrafo">Jueves</h3>
