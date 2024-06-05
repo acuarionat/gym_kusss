@@ -1,18 +1,34 @@
-.parrafoVideo
-{
+.parrafoVideo {
   font-family: var(--Parrafo);
   font-weight: 400;
   color: var(--Negro);
   text-align: left;
+  width: 100%; /* Asegurar que el texto ocupe el ancho completo */
+  margin-left: 10px; /* Espacio a la izquierda para alinearlo mejor */
 }
-.video-container {
+
+.videos-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  gap: 20px;
 }
 
-iframe {
-  border: none; /* Remove the default border */
-  border-radius: 8px; /* Optional: add rounded corners */
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinear elementos al inicio (izquierda) */
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  border-radius: 20px; /* Borde redondeado */
+  border: 2px solid transparent; /* Borde inicial transparente */
+}
+
+.video.active {
+  border-color: var(--Negro); /* Cambiar color de borde al hacer clic */
 }

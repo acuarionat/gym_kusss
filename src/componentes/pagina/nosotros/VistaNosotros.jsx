@@ -3,6 +3,7 @@ import BarraGris from './BarraSideBar/BarraGris'
 import CabezaNosotros from './CabeceraNosotros/CabezaNosotros'
 import Vision from './Misiones/Vision'
 import Mision from './Misiones/Mision'
+import CardFooter from '../../general/footer/CardFooter'
 const VistaNosotros = () => {
   return (
     <div >
@@ -10,6 +11,7 @@ const VistaNosotros = () => {
         <CabezaNosotros/>
         <Vision/>
         <Mision/>
+        <CardFooter/>
     </div>
   )
 }
