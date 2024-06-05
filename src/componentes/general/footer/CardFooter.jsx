@@ -1,8 +1,8 @@
 import React from 'react';
 import RedesSociales from './RedesSociales';
 import Horarios from './Horarios';
-import "./Card.css";
-const Card = () => {
+import "./CardFooter.css";
+const CardFooter = () => {
   return (
     <div className="card">
       <RedesSociales />
@@ -11,4 +11,4 @@ const Card = () => {
   );
 }
 
-export default Card;
+export default CardFooter;

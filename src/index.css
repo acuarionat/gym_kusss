@@ -1,5 +1,6 @@
-html {
-  height: 100%;
+html 
+{
+  height: 100vw;
 }
 body 
 {
@@ -18,6 +19,7 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: start;
 }
 :root
 {

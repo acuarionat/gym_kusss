@@ -1,0 +1,18 @@
+.parrafoVideo
+{
+  font-family: var(--Parrafo);
+  font-weight: 400;
+  color: var(--Negro);
+  text-align: left;
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+iframe {
+  border: none; /* Remove the default border */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
