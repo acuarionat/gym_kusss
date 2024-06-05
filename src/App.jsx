@@ -1,11 +1,11 @@
 import './App.css'
-import SideBar from './components/general/SideBar';
-import ListaEjercicios from './components/perfil cliente/ListaEjercicios';
-import DetalleEjercicios from './components/perfil cliente/DetalleEjercicios';
-import Rutinas from './components/perfil cliente/Rutinas';
-import RutinaSemanalEntrenador from './components/perfil entrenador/RutinaSemanalEntrenador';
-import EditarRutinaEntrenador from './components/perfil entrenador/EditarRutinaEntrenador';
-import SeriesRepeticiones from './components/perfil entrenador/SeriesRepeticiones';
+import SideBar from './componentes/general/SideBar';
+import ListaEjercicios from './componentes/perfil cliente/ejercicios/VistaListaEjercicios';
+import VistaDetalleEjercicios from './componentes/perfil cliente/detalles de ejercicios/VistaDetalleEjercicios';
+import VistaRutinas from './componentes/perfil cliente/rutina semanal/VistaRutinas';
+import RutinaSemanalEntrenador from './componentes/perfil entrenador/rutina semanal/VistaRutinaSemanalEntrenador';
+import EditarRutinaEntrenador from './componentes/perfil entrenador/editar rutina/VistaEditarRutinaEntrenador';
+import SeriesRepeticiones from './componentes/perfil entrenador/enlistar ejercicios/VistaSeriesRepeticiones';
 
 function App() {
 

@@ -1,0 +1,23 @@
+.headLista {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--Granate);
+}
+
+.icoLista {
+    width: 30px;
+    height: 30px;
+}
+
+.tituloEjercicios {
+    display: flex;
+    align-items: center;
+    font-family: "Teko", sans-serif;
+    font-size: 35px;
+    height: 40px;
+    margin: 10px;
+    color: var(--Blanco);
+}
