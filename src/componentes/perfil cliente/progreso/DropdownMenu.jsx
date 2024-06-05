@@ -1,5 +1,4 @@
 import React from 'react';
-import './DropdownMenu.css';
 
 const DropdownMenu = ({ title, isOpen, toggleDropdown, items }) => {
   return (

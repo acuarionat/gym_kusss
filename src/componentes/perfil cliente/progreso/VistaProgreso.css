@@ -1,0 +1,136 @@
+.vista-progreso {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dropdown {
+  width: 200px;
+  border-radius: 4px;
+  font-family: var(--Titulo);
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--Plomo);
+  color: var(--Blanco);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  color: var(--Granate);
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--PlomoClaro);
+  font-size: 20px;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: var(--Negro);
+}
+
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.table-header {
+  width: 100%; /* Ajusta el ancho para ocupar todo el contenedor */
+  margin-left: 20px; /* Margen izquierdo para alinear a la izquierda */
+}
+
+.table-header h2 {
+  font-size: 25px;
+  font-family: var(--Titulo);
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.table {
+  width: 375px;
+  max-width: 500px;
+  border: 1px solid #ccc;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 18px;
+  font-family: var(--Parrafo);
+}
+
+.table-row.even {
+  background-color: var(--PlomoMedio);
+}
+
+.table-row.odd {
+  background-color: var(--PlomoClaro);
+}
+
+.table-cell {
+  width: 50%;
+  text-align: left;
+}
+
+.boton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta este margen según sea necesario */
+}
+
+.boton-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Granate);
+  color: var(--Blanco);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 215px;
+  height: 35px;
+  font-family: var(--Titulo);
+}
+
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+@media (max-width: 375px) {
+  .table-row {
+    font-size: 25px;
+  }
+
+  .boton {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+}
