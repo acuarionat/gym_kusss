@@ -1,59 +1,35 @@
 import './SemanalEjerciciosCliente.css'
+import OrgDiaEjercicio from './OrgDiaEjercicio'
+import { useEffect, useState } from 'react';
+import Ejercicios from '../../../datos/DatosSemanaEjercicio.json'
 
 function SemanalEjercicios() {
+    function Aleatorio() {
+        const num = Math.floor(Math.random() * (5 - 1 + 1) + 1);
+        return num;
+    }
+    console.log(Aleatorio());
+
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+        const fetchSemana = async () => {
+            setUsers(Ejercicios);
+        };
+        fetchSemana();
+    }, []);
+
+    console.log(users)
+
+    const semanal = Ejercicios[Aleatorio()].Semana
+    console.log(semanal)
+
     return (
         <div className='semanal'>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Lunes</p>
-                </div>
-                <div className='botonesEjercicios'>
-                    <button className='botonEjer'>Pecho</button>
-                    <button className='botonEjer'>Brazos</button>
-                </div>
-            </div>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Martes</p>
-                </div>
-                <div className='botonesEjercicios'>
-                    <button className='botonEjer'>Piernas</button>
-                </div>
-            </div>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Miercoles</p>
-                </div>
-                <div className='botonesEjercicios'></div>
-            </div>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Jueves</p>
-                </div>
-                <div className='botonesEjercicios'></div>
-            </div>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Viernes</p>
-                </div>
-                <div className='botonesEjercicios'>
-                    <button className='botonEjer'>Espalda</button>
-                    <button className='botonEjer'>Abdominales</button>
-                    <button className='botonEjer'>Brazos</button>
-                </div>
-            </div>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Sabado</p>
-                </div>
-                <div className='botonesEjercicios'></div>
-            </div>
-            <div className='dias'>
-                <div className='nombreDia'>
-                    <p className='textoSemanal'>Domingo</p>
-                </div>
-                <div className='botonesEjercicios'></div>
-            </div>
+            {
+                semanal.map(
+                    (datos) => (<OrgDiaEjercicio key={semanal.id} semana={datos} />)
+                )
+            }
         </div>
     )
 }
