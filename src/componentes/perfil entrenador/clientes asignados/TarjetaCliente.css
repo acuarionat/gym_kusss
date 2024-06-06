@@ -1,0 +1,9 @@
+.tarjeta
+{
+    width: 200px;
+    height: fit-content;
+    padding: 25px 5px 25px 5px;
+    background-color:#F7DBDB;
+    margin-top: 20px;
+    border-radius: 12px;
+}
