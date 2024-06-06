@@ -9,10 +9,10 @@
 .carousel-card {
   display: flex;
   transition: scroll-left 0.3s;
-  scrollbar-width: none; /* Para Firefox */
-  overflow-x: scroll; /* Añadido para permitir el scroll horizontal */
+  scrollbar-width: none;
+  overflow-x: scroll;
 }
 
 .carousel-card::-webkit-scrollbar {
-  display: none; /* Para Chrome, Safari y Opera */
+  display: none; 
 }

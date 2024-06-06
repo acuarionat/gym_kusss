@@ -1,0 +1,18 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-card {
+  display: flex;
+  transition: scroll-left 0.3s;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+
+.carousel-card::-webkit-scrollbar {
+  display: none; 
+}

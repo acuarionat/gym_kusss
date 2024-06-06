@@ -1,0 +1,23 @@
+.navbar
+{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--Plomo);
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar button
+{
+    background-color: transparent;
+    border-style: none;
+}
+.navbar img
+{
+    width: 35px;
+    height: 35px;
+}

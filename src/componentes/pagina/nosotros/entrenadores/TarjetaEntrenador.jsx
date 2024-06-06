@@ -1,7 +1,7 @@
 import React from 'react';
-import './Coach.css';
+import './TarjetaEntrenador.css';
 
-const Coach = ({ coach, onClick }) => {
+const TarjetaEntrenador = ({ coach, onClick }) => {
   return (
     <div className="card" onClick={onClick}>
       <img src={coach.image} alt={coach.name} className="card-images" />
@@ -13,4 +13,4 @@ const Coach = ({ coach, onClick }) => {
   );
 };
 
-export default Coach;
+export default TarjetaEntrenador;

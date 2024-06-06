@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
-import './CoachCard.css';
-import Coach from './Coach';
-import coach1 from './img/coach1.jpg';
-import coach2 from './img/coach2.jpg';
-import coach3 from './img/coach3.jpg';
+import './CarruselEntrenadores.css';
+import Coach from './TarjetaEntrenador';
+import coach1 from '/imagenes/coach1.jpg';
+import coach2 from '/imagenes/coach2.jpg';
+import coach3 from '/imagenes/coach3.jpg';
 
-const CoachCard = () => {
+const CarruselEntrenadores = () => {
   const [coaches, setCoaches] = useState([]);
   const carouselRef = useRef(null);
 
@@ -57,4 +57,4 @@ const CoachCard = () => {
   );
 };
 
-export default CoachCard;
+export default CarruselEntrenadores;

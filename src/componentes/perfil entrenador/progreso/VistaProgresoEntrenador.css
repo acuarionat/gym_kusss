@@ -116,7 +116,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #900;
+    background-color: var(--Granate);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -133,4 +133,5 @@
 .opcion-agregar-valor {
     display: flex;
     align-items: center;
+    margin-top: 120px; /* Ajusta el valor según sea necesario */
 }
