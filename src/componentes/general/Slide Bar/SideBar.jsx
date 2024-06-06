@@ -2,7 +2,7 @@ import './SideBar.css'
 import OrgSobre from './OrgSobre'
 import KussLogo from '/imagenes/KussLogo.png'
 import Close from '/imagenes/Close.png'
-import SlideDatos from '../Datos.json'
+import SlideDatos from '../../../datos/DatosSideBar.json'
 
 function SideBar() {
     return (
