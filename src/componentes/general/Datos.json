@@ -1,0 +1,22 @@
+[
+    {
+        "SideBar": "Sobre Nosotros",
+        "imagen": "/imagenes/SobreNosotros.png"
+    },
+    {
+        "SideBar": "Ingresar",
+        "imagen": "/imagenes/Ingresar.png"
+    },
+    {
+        "SideBar": "Regístrate",
+        "imagen": "/imagenes/Registrate.png"
+    },
+    {
+        "SideBar": "Novedades",
+        "imagen": "/imagenes/Novedades.png"
+    },
+    {
+        "SideBar": "Contactanos",
+        "imagen": "/imagenes/Contactanos.png"
+    }
+]

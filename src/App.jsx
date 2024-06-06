@@ -1,5 +1,5 @@
 import './App.css'
-import SideBar from './componentes/general/SideBar';
+import SideBar from './componentes/general/Slide Bar/SideBar';
 import ListaEjercicios from './componentes/perfil cliente/ejercicios/VistaListaEjercicios';
 import VistaDetalleEjercicios from './componentes/perfil cliente/detalles de ejercicios/VistaDetalleEjercicios';
 import VistaRutinas from './componentes/perfil cliente/rutina semanal/VistaRutinas';
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <SeriesRepeticiones />
+      <SideBar />
     </>
   )
 };
