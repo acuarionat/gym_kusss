@@ -1,26 +1,31 @@
-body
-{
+html {
+  height: 100vw;
+}
+
+body {
   margin: 0px;
   width: 100vw;
   height: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
-#root
-{
+
+#root {
   margin: 0px;
   width: 100vw;
   height: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-self: start;
 }
-:root
-{
+
+:root {
   --Negro: rgb(0, 0, 0);
   --Plomo: rgb(48, 45, 60);
+  --PlomoNoMedio: rgb(89, 89, 89);
+  --PlomoMedio: rgb(160, 160, 160);
   --PlomoClaro: rgb(217, 217, 217);
   --Blanco: rgb(255, 255, 255);
   --Granate: rgb(146, 5, 37);
@@ -29,5 +34,5 @@ body
   --RosaClaro: rgb(234, 175, 175);
   --RosaMuyClaro: rgb(255, 218, 218);
   --Titulo: "Teko", sans-serif;
-  --Parrafo: "Poppins", sans-serif;
+  --Parrafo: "Poppins", sans-serif;
 }

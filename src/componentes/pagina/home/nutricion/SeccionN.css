@@ -1,0 +1,34 @@
+.container_tituloN {
+    display: flex;
+    align-items: center;
+    background-color: var(--PlomoClaro);
+    padding: 3px 14px;
+    height: 108px;
+}
+
+.iconoN {
+    width: 57px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+
+.tituloN {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin: 4px 0px;
+    font-family: var(--Titulo);
+    font-size: 20px;
+}
+
+
+.parrafoN {
+    display: flex;
+    align-items: center;
+    margin: 2px 0px;
+    font-family: var(--Titulo);
+    color: var(--PlomoNoMedio);
+    font-size: 17px;
+    line-height: 18px;
+}
