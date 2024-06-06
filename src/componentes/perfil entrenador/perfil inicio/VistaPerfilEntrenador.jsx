@@ -7,7 +7,7 @@ import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
 const VistaPerfilEntrenador = () => {
   return (
     <div className="vista-perfil-entrenador">
-      <div className="superior">
+      <div className="superior-perfil-editar">
         <PerfilDetalleEntrenador />
         <PerfilBienvenidaEntrenador />
         <BotonAdministrarClientes />

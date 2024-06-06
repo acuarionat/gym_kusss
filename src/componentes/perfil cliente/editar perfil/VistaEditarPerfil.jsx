@@ -7,7 +7,7 @@ import AvatarPerfil from "./AvatarPerfil";
 const VistaEditarPerfil = () => {
   return (
     <div className="vista-editar">
-      <div className="superior-eitar">
+      <div className="superior-editar">
         <CabeceraEditarPerfil />
         <AvatarPerfil/>
         <FormularioEditarPerfil />

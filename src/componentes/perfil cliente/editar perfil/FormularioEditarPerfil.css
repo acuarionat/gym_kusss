@@ -35,6 +35,9 @@ form
 }
 .general
 {
-    width: 100%;
-    padding-left: 35px;
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 }

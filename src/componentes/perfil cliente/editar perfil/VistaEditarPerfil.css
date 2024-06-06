@@ -1,9 +1,17 @@
-.superior
+.superior-editar
 {
     width: 100%;
-    height: 90%;
+    height: 80%;
+    margin-bottom:30px ;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
+    overflow-y: scroll;    
+}
+.vista-editar
+{
+    overflow-x: hidden;
+}
+html
+{
+    height: 100%;
 }
