@@ -1,0 +1,43 @@
+.carousel-container 
+{
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-card 
+{
+    display: flex;
+    transition: scroll-left 0.3s;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-card::-webkit-scrollbar 
+{
+    display: none;
+}
+
+@media (max-width: 600px) 
+{
+    .card-salas 
+    {
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+    }
+
+    .card-titl 
+    {
+        font-size: 1em;
+    }
+
+    .card-image 
+    {
+        height: auto;
+    }
+}

@@ -1,0 +1,25 @@
+.headDetalleMision
+{
+    width: 100%;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--PlomoClaro);
+}
+.tituloVision 
+{
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    color: var(--Negro);
+    font-display: left;
+}
+
+.parrafoVision 
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: var(--Negro);
+}

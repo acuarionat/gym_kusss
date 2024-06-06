@@ -1,0 +1,35 @@
+.parrafoNosotrosSalas
+{
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Negro);
+  text-align: center;
+  font-size: 42px;
+}
+.parrafoNosotrosEntrenadores
+{
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Granate);
+  text-align: center;
+  font-size: 42px;
+}
+.separacion
+{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.separaciones
+{
+    padding: 10px;
+}
+
+.margin-bottom 
+{
+    margin-bottom: 50px;
+}
+
+html
+{
+  height: 100vw;
+}
