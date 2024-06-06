@@ -1,4 +1,5 @@
-.headDetalleGris {
+.headDetalleGris 
+{
     width: 100%;
     height: 30px;
     display: flex;
@@ -10,20 +11,24 @@
     padding: 0 10px;
 }
 
-.icoDetalleGris {
+.icoDetalleGris 
+{
     width: 25px;
     height: 25px;
     position: absolute;
     right: 10px;
 }
 
-@media (max-width: 600px) {
-    .headDetalleGris {
+@media (max-width: 600px) 
+{
+    .headDetalleGris 
+    {
         height: 40px;
         padding: 0 5px;
     }
 
-    .icoDetalleGris {
+    .icoDetalleGris 
+    {
         width: 20px;
         height: 20px;
     }

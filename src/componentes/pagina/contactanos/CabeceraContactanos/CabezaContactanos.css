@@ -1,31 +1,36 @@
-html, body {
+html, body 
+{
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body {
+body 
+{
     display: flex;
     flex-direction: column;
 }
-.headDetalle {
+.headDetalle 
+{
     width: 100%;
-    height: 50px; /* Set a fixed height for the block */
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the text */
-    position: relative; /* Relative positioning to allow absolute positioning of the icon */
+    justify-content: center;
+    position: relative;
     background: var(--Granate);
 }
 
-.icoDetalle {
+.icoDetalle 
+{
     width: 25px;
     height: 25px;
-    position: absolute; /* Absolute positioning */
-    left: 10px; /* Position the icon on the left side */
+    position: absolute;
+    left: 10px;
 }
 
-.tituloDetalles {
+.tituloDetalles 
+{
     font-family: "Teko", sans-serif;
     font-size: 30px;
     color: var(--Blanco);

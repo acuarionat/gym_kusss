@@ -1,14 +1,7 @@
 import React from 'react';
 import "./RedesSociales.css";
 
-const redes = [
-  { nombre: 'Facebook', servicio: 'Inicio', img: '/imagenes/facebook1.png' },
-  { nombre: 'WhatsApp', servicio: 'Sobre nosotros', img: '/imagenes/whatsapp1.png' },
-  { nombre: 'Instagram', servicio: 'Contáctanos', img: '/imagenes/instagram1.png' },
-  { nombre: 'X-Twitter', servicio: '', img: '/imagenes/twitter1.png' },
-];
-
-const RedesSociales = () => {
+const RedesSociales = ({ redes }) => {
   return (
     <div className='contenedor'>
       <div className='red-social'>

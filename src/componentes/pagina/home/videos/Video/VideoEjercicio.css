@@ -1,32 +1,36 @@
-.parrafoVideo {
+.parrafoVideo 
+{
   font-family: var(--Parrafo);
   font-weight: 400;
   color: var(--Negro);
   text-align: left;
-  width: 100%; /* Asegurar que el texto ocupe el ancho completo */
-  margin-left: 10px; /* Espacio a la izquierda para alinearlo mejor */
+  width: 100%;
+  margin-left: 10px;
 }
 
-.videos-container {
+.videos-container 
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.video-item {
+.video-item 
+{
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinear elementos al inicio (izquierda) */
+  align-items: flex-start;
   width: 100%;
 }
 
-.video {
+.video 
+{
   width: 100%;
   max-width: 300px;
   cursor: pointer;
-  border-radius: 20px; /* Borde redondeado */
-  border: 2px solid transparent; /* Borde inicial transparente */
+  border-radius: 20px;
+  border: 2px solid transparent;
 }
 
 .video.active {

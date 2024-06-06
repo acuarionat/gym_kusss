@@ -1,15 +1,7 @@
 import React from 'react';
 import "./Horarios.css";
 
-const horarios = [
-  { dia: 'Lunes', horas: '9:00 am - 10:00 pm' },
-  { dia: 'Martes', horas: '8:00 am - 10:00 pm' },
-  { dia: 'Miércoles', horas: '9:00 am - 10:00 pm' },
-  { dia: 'Jueves', horas: '9:00 am - 10:00 pm' },
-  { dia: 'Viernes', horas: '8:00 am - 12:00 pm' },
-];
-
-const Horarios = () => {
+const Horarios = ({ horarios }) => {
   return (
     <div className='contenedor'>
       <h2 className="parrafo">Horarios de Atención</h2>

@@ -42,13 +42,13 @@
     width: auto;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
-    background-color: var(--PlomoClaro); /* Usa la variable CSS para el color de fondo */
+    background-color: var(--PlomoClaro);
     cursor: pointer;
     transition: border-color 0.25s;
   }
   
   .button1:hover {
-    border-color: var(--Blanco); /* Cambia el color del borde al pasar el cursor */
+    border-color: var(--Blanco);
   }
   @media screen and (min-width: 768px) {
     .red-social img {

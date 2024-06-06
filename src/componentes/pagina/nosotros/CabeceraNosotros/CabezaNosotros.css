@@ -1,15 +1,17 @@
-.headDetalle {
+.headDetalle 
+{
     width: 100%;
-    height: 40px; /* Set a fixed height for the block */
+    height: 40px; 
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the text */
-    position: relative; /* Relative positioning to allow absolute positioning of the icon */
+    justify-content: center;
+    position: relative;
     background: var(--Granate);
 }
 
 
-.tituloDetalles {
+.tituloDetalles 
+{
     font-family: "Teko", sans-serif;
     font-size: 30px;
     color: var(--Blanco);
