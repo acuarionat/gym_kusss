@@ -55,16 +55,24 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+    background: url('/imagenes/FlechaAbajo.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    appearance: none;
+    background-position: 95%;
 }
 
 .textoElejirDia {
     color: black;
     font-family: "Teko", sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     margin-left: 10px;
 }
 
-.icoAñadir{
+.icoAñadir {
     width: 20px;
     height: 15px;
     margin-right: 10px;
