@@ -1,14 +1,14 @@
-import "./App.css";
-import VistaProgreso from "./componentes/perfil cliente/progreso/VistaProgreso";
-import VistaProgresoEntrenador from "./componentes/perfil entrenador/progreso/cargar grafica/VistaProgresoEntrenador";
-import VistaCargarProgreso from "./componentes/perfil entrenador/progreso/cargar formulario/VistaCargarProgreso";
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-	return (
-		//<VistaProgreso/>
-		//<VistaProgresoEntrenador />
-		<VistaCargarProgreso/>
-	);
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    
+    </>
+  )
 }
 
 export default App;
