@@ -1,0 +1,81 @@
+.formularioRepesSeries {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaTextoSeries {
+    width: 75%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textoSeries {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}
+
+.ingresoSeries {
+    background-color: var(--PlomoClaro);
+    color: black;
+    width: 75%;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-family: "Teko", sans-serif;
+}
+
+.cajaTextoRepeticiones {
+    width: 75%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textoRepeticiones {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}
+
+.ingresoRepeticiones {
+    background-color: var(--PlomoClaro);
+    color: black;
+    width: 75%;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-family: "Teko", sans-serif;
+}
+
+.cajaTextoConsejoExperto {
+    width: 75%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textoConsejoExerto {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}
+
+.ingresoConsejoExperto {
+    background-color: var(--PlomoClaro);
+    color: black;
+    width: 75%;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-family: "Teko", sans-serif;
+}
