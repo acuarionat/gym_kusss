@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 1440px) 
 {
-  .card2 
+  .card-container
   {
     padding: 3.5rem;
     border-radius: 1rem;
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 375px) 
 {
-  .card2 
+  .card-container 
   {
     padding: 2.5rem;
     border-radius: 1rem;
