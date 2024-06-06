@@ -1,0 +1,40 @@
+.formulario label
+{
+    font-family: var(--Titulo);
+    font-size: 25px;
+}
+.formulario input
+{
+    font-family: var(--Parrafo);
+    background-color: var(--PlomoClaro);
+    border-style: none;
+    height: 40px;
+    width: 90%;
+
+    
+}
+.formulario .guardar
+{
+    background-color: var(--Granate);
+    width: 50%;
+    height: fit-content;
+    padding: 5px 0px 5px 0px;
+    color: var(--Blanco);
+    font-family: var(--Titulo);
+    font-size:30px; 
+    border-radius: 12px;
+    align-self: center;
+    margin-top: 40px;
+}
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.general
+{
+    width: 100%;
+    padding-left: 35px;
+}

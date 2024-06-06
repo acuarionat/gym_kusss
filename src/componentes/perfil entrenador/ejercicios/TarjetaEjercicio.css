@@ -1,0 +1,43 @@
+.ejercicio
+{
+    background-color: #FFDADA;
+    width: 300px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--Parrafo);
+    margin-top: 20px;
+}
+.imagen-ejer
+{
+    width: 70px;
+    height: 70px;
+    border: solid 5px var(--Granate);
+    border-radius: 3px;
+    border-bottom-right-radius: 20px;
+}
+.descripcion-ejer h4
+{
+    text-align: left;
+    font-size: 12px;
+    color: var(--Granate);
+}
+.descripcion-ejer .musculo
+{
+    font-weight: bold;
+    color: var(--Negro);
+    font-size: 10px;
+}
+.descripcion-ejer .dif
+{
+    color: var(--Negro);
+    font-size: 10px;
+}
+.descripcion-ejer 
+{
+    padding: 0px 0px 0px 15px;
+   text-align: left;
+}

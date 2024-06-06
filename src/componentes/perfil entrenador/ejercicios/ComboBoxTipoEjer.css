@@ -1,0 +1,27 @@
+h2
+{
+    font-family: var(--Titulo);
+    color: var(--Granate);
+}
+select
+{
+    width: 80%;
+    border: solid var(--Granate);
+    background-color: var(--PlomoClaro);
+    font-family: var(--Parrafo);
+    font-size: 15px;
+}
+option
+{
+    font-family: var(--Parrafo);
+    font-size: 15px;
+}
+.combo-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20%;
+}

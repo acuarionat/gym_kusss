@@ -1,0 +1,33 @@
+.foto-perfil
+{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+.foto-perfil img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.editar-perfil
+{
+    background-color: var(--Granate);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50px;
+    z-index: 1;
+}
+.editar-perfil .edit
+{
+    width: 20px;
+    height: 20px;
+}
