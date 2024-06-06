@@ -1,0 +1,20 @@
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--Parrafo);
+}
+
+.table-row.even {
+    background-color: var(--PlomoMedio);
+}
+
+.table-row.odd {
+    background-color: var(--PlomoClaro);
+}
+
+.table-cell {
+    width: 50%;
+    text-align: center;
+}
