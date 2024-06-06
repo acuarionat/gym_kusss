@@ -1,17 +1,21 @@
-import React from 'react'
-import Dropdown from './Dropdown'
-import Tabla from './Tabla'
+import React from "react";
+import Dropdown from "./Dropdown";
+import Tabla from "./Tabla";
+import Grafica from "./Grafica";
 import BotonCompartir from './BotonCompartir'
+import CabezaCargarProgreso from './CabezaCargarProgreso'
 import NavBarPerfil from '../../general/NavBarPerfil'
 const VistaProgreso = () => {
-  return (
-    <div className='vista-progreso'>
-      <Dropdown/>
-      <Tabla/>
-      <BotonCompartir/>
+	return (
+		<div className="vista-cargar-progreso">
+			<CabezaCargarProgreso/>
+			<Dropdown/>
+			<Grafica/>
+			<Tabla/>
+			<BotonCompartir/>
       <NavBarPerfil/>
-    </div>
-  )
-}
+		</div>
+	);
+};
 
-export default VistaProgreso
+export default VistaProgreso;

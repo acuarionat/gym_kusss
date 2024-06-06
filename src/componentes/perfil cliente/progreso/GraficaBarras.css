@@ -1,0 +1,16 @@
+.grafica {
+    background-color: var(--Plomo);
+    padding: 10px;
+    border: 12px solid var(--PlomoClaro);
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+canvas {
+    background-color: var(--Plomo);
+    width: 100% !important;
+    height: 100% !important;
+}

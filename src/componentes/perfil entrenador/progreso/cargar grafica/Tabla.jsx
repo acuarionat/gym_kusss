@@ -1,3 +1,4 @@
+// Tabla.jsx
 import React, { useState, useEffect } from 'react';
 import TablaFila from './TablaFila';
 import './Tabla.css';
