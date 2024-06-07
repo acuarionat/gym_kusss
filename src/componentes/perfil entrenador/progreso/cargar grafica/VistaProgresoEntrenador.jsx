@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './VistaProgreso.css'
+import './VistaProgresoEntrenador.css'
 import Dropdown from "./Dropdown";
 import Tabla from "./Tabla";
 import Grafica from "./Grafica";
