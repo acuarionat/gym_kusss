@@ -1,0 +1,5 @@
+[
+    { "nombre": "Nutricion", "fecha":"12 / 05 / 2024", "novedad": "¡Mira estos consejos de alimentación!", "img": "/imagenes/nutricionNov.png" },
+    { "nombre": "Salud","fecha":"11 / 05 / 2024", "novedad": "¡Mira los nuevos consejos de salud mental!", "img": "/imagenes/saludMentalNov.png" },
+    { "nombre": "Entretenimiento","fecha":"12 / 05 / 2024", "novedad": "¡Mira los nuevos consejos de cómo perder peso!", "img": "/imagenes/entretenimientoNov.png" }
+  ]

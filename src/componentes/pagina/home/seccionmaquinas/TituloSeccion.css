@@ -1,0 +1,15 @@
+.PorEscoger{
+    text-align: center;
+    font-size: 20px;
+    color: var(--Granate);
+    font-family: var(--Titulo);
+    line-height: 10px;
+}
+
+.TieneTodo{
+    text-align: center;
+    font-size: 35px;
+    color: var(--Negro);
+    font-family: var(--Titulo);
+    line-height: 30px;
+}

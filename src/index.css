@@ -6,6 +6,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.html{
+  width: 100vw;
+}
 
 #root {
   margin: 0px;

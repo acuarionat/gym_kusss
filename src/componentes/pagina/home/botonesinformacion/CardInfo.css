@@ -1,0 +1,12 @@
+.card-i {
+    flex: 0 0 auto;
+    width: 210px;
+    height: 250px;
+    padding: 30px;
+    margin: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border: 3px solid var(--PlomoClaro);
+    border-radius: 0px;
+    background: linear-gradient(var(--Blanco) 40%, var(--PlomoClaro) 110%);
+}

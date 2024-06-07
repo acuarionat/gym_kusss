@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { usestate } from 'react'
 import './App.css'
+import VistaGeneralHome from './componentes/pagina/home/VistaGeneralHome';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App() 
+{
   return (
     <>
-    
+        <VistaGeneralHome/>
     </>
   )
 }
