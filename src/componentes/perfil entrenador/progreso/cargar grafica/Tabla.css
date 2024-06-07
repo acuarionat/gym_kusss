@@ -6,11 +6,11 @@
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .table-header {
     width: 100%;
-    margin-left: 16px;
 }
 
 .table-header h2 {
@@ -18,10 +18,11 @@
     font-family: var(--Titulo);
     text-align: left;
     font-weight: normal;
+    color: var(--Granate);
 }
 
 .table {
-    width: 343px;
+    width: 100%;
     max-width: 100%;
     border: 1px solid var(--PlomoClaro);
 }

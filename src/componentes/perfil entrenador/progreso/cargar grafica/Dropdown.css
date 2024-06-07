@@ -1,7 +1,7 @@
 .dropdown-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: border-box;
