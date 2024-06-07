@@ -1,0 +1,27 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.table-header {
+    width: 100%;
+    margin-left: 16px;
+}
+
+.table-header h2 {
+    font-size: 25px;
+    font-family: var(--Titulo);
+    text-align: left;
+    font-weight: normal;
+}
+
+.table {
+    width: 343px;
+    max-width: 100%;
+    border: 1px solid var(--PlomoClaro);
+}
