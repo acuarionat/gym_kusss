@@ -1,0 +1,8 @@
+.BSuger{
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--Titulo);
+    border: 0px;
+    color: var(--Blanco);
+    background-color: var(--GranateClaro);
+}

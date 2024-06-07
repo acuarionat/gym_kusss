@@ -1,0 +1,13 @@
+.combobox{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.Metodos{
+    background-color: var(--Granate);
+    border-radius: 10%;
+    color: var(--Blanco);
+    font-family: var(--Titulo);
+    font-size: 20px;
+}
+  

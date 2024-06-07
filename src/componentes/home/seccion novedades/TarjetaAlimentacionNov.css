@@ -1,0 +1,12 @@
+.NovAlimentacion1{
+    height: 120px;
+    background-color: var(--RosaClaro);
+}
+
+.comidaAli{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: 6px;
+}

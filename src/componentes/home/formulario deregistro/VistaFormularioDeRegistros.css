@@ -1,0 +1,58 @@
+.FormularioRegistro{
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  .fondos1{
+    width: 275px;
+    height: 450px;
+    filter: blur(1px);
+  }
+  .BarraNav{
+    width: 275px;
+    height: 50px;
+    background: var(--Plomo);
+    margin-left: 0px;
+    margin-top: -430px;
+    filter: blur(0px);
+    opacity: 0.8;
+  }
+  .Barras1{
+    width: 40px;
+    height: 25px;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+  .RegistroText{
+    margin-left: 110px;
+    filter: blur(0px);
+    color: var(--Blanco);
+  }
+
+  .Campos10{
+    filter: blur(0px);
+    color:var(--Blanco);
+    line-height: 7px;
+    margin-left: 20px;
+  }
+  .TextBox2{
+    width: 230px;
+    height: 25px;
+    background-color: var(--GranateClaro);
+    opacity: 0.6;
+  }
+  .Aceptar5{
+    width: 100px;
+    height: 30px;
+    filter: blur(0px);
+    font-size: 13px;
+    margin-top: 20px;
+    background:var(--GranateClaro);
+    padding: 4px;
+    color: var(--Blanco);
+    margin-left: 90px;
+    border-radius: 7px;
+  }
