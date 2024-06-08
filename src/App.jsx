@@ -1,9 +1,10 @@
-import { useState } from "react";
 import "./App.css";
+import Navigation from "./routes/Navigation";
 function App() {
   return (
-   <>
-   </>
+    <>
+      <Navigation />
+    </>
   );
 }
 

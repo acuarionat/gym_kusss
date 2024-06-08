@@ -21,3 +21,8 @@
     margin: 10px;
     color: var(--Blanco);
 }
+.goback
+{
+    border-style: none;
+    background-color: transparent;
+}
