@@ -1,6 +1,5 @@
 .grafica-header {
     width: 100%;
-    margin-left: 16px;
 }
 
 .grafica-header h2 {
@@ -9,4 +8,14 @@
     text-align: left;
     font-weight: normal;
     color: var(--Granate);
+    padding-left: 16px;
+}
+.grafica-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
 }
