@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const MoleculaCorreo = () => {
     return (
         <>
-          <img src="../public/imagenes/carta.png" alt="" className='correologo' />
+          <img src="/imagenes/carta.png" alt="" className='correologo' />
           <p className='recursostext'>Aplicación <br />de Correo</p>
         </>
     );

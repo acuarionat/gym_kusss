@@ -3,7 +3,7 @@ import './FlechaCabecera2.css'
 
 const FlechaCabecera2 = () => {
     return (
-            <img src='../public/imagenes/flecha.png' alt=""  className='Flecha110'/>
+            <img src='/imagenes/flecha.png' alt=""  className='Flecha110'/>
     );
   };
   

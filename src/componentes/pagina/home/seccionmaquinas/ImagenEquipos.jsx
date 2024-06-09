@@ -4,7 +4,7 @@ import './ImagenEquipos.css'
 const ImagenEquipos = () => {
     return (
         <>
-            <img src="../public/imagenes/equipamiento.png" alt=""  className='ImageEquip'/>
+            <img src="/imagenes/equipamiento.png" alt=""  className='ImageEquip'/>
         </>
     );
   };

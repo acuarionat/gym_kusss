@@ -5,7 +5,7 @@ import './CabeceraInformate.css'
 const CabeceraInformate = () => (
     <>
         <p className='TituloInformate2'>INFORMATE DE VARIOS TEMAS</p>
-        <img src="../public/imagenes/admiracion.png" alt="" className='IconAdm'/>
+        <img src="/imagenes/admiracion.png" alt="" className='IconAdm'/>
    
     </>
 );

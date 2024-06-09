@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const MoleculaTwitter = () => {
     return (
         <>
-        <img src="../public/imagenes/xlogo.png" alt="" className='xlogo' />
+        <img src="/imagenes/xlogo.png" alt="" className='xlogo' />
         <p className='logox'>Twitter</p>
         </>
     );

@@ -3,7 +3,7 @@ import './VistaSeccionEquipamiento.css'
 import CabeceraInformate from './CabeceraInformate'
 import MiniTextoInformate from './MiniTextoInformate'
 import BotonesInformate from './BotonesInformate'
-import VistaBotonesInfo from '/home/carvajalmax/2d0Parcial/2doParcial/2doParcial/2doParcial/src/componentes/pagina/home/botonesinformacion/VistaBotonesInfo'
+import VistaBotonesInfo from '../botonesinformacion/VistaBotonesInfo'
 
 const VistaSeccionEquipamiento = () => (
     <div className='VistaSeccEquipamiento'>

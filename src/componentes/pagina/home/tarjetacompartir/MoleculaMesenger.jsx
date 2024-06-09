@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const MoleculaMesenger = () => {
     return (
         <>
-            <img src="../public/imagenes/mesenger.png" alt="" className='mesengerlogo' />
+            <img src="/imagenes/mesenger.png" alt="" className='mesengerlogo' />
             <p className='logox'>Messenger</p>
         </>
     );

@@ -4,7 +4,7 @@ import './ImagenHorario1.css'
 const ImagenHorario1 = () => {
     return (
         <>
-            <img src="../public/imagenes/horario.png" alt="" className='ImgHor1'/>
+            <img src="/imagenes/horario.png" alt="" className='ImgHor1'/>
         </>
     );
   };

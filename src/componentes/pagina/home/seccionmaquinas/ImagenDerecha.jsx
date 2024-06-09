@@ -4,7 +4,7 @@ import './ImagenDerecha.css'
 const ImagenDerecha = () => {
     return (
         <>
-            <img src="../public/imagenes/RectangleRosa.png" alt=""  className='ImageDer4'/>
+            <img src="/imagenes/RectangleRosa.png" alt=""  className='ImageDer4'/>
         </>
     );
   };

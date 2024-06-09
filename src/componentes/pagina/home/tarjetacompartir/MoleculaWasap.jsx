@@ -5,7 +5,7 @@ const MoleculaWasap = () => {
     return (
         <>
             <img src="/imagenes/wasap.png" alt="" className='wasaplogo' />
-            <p className='recursostext'>WathsApp</p>
+            <p className='recursostext'>WhatsApp</p>
         </>
     );
   };
