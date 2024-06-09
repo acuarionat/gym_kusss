@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const MoleculaWasap = () => {
     return (
         <>
-            <img src="../public/imagenes/wasap.jpg" alt="" className='wasaplogo' />
+            <img src="/imagenes/wasap.png" alt="" className='wasaplogo' />
             <p className='recursostext'>WathsApp</p>
         </>
     );

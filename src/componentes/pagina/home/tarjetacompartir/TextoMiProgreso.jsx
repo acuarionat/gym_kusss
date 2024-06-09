@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const TextoMiProgreso = () => {
     return (
         <>
-            <img src="../public/imagenes/ogo.png" alt="" className='logoimg' />
+            <img src="/imagenes/logo.png" alt="" className='logoimg' />
             <p className='textlogo'>MiProgreso.gymhusss</p>
         </>
     );
