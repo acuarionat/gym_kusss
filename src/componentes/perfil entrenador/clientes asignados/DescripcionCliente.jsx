@@ -6,7 +6,7 @@ const DescripcionCliente = ({cliente}) => {
     <div className='descripcion'>
         <img 
         className="imagen"
-        src={cliente.avatar}
+        src={cliente.foto}
         alt={`avatar de ${cliente.name}`}
       />
         <h4>{cliente.name}</h4>

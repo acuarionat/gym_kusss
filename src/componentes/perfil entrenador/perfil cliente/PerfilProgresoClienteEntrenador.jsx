@@ -4,7 +4,7 @@ const PerfilProgresoClienteEntrenador = () => {
   return (
       <div className="detalle-progreso">
         <h4>Progreso General</h4>
-        <div className="grafica">
+        <div className="grafica-progreso-general">
           <div className="valor-progreso"><p>50%</p></div>
         </div>
       </div>

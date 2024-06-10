@@ -1,15 +1,16 @@
 import React from "react";
 import "./VistaPerfilClienteEntrenador.css";
-import PerfilDetalleClienteEntrenador from "./PerfilDetalleClienteEntrenador";
+import ClienteEntrenadorApp from "../../../ClienteEntrenadorApp";
 import InformacionGeneralClienteEntrenador from "./InformacionGeneralClienteEntrenador";
 import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
 import BotonProgreso from "./BotonProgreso";
 import BotonRutina from "./BotonRutina";
-const VistaPerfilClienteEntrenador = () => {
+
+const VistaPerfilClienteEntrenador = ({cliente}) => {
   return (
     <div className="vista-cliente-entrenador">
       <div className="superior">
-        <PerfilDetalleClienteEntrenador />
+        <ClienteEntrenadorApp cliente={cliente} />
         <InformacionGeneralClienteEntrenador />
         <BotonProgreso />
         <BotonRutina />

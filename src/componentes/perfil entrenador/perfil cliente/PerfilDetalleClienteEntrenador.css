@@ -65,9 +65,10 @@
     margin-left:5px;
 
 }
-.tarjeta-detalle .imagenes .perfil img
+.tarjeta-detalle .imagenes .perfil
 {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 10px 0px 5px 0px;
+    border-radius: 50%;
 }

@@ -9,7 +9,7 @@ const VistaClientesAsignados = () => {
     <div className="vista-clientes-asignados">
       <div className="superior">
         <CabeceraClientesAsignados />
-        <ClienteApp />
+        <ClienteApp/>
       </div>
       <NavBarPerfilEntrenador />
     </div>
