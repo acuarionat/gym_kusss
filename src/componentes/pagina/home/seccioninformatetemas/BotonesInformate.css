@@ -3,7 +3,7 @@
     margin-left: 75px;
     padding: 5px;
     width: 100px;
-    border-radius: 40%;
+    border-radius: 56%;
     font-family: var(--Titulo);
     font-size: 20px;
     color: var(--Blanco);
@@ -15,7 +15,7 @@
     margin-left: 25px;
     padding: 5px;
     width: 100px;
-    border-radius: 40%;
+    border-radius: 56%;
     font-family: var(--Titulo);
     font-size: 20px;
     color: var(--Blanco);

@@ -4,7 +4,7 @@ import "./BotonDescarga.css";
 const BotonDescarga = () => {
   return (
     <div class="combobox">
-        <form action="" className="Opciones">
+        <form>
             <select className="Metodos" id="">
                 <option value="none">DESCARGAR HORARIO</option>
                 <option value="">JPG</option>

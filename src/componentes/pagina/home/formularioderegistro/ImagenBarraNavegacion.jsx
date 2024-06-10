@@ -3,7 +3,7 @@ import './VistaFormularioDeRegistros.css'
 
 const ImagenBarraNavegacion = () => {
     return (
-          <img src="../public/imagenes/barras.png" alt="" className='Barras1' />
+          <img src="/imagenes/barras.png" alt="" className='Barras1' />
         
     );
   };

@@ -11,21 +11,23 @@ import VistaSeccionPortada from './componentes/pagina/home/seccionportada/VistaS
 import VistaSeccionSugerencia from './componentes/pagina/home/seccionsugerencia/VistaSeccionSugerencia';
 import VistaTarjetaCompartir from './componentes/pagina/home/tarjetacompartir/VistaTarjetaCompartir';
 import VistaTarjetaNotificaciones from './componentes/pagina/home/tarjetade notificaciones/VistaTarjetaNotificaciones';
+import VistaSeccionHorario from './componentes/pagina/home/seccionhorario/VistaSeccionHorario';
 
 function App() 
 {
   return (
     <>
-        {/* <VistaGeneralHome/> */}
+        <VistaGeneralHome/>
         {/* <VistaFormularioDeRegistros/> */}
         {/* <VistaTarjetadeEquipamiento/> */}
-        <VistaSeccionSugerencia/>
-        <VistaTarjetaCompartir/>
-        <VistaSeccionEquipamiento/>
-        <VistaSeccionMaquinas/>
+        {/* <VistaSeccionSugerencia/> Sirve*/}
+        {/* <VistaTarjetaCompartir/> */}
+        {/* <VistaSeccionEquipamiento/> Botones tal vez*/}
+        {/* <VistaSeccionMaquinas/>
         <VistaTarjetaNotificaciones/>
-        <VistaSeccionSugerencia/>
-        
+        <VistaSeccionSugerencia/> */}
+        {/* <VistaBotonesInfo/> Sirve*/}
+        {/* <VistaSeccionHorario/> Hacer a mi estilo */}
     </>
   )
 }

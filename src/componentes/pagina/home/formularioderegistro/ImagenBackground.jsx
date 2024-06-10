@@ -3,7 +3,7 @@ import './VistaFormularioDeRegistros.css'
 
 const ImagenBackground = () => {
     return (
-        <img src="../public/imagenes/gymAtardecer.jpg" alt="" className='fondos1'/>
+        <img src="/imagenes/gymAtardecer.jpg" alt="" className='fondos1'/>
     );
   };
   

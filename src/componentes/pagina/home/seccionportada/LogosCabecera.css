@@ -1,3 +1,20 @@
-.BarrasDeNavegacion2{
-    margin-left: 300px;
+.LogosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.LogosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%; /* Para asegurar que los logos no se salgan de la pantalla en tamaños muy grandes */
+}
+
+.LogoKussCabecera1,
+.BarrasDeNavegacion2 {
+    max-width: 100px; /* Ajusta el tamaño máximo de los logos */
+    height: auto;
 }

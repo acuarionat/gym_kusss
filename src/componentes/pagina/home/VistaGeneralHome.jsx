@@ -10,9 +10,9 @@ const VistaGeneralHome = () => (
     <>
       <VistaSeccionPortada />
       <VistaSeccionMaquinas />
-      <VistaSeccionEquipamiento />
+      {/* <VistaSeccionEquipamiento />
       <VistaseccionNovedades />
-      <VistaSeccionSugerencia /> 
+      <VistaSeccionSugerencia />  */}
       
     </>
   </div>
