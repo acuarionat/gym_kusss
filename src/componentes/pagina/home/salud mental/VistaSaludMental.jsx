@@ -1,4 +1,3 @@
-// SaludMental.jsx
 import React, { useState, useEffect } from 'react';
 import Header from './CabezaS';
 import Section from './SeccionS';
