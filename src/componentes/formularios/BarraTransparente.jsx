@@ -2,19 +2,15 @@ import React from 'react';
 import './BarraTransparente.css';
 
 const BarraTransparente = () => {
-  const handleClick = () => {
-    // Aquí puedes agregar la lógica para el botón, como abrir un menú lateral
-    console.log("Botón de menú clickeado");
-  };
-
   return (
     <div className='headDetalleTransparente'>
-      <img 
-        className='icoDetalleGris' 
-        src={"/imagenes/Menu.png"} 
-        alt="Tres barras" 
-        onClick={handleClick} 
-      />
+      <button id="BotonMenu" className='icoDetalleTransparente'>
+        <img 
+          className='imagenMenu' 
+          src={"/imagenes/Menu.png"} 
+          alt="Barras de Navegacion" 
+        />
+      </button>
     </div>
   );
 }
