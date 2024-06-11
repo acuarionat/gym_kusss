@@ -1,12 +1,12 @@
-import Sobre from '/imagenes/SobreNosotros.png'
+import './OrgSobre.css'
 
 function OrgSobre(props) {
     const sideDatos = props.nombre
     return (
-        <div className='textosIma'>
+        <button className='textosIma'>
             <p className='textos'>{sideDatos.SideBar}</p>
             <img className='icoMenu' src={sideDatos.imagen} alt="Nosotros" />
-        </div>
+        </button>
     )
 }
 

@@ -1,0 +1,13 @@
+.pruebaCuerpo {
+    width: 100%;
+    height: 100%;
+}
+
+#btnMenu {
+    display: none;
+}
+
+#btnMenu:checked~.fondoSideBar {
+    opacity: 1;
+    visibility: visible;
+}

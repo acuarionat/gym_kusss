@@ -1,11 +1,12 @@
 import { useState } from "react";
-import VistaEditarRutinaEntrenador from './componentes/perfil entrenador/editar rutina/VistaEditarRutinaEntrenador'
+import PruebaSideBar from "./componentes/general/Slide Bar/PruebaSideBar";
+import VistaRutinas from './componentes/perfil cliente/rutina semanal/VistaRutinas'
 import "./App.css";
 
 function App() {
   return (
     <>
-      <VistaEditarRutinaEntrenador />
+      <VistaRutinas />
     </>
   );
 }

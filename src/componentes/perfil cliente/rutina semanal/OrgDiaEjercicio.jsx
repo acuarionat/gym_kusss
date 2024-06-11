@@ -10,7 +10,7 @@ function OrgDiaEjercicio(props) {
             </div>
             <div className='botonesEjercicios'>
                 <button className='botonEjer'>Pecho</button>
-                <button className='botonEjer'>Brazos</button>
+                <button className='botonCalorias'>Calorias est. 310</button>
             </div>
         </div>
     )
