@@ -1,0 +1,15 @@
+.tarjetas-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container-e {
+    width: 310px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.carousel-e {
+    display: flex;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,32 @@
+.container_tituloS {
+    display: flex;
+    align-items: center;
+    background-color: var(--PlomoClaro);
+    padding: 3px 16px;
+    height: 108px;
+}
+
+.iconoS {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.tituloS {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin: 4px 0px;
+    font-family: var(--Titulo);
+    font-size: 20px;
+}
+
+.parrafoS {
+    display: flex;
+    align-items: center;
+    margin: 2px 0px;
+    font-family: var(--Titulo);
+    color: var(--PlomoNoMedio);
+    font-size: 17px;
+    line-height: 18px;
+}

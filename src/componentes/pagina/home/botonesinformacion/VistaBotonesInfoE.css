@@ -1,0 +1,16 @@
+.Tarjeta-containerB{
+    display: flex;
+    justify-content: center;
+
+}
+.carousel-container {
+    width: 300px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+
+}

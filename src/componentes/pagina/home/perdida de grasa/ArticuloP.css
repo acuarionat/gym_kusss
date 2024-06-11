@@ -1,0 +1,21 @@
+.containerAriculoP {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.parrafoArticuloP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Parrafo);
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.imagenP {
+    width: 280px;
+    height: auto;
+    margin: 20px;
+    margin-top: 5px;
+}
