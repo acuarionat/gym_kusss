@@ -1,17 +1,4 @@
-html, body 
-{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body 
-{
-    display: flex;
-    flex-direction: column;
-}
-.headDetalle 
-{
+.headDetalle {
     width: 100%;
     height: 50px;
     display: flex;
@@ -33,16 +20,18 @@ body
     align-items: center;
     justify-content: center;
 }
+
 .imagenFlecha {
     width: 100%;
     height: 100%;
 }
-.tituloDetalles 
-{
+
+.tituloDetalles {
     font-family: "Teko", sans-serif;
     font-size: 30px;
     color: var(--Blanco);
 }
+
 @media (max-width: 600px) {
     .headDetalle {
         height: 40px;
@@ -57,4 +46,3 @@ body
         font-size: 25px;
     }
 }
-

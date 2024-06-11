@@ -1,0 +1,36 @@
+.card1
+{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Plomo);
+  width: 100%;
+  max-width: none;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+.teko-titulo
+{
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Granate);
+}
+
+@media screen and (min-width: 1440px) 
+{
+  .card1 
+  {
+    padding: 3.5rem;
+    border-radius: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 375px) 
+{
+  .card1 
+  {
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+}

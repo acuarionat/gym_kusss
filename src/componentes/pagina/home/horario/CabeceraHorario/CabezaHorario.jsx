@@ -1,5 +1,5 @@
-import './CabezaContactanos.css'
-function CabezaContactanos() {
+import './CabezaHorario.css'
+function CabezaHorario() {
     return (
         <div className='headDetalle'>
             <button className='icoDetalle'>
@@ -9,9 +9,9 @@ function CabezaContactanos() {
                     alt="Flecha Atras" 
                 />
             </button>
-            <p className='tituloDetalles'>CONTACTANOS</p>
+            <p className='tituloDetalles'>TRANSFORMA TU CUERPO</p>
         </div>
-    )
+    );
 }
 
-export default CabezaContactanos
+export default CabezaHorario
