@@ -1,13 +1,14 @@
+import { usestate } from 'react';
 import './App.css';
-import Botones from './componentes/pagina/home/botonesinformacion/VistaBotonesInfo'
-function App() {
-  return (
-    <><Botones/>
+import VistaGeneralHome from './componentes/pagina/home/VistaGeneralHome';
 
+function App() 
+{
+  return (
+    <>
+        <VistaGeneralHome/>
     </>
   )
 }
 
 export default App;
-
-

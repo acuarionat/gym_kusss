@@ -1,0 +1,13 @@
+.iconE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--Blanco);
+}
+
+.iconE img {
+    width: 220px;
+    object-fit: cover;
+}

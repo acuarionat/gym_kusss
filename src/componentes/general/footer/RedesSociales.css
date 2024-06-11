@@ -1,0 +1,52 @@
+.contenedor 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.red-social 
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.red-social-item 
+{
+  display: flex;
+  align-items: center;
+}
+
+.red-social-item img 
+{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.red-social-text 
+{
+  text-align: right;
+}
+
+.parrafo 
+{
+  font-family: var(--Parrafo);
+  font-weight: 400;
+  color: var(--Blanco);
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) 
+{
+  .red-social-item img 
+  {
+    width: 50px;
+    height: 50px;
+  }
+}
