@@ -7,3 +7,7 @@
     margin-top: 20px;
     border-radius: 12px;
 }
+.nav-link
+{
+    text-decoration: none;
+}

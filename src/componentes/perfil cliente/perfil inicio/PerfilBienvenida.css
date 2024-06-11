@@ -15,6 +15,7 @@
 {
     text-align: left;
     width: 60%;
+    font-family: var(--Parrafo);
 }
 .bienvenida .texto h3
 {
@@ -28,6 +29,7 @@
 .bienvenida .texto p
 {
     font-size: 10px;
+    font-weight: 400;
 }
 .bienvenida .imagen
 {

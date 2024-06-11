@@ -11,12 +11,13 @@
     box-shadow: #000 2px 2px 10px;
     border-radius: 12px;
 }
-.bienvenida .texto
+.bienvenida .texto-bienvenida
 {
     text-align: left;
     width: 60%;
+    font-family: var(--Parrafo);
 }
-.bienvenida .texto h3
+.bienvenida .texto-bienvenida h3
 {
     font-weight: 500;
     font-size: 14px;
@@ -25,9 +26,10 @@
 {
     color: var(--Granate);
 }
-.bienvenida .texto p
+.bienvenida .texto-bienvenida p
 {
     font-size: 10px;
+    font-weight:400;
 }
 .bienvenida .imagen
 {

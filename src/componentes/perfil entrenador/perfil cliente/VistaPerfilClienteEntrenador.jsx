@@ -9,7 +9,7 @@ import BotonRutina from "./BotonRutina";
 const VistaPerfilClienteEntrenador = ({cliente}) => {
   return (
     <div className="vista-cliente-entrenador">
-      <div className="superior">
+      <div className="superior-cliente-entrenador">
         <ClienteEntrenadorApp cliente={cliente} />
         <InformacionGeneralClienteEntrenador />
         <BotonProgreso />

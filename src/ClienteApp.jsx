@@ -1,19 +1,51 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { ThreeDots } from 'react-loader-spinner';
 import TarjetaCliente from './componentes/perfil entrenador/clientes asignados/TarjetaCliente';
 
 function ClienteApp() {
   const [clientes, setClientes] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   let [searchParams, setSearchParams] = useSearchParams();
-  const id=searchParams.get("id")
+  const id = searchParams.get("id");
+
+  const fetchDataWithRetry = async (url, options = {}, retries = 3, backoff = 3000) => {
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        if (response.status === 429 && retries > 0) {
+          console.warn(`Request limit reached. Retrying in ${backoff}ms...`);
+          await new Promise(resolve => setTimeout(resolve, backoff));
+          return fetchDataWithRetry(url, options, retries - 1, backoff * 2);
+        }
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Failed to fetch data:', error);
+      throw error;
+    }
+  };
+
   useEffect(() => {
-    fetch('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes')
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchClientes = async () => {
+      try {
+        const data = await fetchDataWithRetry('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes');
         const firstFiveClientes = data.slice(0, 5);
         setClientes(firstFiveClientes);
-      });
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchClientes();
   }, []);
+
+  if (loading) return <ThreeDots color="#920525" height={80} width={80} />;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <>

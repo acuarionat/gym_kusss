@@ -6,11 +6,4 @@
     display: flex;
     flex-direction: column;
 }
-.vista-editar
-{
-    overflow-x: hidden;
-}
-html
-{
-    height: 100%;
-}
+
