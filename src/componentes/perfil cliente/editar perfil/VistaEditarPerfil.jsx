@@ -2,16 +2,12 @@ import React from "react";
 import "./VistaEditarPerfil.css";
 import NavBarPerfil from "../../general/NavBarPerfil";
 import CabeceraEditarPerfil from "./CabeceraEditarPerfil";
-import FormularioEditarPerfil from "./FormularioEditarPerfil";
-import AvatarPerfil from "./AvatarPerfil";
-const VistaEditarPerfil = () => {
+import EditarApp from "../../../EditarApp";
+const VistaEditarPerfil = ({cliente}) => {
   return (
     <div className="vista-editar">
-      <div className="superior-editar">
-        <CabeceraEditarPerfil />
-        <AvatarPerfil/>
-        <FormularioEditarPerfil />
-      </div>
+        <CabeceraEditarPerfil/>
+        <EditarApp cliente={cliente} />
       <NavBarPerfil />
     </div>
   );

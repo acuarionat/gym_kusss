@@ -1,17 +1,16 @@
-.formulario label
+label
 {
     font-family: var(--Titulo);
     font-size: 25px;
 }
-.formulario input
+input
 {
     font-family: var(--Parrafo);
     background-color: var(--PlomoClaro);
     border-style: none;
     height: 40px;
-    width: 100%;
-
-    
+    width: 100%; 
+    margin-bottom: 20px;
 }
 .formulario .guardar
 {
@@ -37,9 +36,25 @@ form
 }
 .general
 {
-    width: 90%;
+    width: 85%;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
+}
+
+.foto-perfil
+{
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.formulario
+{
+    margin: 20px 0px 20px 0px;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
 }
