@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import VistaGeneralHome from './componentes/pagina/home/VistaGeneralHome'
-import PruebaSideBar from './componentes/general/Slide Bar/PruebaSideBar'
+import "./App.css";
+import BotonesInfo from "./componentes/pagina/home/botonesinformacion/VistaBotonesInfo";
+import VistaSeccionEquipamiento from "./componentes/pagina/home/seccioninformacion/VistaSeccionInformacion";
+import Navigation from "./routes/Navigation";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    {/* <VistaGeneralHome/> */}
-    <PruebaSideBar/>
-
+      {/* <Navigation /> */}
+      <BotonesInfo />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

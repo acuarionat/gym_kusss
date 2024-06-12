@@ -14,8 +14,7 @@ const VistaGeneralHome = () => (
       <VistaSeccionInformacion />
       <VistaSeccionVideos/>
       <VistaseccionNovedades />
-      <VistaSeccionSugerencia /> 
-      
+      <VistaSeccionSugerencia />
       <VistaSeccionFooter/>
   </div>
 );
