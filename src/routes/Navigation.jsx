@@ -26,7 +26,7 @@ const Navigation = () => {
           <Route path="/equipamiento" element= {<VistaEquipamiento/>} />
           <Route path="/sugerencias" element= {<VistaSugerencias/>} />
           <Route path="/perdida-de-grasa" element= {<VistaPerdidaDeGrasa/>} />
-          <Route path="/masamusc" element= {<VistaNutricion/>} />
+          <Route path="/nutricion" element= {<VistaNutricion/>} />
           <Route path="/saludmental" element= {<VistaSaludMental/>} />
           <Route path="/login" element= {<CardLogin/>} />
           <Route path="/registro" element= {<CardRegistro/>} />

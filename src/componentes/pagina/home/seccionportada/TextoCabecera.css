@@ -9,8 +9,7 @@
     color: var(--Blanco);
     text-align: center;
     font-family: var(--Titulo);
-    z-index: 1;
-
+    z-index: 0;
 }
 
 .TextCabecera2::before {

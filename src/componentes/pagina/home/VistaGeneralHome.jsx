@@ -11,7 +11,7 @@ const VistaGeneralHome = () => (
   <div className="vista-home">
       <VistaSeccionPortada />
       <VistaSeccionMaquinas />
-      <VistaSeccionInformacion />
+      {/* <VistaSeccionInformacion /> */}
       <VistaSeccionVideos/>
       <VistaseccionNovedades />
       <VistaSeccionSugerencia />

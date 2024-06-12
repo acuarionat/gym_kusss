@@ -6,8 +6,8 @@
     margin: 50px 0px;
     border-radius: 2px;
     height: 110px;
-    padding: 3px 10px; /* Agrega un poco de padding para dar espacio al contenido */
-    overflow: hidden; /* Asegúrate de que el contenido no se desborde */
+    padding: 3px 10px;
+    overflow: hidden;
     border: none;
 }
 
@@ -19,25 +19,25 @@
     width: 100%;
     height: 100%;
     background-color: var(--RosaMuyClaro);
-    opacity: 0.1; /* Ajusta la opacidad según sea necesario */
-    z-index: 0; /* Envía el pseudo-elemento detrás del contenido */
-    border-radius: 10px; /* Coincide con el borde del contenedor */
+    opacity: 0.1;
+    z-index: 0;
+    border-radius: 10px;
 
 }
 
 .IconoNovedades, .InformacionNovedades1 {
     position: relative;
-    z-index: 1; /* Asegura que el contenido esté por encima del pseudo-elemento */
+    z-index: 1;
 }
 
 .IconoNovedades {
     width: 80px;
     height: 80px;
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    margin-right: 10px;
 }
 
 .InformacionNovedades1 {
     font-family: var(--Titulo);
     font-size: 20px;
-    line-height: 0.5; /* Ajuste de line-height para un mejor espaciado de texto */
+    line-height: 0.5;
 }

@@ -1,5 +1,10 @@
 [
     {
+        "SideBar": "Home",
+        "imagen": "/imagenes/Novedades.png",
+        "link": "/"
+    },
+    {
         "SideBar": "Sobre Nosotros",
         "imagen": "/imagenes/SobreNosotros.png",
         "link": "/nosotros"
@@ -13,11 +18,6 @@
         "SideBar": "Regístrate",
         "imagen": "/imagenes/Registrate.png",
         "link": "/registro"
-    },
-    {
-        "SideBar": "Home",
-        "imagen": "/imagenes/Novedades.png",
-        "link": "/"
     },
     {
         "SideBar": "Contactanos",
