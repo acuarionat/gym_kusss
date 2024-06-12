@@ -31,9 +31,21 @@ function ClienteApp() {
   useEffect(() => {
     const fetchClientes = async () => {
       try {
-        const data = await fetchDataWithRetry('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes');
-        const firstFiveClientes = data.slice(0, 5);
-        setClientes(firstFiveClientes);
+        // Fetch the data of the trainer with id 1
+        const entrenador = await fetchDataWithRetry('https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores/2');
+
+        // Extract the array of client IDs from the trainer data
+        const clienteIds = entrenador.clientes; // Assuming 'clientes' is the key that contains the array of client IDs
+
+        // Fetch the data of each client using the IDs
+        const clientePromises = clienteIds.map(id =>
+          fetchDataWithRetry(`https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/${id}`)
+        );
+        
+        const clientesData = await Promise.all(clientePromises);
+        console.log('Clientes Data:', clientesData);
+
+        setClientes(clientesData);
       } catch (error) {
         setError(error.message);
       } finally {
