@@ -11,12 +11,10 @@
 }
 .superior-cliente-entrenador
 {
-    height: 85%;
     width: 100%;
-    margin-bottom: 15%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:start;
     overflow: scroll;
 }

@@ -19,7 +19,7 @@ const FormularioEditarPerfil = ({ cliente, validationSchema }) => {
     try {
       const patchedData = {
         ...values,
-        imageUrl: imageUrl,
+        foto: imageUrl,
       };
       const response = await fetch('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/3', {
         method: 'PUT',

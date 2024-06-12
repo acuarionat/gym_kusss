@@ -7,10 +7,10 @@ import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
 const VistaClientesAsignados = () => {
   return (
     <div className="vista-clientes-asignados">
-      <div className="superior-administrar">
         <CabeceraClientesAsignados />
+        <div className="contenerdor-tarjeta-cliente">
         <ClienteApp/>
-      </div>
+        </div>
       <NavBarPerfilEntrenador />
     </div>
   );
