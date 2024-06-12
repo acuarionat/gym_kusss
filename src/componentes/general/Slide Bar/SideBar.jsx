@@ -1,9 +1,9 @@
-import React from 'react'
-import './SideBar.css'
-import OrgSobre from './OrgSobre'
-import KussLogo from '/imagenes/KussLogo.png'
-import Close from '/imagenes/Close.png'
-import SlideDatos from '../../../datos/DatosSideBar.json'
+import React from 'react';
+import './SideBar.css';
+import OrgSobre from './OrgSobre';
+import KussLogo from '/imagenes/KussLogo.png';
+import Close from '/imagenes/Close.png';
+import SlideDatos from '../../../datos/DatosSideBar.json';
 
 function SideBar() {
     return (
@@ -17,11 +17,9 @@ function SideBar() {
                     </div>
                     <div className='menu'>
                         <p className='textoMenu'>Menu</p>
-                        {
-                            SlideDatos.map(
-                                (datos) => (<OrgSobre nombre={datos} />)
-                            )
-                        }
+                        {SlideDatos.map((datos, index) => (
+                            <OrgSobre key={index} nombre={datos} />
+                        ))}
                     </div>
                 </div>
                 <div className='logo'>
@@ -29,7 +27,7 @@ function SideBar() {
                 </div>
             </div>
         </div>
-    )
-};
+    );
+}
 
 export default SideBar;

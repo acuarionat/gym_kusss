@@ -7,8 +7,8 @@ const BotonesInformate = () => {
 
     return (
         <div className="containerBotonesVideos">
-            <button className='BYoga1' onClick={() => navigate('/videos')}>YOGA</button>
-            <button className='BZumba2' onClick={() => navigate('/videos')}>ZUMBA</button>
+            <button className='BYoga1' onClick={() => navigate('/videosyoga')}>YOGA</button>
+            <button className='BZumba2' onClick={() => navigate('/videoszumba')}>ZUMBA</button>
         </div>
     );
 };

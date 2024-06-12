@@ -1,16 +1,19 @@
 import React from 'react';
 import './BarraTransparente.css';
+import SideBar from '../general/Slide Bar/SideBar';
 
 const BarraTransparente = () => {
   return (
     <div className='headDetalleTransparente'>
-      <button id="BotonMenu" className='icoDetalleTransparente'>
+      <input className='icoDetalleTransparente' type="checkbox" id='btnMenu' />
+      <label htmlFor='btnMenu'>
         <img 
           className='imagenMenu' 
           src={"/imagenes/Menu.png"} 
           alt="Barras de Navegacion" 
         />
-      </button>
+      </label>
+      <SideBar />
     </div>
   );
 }

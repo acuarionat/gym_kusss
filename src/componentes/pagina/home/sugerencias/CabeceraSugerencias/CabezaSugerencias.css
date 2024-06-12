@@ -26,9 +26,9 @@
     height: 100%;
 }
 
-.tituloDetalles {
+.tituloDetalles1 {
     font-family: "Teko", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     color: var(--Blanco);
 }
 
@@ -42,7 +42,7 @@
         height: 20px;
     }
 
-    .tituloDetalles {
-        font-size: 25px;
+    .tituloDetalles1 {
+        font-size: 28px;
     }
 }

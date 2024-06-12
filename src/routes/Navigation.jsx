@@ -10,23 +10,26 @@ import VistaSugerencias from "../componentes/pagina/home/sugerencias/VistaSugere
 import VistaPerdidaDeGrasa from "../componentes/pagina/home/perdida de grasa/VistaPerdidaDeGrasa";
 import VistaSaludMental from "../componentes/pagina/home/salud mental/VistaSaludMental";
 import VistaNutricion from "../componentes/pagina/home/nutricion/VistaNutricion";
-import VistaSeccionMaquinas from "../componentes/pagina/home/seccionmaquinas/VistaSeccionMaquinas";
-import VistaSeccionEquipamiento from "../componentes/pagina/home/seccioninformacion/VistaSeccionInformacion";
+import VistaYoga from "../componentes/pagina/home/videos/VistaYoga";
+import CardLogin from "../componentes/formularios/formulario ingresar/CardLogin";
+import CardRegistro from "../componentes/formularios/formulario registrar/CardRegistro";
 const Navigation = () => {
     return (
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element= {<VistaGeneralHome/>} /> */}
+          <Route path="/" element= {<VistaGeneralHome/>} />
           <Route path="/nosotros" element= {<VistaNosotros/>} />
           <Route path="/contactanos" element= {<VistaContactanos/>} />
-          <Route path="/videos" element= {<VistaVideos/>} />
+          <Route path="/videoszumba" element= {<VistaVideos/>} />
+          <Route path="/videosyoga" element= {<VistaYoga/>} />
           <Route path="/horario" element= {<VistaHorario/>} />
           <Route path="/equipamiento" element= {<VistaEquipamiento/>} />
           <Route path="/sugerencias" element= {<VistaSugerencias/>} />
           <Route path="/perdida-de-grasa" element= {<VistaPerdidaDeGrasa/>} />
           <Route path="/masamusc" element= {<VistaNutricion/>} />
           <Route path="/saludmental" element= {<VistaSaludMental/>} />
-          <Route path="/" element= {<VistaSeccionEquipamiento/>} />
+          <Route path="/login" element= {<CardLogin/>} />
+          <Route path="/registro" element= {<CardRegistro/>} />
         </Routes>
       </BrowserRouter>
     );

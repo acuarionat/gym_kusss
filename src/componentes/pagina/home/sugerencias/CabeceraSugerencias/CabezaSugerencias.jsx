@@ -1,5 +1,7 @@
 import './CabezaSugerencias.css'
+import { useNavigate } from 'react-router-dom';
 function CabezaSugerencias() {
+    const navigate = useNavigate();
     return (
         <div className='headDetalle'>
             <button className='icoDetalle'>
@@ -7,9 +9,10 @@ function CabezaSugerencias() {
                     className='imagenFlecha' 
                     src={"/imagenes/FlechaIzquierda.png"} 
                     alt="Flecha Atras" 
+                    onClick={() => navigate('/')}
                 />
             </button>
-            <p className='tituloDetalles'>BUZON DE QUEJAS Y/O SUGERENCIA</p>
+            <p className='tituloDetalles1'>BUZON DE QUEJAS Y/O SUGERENCIA</p>
         </div>
     );
 }

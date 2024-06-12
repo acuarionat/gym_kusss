@@ -1,13 +1,15 @@
-import './OrgSobre.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './OrgSobre.css';
 
 function OrgSobre(props) {
-    const sideDatos = props.nombre
+    const sideDatos = props.nombre;
     return (
-        <button className='textosIma'>
+        <Link to={sideDatos.link} className='textosIma'>
             <p className='textos'>{sideDatos.SideBar}</p>
             <img className='icoMenu' src={sideDatos.imagen} alt="Nosotros" />
-        </button>
-    )
+        </Link>
+    );
 }
 
-export default OrgSobre
+export default OrgSobre;
