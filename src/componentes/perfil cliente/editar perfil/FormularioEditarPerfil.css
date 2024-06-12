@@ -58,3 +58,9 @@ form
     width: 100%;
     overflow: scroll;
 }
+.error
+{
+    color: var(--Granate);
+    font-size: 8px;
+    font-family: var(--Parrafo);
+}

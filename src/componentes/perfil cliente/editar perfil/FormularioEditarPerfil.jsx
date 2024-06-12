@@ -2,24 +2,34 @@ import React, { useState } from "react";
 import "./FormularioEditarPerfil.css";
 import { useFormik } from "formik";
 import axios from "axios";
+import * as Yup from 'yup';
 
-const FormularioEditarPerfil = ({ cliente, validationSchema }) => {
+const FormularioEditarPerfil = ({ cliente }) => {
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState(null);
-  const [imageUrl, setImageUrl] = useState(cliente.imageUrl || "");
+  const [imageUrl, setImageUrl] = useState(cliente.foto || "");
 
   const initialValues = {
-    nombre: cliente.name,
-    email: cliente.email,
-    telefono: cliente.telefono,
-    genero: cliente.genero,
+    name: cliente.name || '',
+    email: cliente.email || '',
+    telefono: cliente.telefono || ''
   };
 
-  const onSubmit = async(values) => {
+  const validationSchema = Yup.object({
+    name: Yup.string().required('Campo requerido'),
+    email: Yup.string().email('Correo no válido').required('Campo requerido'),
+    telefono: Yup.string()
+      .matches(/^\d+$/, 'Teléfono no válido')
+      .min(7, 'Teléfono no válido')
+      .max(10, 'Teléfono no válido')
+      .required('Campo requerido'),
+  });
+
+  const onSubmit = async (values) => {
     try {
       const patchedData = {
         ...values,
-        foto: imageUrl,
+        foto: imageUrl || cliente.foto,
       };
       const response = await fetch('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/3', {
         method: 'PUT',
@@ -74,8 +84,8 @@ const FormularioEditarPerfil = ({ cliente, validationSchema }) => {
     <div className="formulario">
       <form onSubmit={formik.handleSubmit}>
         <div className="general">
-        <label htmlFor="imagen">Foto de Perfil:</label>
-        {imageUrl && <img className="foto-perfil" src={imageUrl} alt="Imagen de perfil" />}
+          <label htmlFor="imagen">Foto de Perfil:</label>
+          {imageUrl && <img className="foto-perfil" src={imageUrl} alt="Imagen de perfil" />}
           <input
             type="file"
             id="imagen"
@@ -85,55 +95,45 @@ const FormularioEditarPerfil = ({ cliente, validationSchema }) => {
           />
           {uploading && <p>Subiendo imagen...</p>}
           {uploadError && <p>{uploadError}</p>}
-          <label htmlFor="nombre">Nombre:</label>
-          <input 
-            onChange={formik.handleChange} 
-            value={formik.values.nombre} 
-            type="text" 
-            id="nombre" 
-            name="nombre"
+
+          <label htmlFor="name">Nombre:</label>
+          <input
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.name}
+            type="text"
+            id="name"
+            name="name"
           />
-          {formik.errors.nombre && formik.touched.nombre ? (
-            <div>{formik.errors.nombre}</div>
-          ) : null}
+          {formik.errors.name && formik.touched.name && (
+            <small className="error">{formik.errors.name}</small>
+          )}
 
           <label htmlFor="email">Email:</label>
-          <input 
-            onChange={formik.handleChange} 
-            value={formik.values.email} 
-            type="email" 
-            id="email" 
+          <input
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+            type="email"
+            id="email"
             name="email"
           />
-          {formik.errors.email && formik.touched.email ? (
-            <div>{formik.errors.email}</div>
-          ) : null}
+          {formik.errors.email && formik.touched.email && (
+            <small className="error">{formik.errors.email}</small>
+          )}
 
           <label htmlFor="telefono">Teléfono:</label>
-          <input 
-            onChange={formik.handleChange} 
-            value={formik.values.telefono} 
-            type="tel" 
-            id="telefono" 
+          <input
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.telefono}
+            type="tel"
+            id="telefono"
             name="telefono"
           />
-          {formik.errors.telefono && formik.touched.telefono ? (
-            <div>{formik.errors.telefono}</div>
-          ) : null}
-
-          <label htmlFor="genero">Género:</label>
-          <select
-            value={formik.values.genero}
-            onChange={(e) => {
-              formik.handleChange(e);
-            }}
-            id="genero"
-            name="genero"
-          >
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-          </select>
+          {formik.errors.telefono && formik.touched.telefono && (
+            <small className="error">{formik.errors.telefono}</small>
+          )}
         </div>
 
         <input className="guardar" type="submit" value="GUARDAR" />

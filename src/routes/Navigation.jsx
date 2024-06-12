@@ -32,7 +32,8 @@ const Navigation = () => {
         <Route path="/editar_rutina" element= {<EditarRutinaEntrenador/>} />
         <Route path="/cargar_progreso" element= {<VistaCargarProgreso/>} />
         <Route path="/variedad_ejercicios" element= {<VistaVariedadEjercicios/>} />
-        <Route path="/editar_perfil" element={<VistaEditarPerfil/>}/></Routes>
+        <Route path="/editar_perfil" element={<VistaEditarPerfil/>}/>
+        </Routes>
     </BrowserRouter>
   );
 };
