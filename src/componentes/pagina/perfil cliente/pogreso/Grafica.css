@@ -1,0 +1,12 @@
+.grafica-header {
+    width: 100%;
+    margin-left: 16px;
+}
+
+.grafica-header h2 {
+    font-size: 25px;
+    font-family: var(--Titulo);
+    text-align: left;
+    font-weight: normal;
+    color: var(--Granate);
+}
