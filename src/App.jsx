@@ -1,9 +1,10 @@
 import './App.css';
-import Botones from './componentes/pagina/home/botonesinformacion/VistaBotonesInfo'
+import VistaProgreso from './componentes/pagina/perfil cliente/pogreso/VistaProgreso';
+
 function App() {
   return (
-    <><Botones/>
-
+    <>
+      <VistaProgreso />
     </>
   )
 }
