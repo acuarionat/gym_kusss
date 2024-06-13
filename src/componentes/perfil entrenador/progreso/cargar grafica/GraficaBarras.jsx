@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
-import "./GraficaBarras.css"; 
+import "./GraficaBarras.css";
 
 const GraficaBarras = ({ data }) => {
     const chartRef = useRef(null);
@@ -13,16 +13,17 @@ const GraficaBarras = ({ data }) => {
 
         const ctx = chartRef.current.getContext("2d");
 
-        const weightData = Array(11).fill(0);
+        const weightData = Array.from({ length: 12 }, () => null);
+
         data.forEach(item => {
-            const month = new Date(item.date).getMonth();
-            weightData[month] = item.weight;
+            const month = parseInt(item.fecha_seguimiento.substring(5, 7), 10); 
+            weightData[month - 1] = item.peso; 
         });
 
         chartInstance.current = new Chart(ctx, {
             type: "bar",
             data: {
-                labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov"],
+                labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
                 datasets: [
                     {
                         label: "Kilogramos",
@@ -47,7 +48,7 @@ const GraficaBarras = ({ data }) => {
                             display: false,
                         },
                         grid: {
-                            color: "#a0a0a0", 
+                            color: "#a0a0a0",
                         },
                     },
                     x: {

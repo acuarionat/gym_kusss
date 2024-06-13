@@ -6,14 +6,15 @@ import Grafica from "./Grafica";
 import BotonCompartir from "./BotonCompartir";
 import CabezaCargarProgreso from "./CabezaCargarProgreso";
 import NavBarPerfil from "../../general/NavBarPerfil";
-const VistaProgreso = () => {
+
+const VistaProgreso = ({ idCliente = 1 }) => {
   return (
     <div className="vista-progreso">
       <CabezaCargarProgreso />
       <div className="superior-progreso">
         <Dropdown />
-        <Grafica />
-        <Tabla />
+        <Grafica idCliente={idCliente} />
+        <Tabla idCliente={idCliente} />
         <BotonCompartir />
       </div>
       <NavBarPerfil />

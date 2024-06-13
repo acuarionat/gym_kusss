@@ -10,7 +10,7 @@ const VistaCargarProgreso = () => {
 	const [selectedClient, setSelectedClient] = useState(null);
 
 	useEffect(() => {
-		fetch("https://6660e68963e6a0189fe7dc30.mockapi.io/api/v1/table")
+		fetch("https://665fe2675425580055b13673.mockapi.io/api/v1/clientes")
 			.then((response) => response.json())
 			.then((data) => {
 				setClientes(data);
