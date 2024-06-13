@@ -15,7 +15,7 @@
   height: 31px;
 }
 
-#input-informacion {
+.input-informacion {
   border: none;
   padding: 15px;
   background: linear-gradient(to right, rgba(221, 64, 64, 0.5), rgba(255, 218, 218, 0.2));

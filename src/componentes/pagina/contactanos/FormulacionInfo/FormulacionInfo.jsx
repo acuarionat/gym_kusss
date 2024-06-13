@@ -7,11 +7,14 @@ import './FormulacionInfo.css';
 const FormulacionInfo = () => {
     return (
         <Card>
-            <form>
-                <FormGroup label="NOMBRE" id="name" />
-                <FormGroup label="TELÉFONO" id="phone" type="tel" />
-                <FormGroup label="EMAIL" id="email" type="email" />
-                <FormGroup label="CONSULTA" id="query" isTextArea={true} />
+            <form 
+                action="https://formspree.io/f/mknddzwq" 
+                method="POST"
+            >
+                <FormGroup label="NOMBRE" id="name" name="Nombre:" />
+                <FormGroup label="TELÉFONO" id="phone" name="Telefono:" type="tel" />
+                <FormGroup label="EMAIL" id="email" name="Email:" type="email" />
+                <FormGroup label="CONSULTA" id="query" name="Mensaje:" isTextArea={true} />
                 <Boton text="SOLICITAR INFORMACIÓN" />
             </form>
         </Card>

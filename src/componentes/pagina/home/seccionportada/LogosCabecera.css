@@ -1,0 +1,66 @@
+.LogosContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 32px;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.LogosContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Negro);
+    opacity: 0.55;
+    z-index: -1;
+}
+
+.LogoKussCabecera1 {
+    width: 35px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.BotonMenu {
+    width: 35px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.BotonMenu img {
+    width: 100%;
+    height: auto;
+}
+
+.icoDetalleGris {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnMenu {
+    display: none;
+}
+
+#btnMenu:checked ~ .fondoSideBar {
+    opacity: 1;
+    visibility: visible;
+}

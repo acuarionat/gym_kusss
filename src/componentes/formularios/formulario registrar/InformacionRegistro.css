@@ -1,0 +1,70 @@
+.contenedorLogin-informacion {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.input-text-informacion {
+  padding: 12px 16px;
+  border-radius: 12px;
+  width: 90%;
+  font-size: 1.2em;
+  height: 31px;
+}
+
+.input-informacion {
+  border: none;
+  padding: 15px;
+  background: linear-gradient(to right, rgba(221, 64, 64, 0.5), rgba(255, 218, 218, 0.2));
+  color: black;
+  font-size: 18px;
+  outline: none;
+}
+
+.button-container-informacion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.button-informacion {
+  border-radius: 8px;
+  width: 70%;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--Granate);
+  color: var(--Blanco);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.button-informacion:hover {
+  border-color: var(--Blanco);
+}
+
+.parrafo-informacion {
+  font-family: var(--Parrafo);
+  font-weight: 400;
+  color: var(--Blanco);
+  text-align: left;
+}
+
+.titulo1-informacion1 {
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Blanco);
+  text-align: center;
+}
+
+.titulob-informacion {
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Blanco);
+}

@@ -1,0 +1,28 @@
+.containerBotonesVideos{
+    display: flex;
+    justify-content: center;
+}
+
+.BYoga1{
+    margin:18px;
+    padding: 5px;
+    width: 140px;
+    border-radius: 25px;
+    font-family: var(--Titulo);
+    font-size: 30px;
+    color: var(--Blanco);
+    background-color: var(--Granate);
+    border: 0px;
+}
+
+.BZumba2{
+    margin:18px;
+    padding: 5px;
+    width: 140px;
+    border-radius: 25px;
+    font-family: var(--Titulo);
+    font-size: 30px;
+    color: var(--Blanco);
+    background-color: var(--Negro);
+    border: 0px;
+}

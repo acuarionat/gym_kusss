@@ -1,0 +1,6 @@
+.TextSuger{
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--Titulo);
+    margin: 10px;
+}

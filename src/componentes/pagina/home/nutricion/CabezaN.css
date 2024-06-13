@@ -1,23 +1,25 @@
-.headDetalle {
+.headDetalle 
+{
     width: 100%;
-    height: fit-content;
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
     background: var(--Granate);
 }
 
-.icoDetalle {
-    width: 30px;
-    height: 30px;
+.icoDetalle 
+{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
 }
 
-.tituloDetalles {
-    display: flex;
-    align-items: center;
+.tituloDetalles 
+{
     font-family: "Teko", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     color: var(--Blanco);
-    height: 40px;
-    margin: 10px;
 }

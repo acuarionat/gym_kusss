@@ -1,22 +1,27 @@
 [
     {
+        "SideBar": "Home",
+        "imagen": "/imagenes/Novedades.png",
+        "link": "/"
+    },
+    {
         "SideBar": "Sobre Nosotros",
-        "imagen": "/imagenes/SobreNosotros.png"
+        "imagen": "/imagenes/SobreNosotros.png",
+        "link": "/nosotros"
     },
     {
         "SideBar": "Ingresar",
-        "imagen": "/imagenes/Ingresar.png"
+        "imagen": "/imagenes/Ingresar.png",
+        "link": "/login"
     },
     {
         "SideBar": "Regístrate",
-        "imagen": "/imagenes/Registrate.png"
-    },
-    {
-        "SideBar": "Novedades",
-        "imagen": "/imagenes/Novedades.png"
+        "imagen": "/imagenes/Registrate.png",
+        "link": "/registro"
     },
     {
         "SideBar": "Contactanos",
-        "imagen": "/imagenes/Contactanos.png"
+        "imagen": "/imagenes/Contactanos.png",
+        "link": "/contactanos"
     }
 ]

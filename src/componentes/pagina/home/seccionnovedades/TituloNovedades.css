@@ -1,0 +1,6 @@
+.TituloNov1{
+    text-align: center;
+    font-family: var(--Titulo);
+    font-size: 35px;
+    color: var(--Negro);
+}

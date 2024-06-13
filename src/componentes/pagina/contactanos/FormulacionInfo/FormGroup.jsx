@@ -1,13 +1,13 @@
 import React from 'react';
 import './FormulacionInfo.css';
 
-const FormGroup = ({ label, id, type = "text", isTextArea = false }) => (
+const FormGroup = ({ label, id, name, type = "text", isTextArea = false }) => (
     <div className="form-group">
         <label htmlFor={id}>{label}:</label>
         {isTextArea ? (
-            <textarea id={id} className="form-control"></textarea>
+            <textarea id={id} name={name} className="form-control"></textarea>
         ) : (
-            <input type={type} id={id} className="form-control" />
+            <input type={type} id={id} name={name} className="form-control" />
         )}
     </div>
 );

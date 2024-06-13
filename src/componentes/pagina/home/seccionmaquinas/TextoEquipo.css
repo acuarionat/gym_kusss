@@ -1,0 +1,22 @@
+.TituloTarjeta4 {
+    margin: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--Titulo);
+}
+
+.TextoEquipo5 {
+    position: relative;
+    margin: 12px 10px;
+    top:-10px;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--Parrafo);
+}
+
+.IconoRosa {
+    position: absolute;
+    margin: 3%; 
+    right: 272px;/
+}
