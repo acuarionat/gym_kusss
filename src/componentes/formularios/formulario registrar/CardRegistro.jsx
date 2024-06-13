@@ -5,9 +5,9 @@ import BarraTransparente from '../BarraTransparente';
 
 const CardRegistro = () => {
   return (
-    <div className="card-container1">
+    <div className="card-containerRegistro">
       <BarraTransparente />
-      <h1 className="teko-titulo1">Registrar</h1>
+      <h1 className="teko-tituloRegistro">Registrar</h1>
       <div>
         <Informacion />
       </div>

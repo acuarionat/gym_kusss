@@ -4,7 +4,7 @@ import "./InformacionRegistro.css";
 const InformacionRegistro = () => {
   return (
     <div>
-      <div className='contenedorLogin-informacion'>
+      <div className='contenedorRegistro-informacion'>
         <h3 className="parrafo-informacion">Nombres</h3>
         <input type="text" className='input-text-informacion input-informacion' />
         <h3 className="parrafo-informacion">Correo</h3>
