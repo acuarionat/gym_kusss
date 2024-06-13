@@ -8,9 +8,6 @@ function SeriesRepeticiones() {
         <div className='principalSeriesRep'>
             <CabezaSeriesRepeticiones />
             <FormularioRepeticiones />
-            <button className='botonEditarEjercicio'>
-                <p className='textoConfirmarEjercicio'>CONFIRMAR EJERCICIO</p>
-            </button>
             <NavBarPerfilEntrenador />
         </div>
     )

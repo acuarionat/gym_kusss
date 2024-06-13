@@ -31,7 +31,7 @@ function ClienteApp() {
   useEffect(() => {
     const fetchClientes = async () => {
       try {
-        const entrenador = await fetchDataWithRetry('https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores/5');
+        const entrenador = await fetchDataWithRetry('https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores/1');
 
         const clienteIds = entrenador.clientes; 
 

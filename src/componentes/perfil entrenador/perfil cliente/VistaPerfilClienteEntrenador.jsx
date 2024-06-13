@@ -6,15 +6,15 @@ import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
 import BotonProgreso from "./BotonProgreso";
 import BotonRutina from "./BotonRutina";
 
-const VistaPerfilClienteEntrenador = ({cliente}) => {
+const VistaPerfilClienteEntrenador = () => {
   return (
     <div className="vista-cliente-entrenador">
       <div className="superior-cliente-entrenador">
-        <ClienteEntrenadorApp cliente={cliente} />
+        <ClienteEntrenadorApp  />
         <InformacionGeneralClienteEntrenador />
         <BotonProgreso />
-        <BotonRutina />
-      </div>
+{/*           <BotonRutina/>
+ */}      </div>
       <NavBarPerfilEntrenador />
     </div>
   );

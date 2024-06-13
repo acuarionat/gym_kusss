@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ThreeDots } from 'react-loader-spinner';
-import PerfilDetalleClienteEntrenador from './componentes/perfil entrenador/perfil cliente/PerfilDetalleClienteEntrenador';
+import SemanalEjercicios from './componentes/perfil entrenador/rutina semanal/SemanalEjerciciosEntrenador';
 
-function ClienteEntrenadorApp() {
+function Rutina() {
   const [cliente, setCliente] = useState(null);
+  const [rutinas, setRutinas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   let [searchParams, setSearchParams] = useSearchParams();
@@ -28,23 +29,46 @@ function ClienteEntrenadorApp() {
     }
   };
 
-  useEffect(() => {
-    if (id) {
-      const fetchCliente = async () => {
-        try {
-          const data = await fetchDataWithRetry(`https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/${id}`);
-          setCliente(data);
-        } catch (error) {
-          setError(error.message);
-        } finally {
-          setLoading(false);
-        }
-      };
-
-      fetchCliente();
-    } else {
+  const fetchCliente = async (id) => {
+    try {
+      const data = await fetchDataWithRetry(`https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/${id}`);
+      setCliente(data);
+      return data.rutinas || [];
+    } catch (error) {
+      setError(error.message);
       setLoading(false);
     }
+  };
+
+  const fetchRutinas = async (rutinaIds) => {
+    try {
+      const rutinaPromises = rutinaIds.map(id =>
+        fetchDataWithRetry(`https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/rutina/${id}`)
+      );
+      const rutinasData = await Promise.all(rutinaPromises);
+      setRutinas(rutinasData);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    const fetchClienteAndRutinas = async () => {
+      if (id) {
+        const rutinaIds = await fetchCliente(id);
+        if (rutinaIds.length > 0) {
+          await fetchRutinas(rutinaIds);
+        } else {
+          setLoading(false);
+        }
+      } else {
+        setLoading(false);
+      }
+    };
+
+    fetchClienteAndRutinas();
   }, [id]);
 
   if (loading) return (
@@ -59,7 +83,13 @@ function ClienteEntrenadorApp() {
     <>
       {cliente ? (
         <>
-          <PerfilDetalleClienteEntrenador key={cliente.id} cliente={cliente} />
+          {rutinas.length > 0 ? (
+            rutinas.map(rutina => (
+              <SemanalEjercicios key={rutina.id} rutina={rutina} />
+            ))
+          ) : (
+            <div>No hay rutinas disponibles.</div>
+          )}
         </>
       ) : (
         <div>Datos no disponibles.</div>
@@ -68,4 +98,4 @@ function ClienteEntrenadorApp() {
   );
 }
 
-export default ClienteEntrenadorApp;
+export default Rutina;

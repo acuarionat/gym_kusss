@@ -1,9 +1,13 @@
 import React from "react";
 import "./TarjetaEjercicio.css";
-const TarjetaEjercicioFuerza = ({ ejerciciof }) => {
+import { NavLink } from "react-router-dom";
+const TarjetaEjercicioFuerza = ({ ejerciciof, onCardClick }) => {
+  const handleClick = () => {
+    onCardClick(ejerciciof.id);
+  };
   return (
-    <div>
-      <div className="ejercicio">
+      <NavLink to='/editar_ejercicio_rutina'>
+      <div className="ejercicio" onClick={handleClick}>
         <img
           className="imagen-ejer"
           src={ejerciciof.imagen}
@@ -11,11 +15,13 @@ const TarjetaEjercicioFuerza = ({ ejerciciof }) => {
         />
         <div className="descripcion-ejer">
           <h4>{ejerciciof.nombre}</h4>
-          <p className='musculo'>Musculo Principal: {ejerciciof.musculo_principal}</p>
+          <p className="musculo">
+            Musculo Principal: {ejerciciof.musculo_principal}
+          </p>
           <p className="dif">{ejerciciof.dificultad}</p>
         </div>
       </div>
-    </div>
+      </NavLink>
   );
 };
 

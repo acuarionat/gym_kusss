@@ -7,7 +7,10 @@ body {
   justify-content: center;
 
 }
-
+a
+{
+  text-decoration: none;
+}
 #root
 {
   margin: 0px;
@@ -17,7 +20,6 @@ body {
   flex-direction: column;
   align-self: start;
 }
-
 :root {
   --Negro: rgb(0, 0, 0);
   --Plomo: rgb(48, 45, 60);

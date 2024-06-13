@@ -7,7 +7,7 @@ const EjerciciosRApp = () => {
       fetch('https://665fe2675425580055b13673.mockapi.io/api/v1/ejercicios/')
         .then((res) => res.json())
         .then((data) => {
-          const seisejerciciosFiltrados = data.filter(ejercicios => ejercicios.id >= 6 && ejercicios.id <= 10);
+          const seisejerciciosFiltrados = data.filter(ejercicios => ejercicios.id >= 11 && ejercicios.id <= 20);
           setEjercicios(seisejerciciosFiltrados);
         });
     }, []);

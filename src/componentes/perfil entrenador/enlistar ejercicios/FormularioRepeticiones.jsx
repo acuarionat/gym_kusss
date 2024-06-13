@@ -1,22 +1,21 @@
-import './FormularioRepeticiones.css'
+import "./FormularioRepeticiones.css";
 
 function FormularioEditarRutina() {
-    return (
-        <div className='formularioRepesSeries'>
-            <div className='cajaTextoSeries'>
-                <p className='textoSeries'>Series:</p>
-            </div>
-            <input type="number" className='ingresoSeries' />
-            <div className='cajaTextoRepeticiones'>
-                <p className='textoRepeticiones'>Repeticiones:</p>
-            </div>
-            <input type="number" className='ingresoRepeticiones' />
-            <div className='cajaTextoConsejoExperto'>
-                <p className='textoConsejoExerto'>Consejo Experto:</p>
-            </div>
-            <input type="text" className='ingresoConsejoExperto' />
+  return (
+    <div className="formularioRepesSeries">
+      <form action="">
+        <div className="inputs">
+        <label>Series:</label>
+        <input type="number" className="ingresoSeries" />
+        <label>Repeticiones:</label>
+        <input type="number" className="ingresoRepeticiones" />
+        <label>Consejo Experto:</label>
+        <input type="text" className="ingresoConsejoExperto" />
         </div>
-    )
+        <input className="confirmar" type="submit" value="CONFIRMAR EJERCICIO" />
+      </form>
+    </div>
+  );
 }
 
-export default FormularioEditarRutina
+export default FormularioEditarRutina;
