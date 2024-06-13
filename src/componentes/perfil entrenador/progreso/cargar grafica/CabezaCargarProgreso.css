@@ -15,7 +15,7 @@
 .tituloDetalles {
     display: flex;
     align-items: center;
-    font-family: var(--Titulo);
+    font-family: "Teko", sans-serif;
     font-size: 35px;
     height: 40px;
     margin: 10px;
