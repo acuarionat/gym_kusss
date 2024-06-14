@@ -4,7 +4,7 @@ import './NovedadAlimentacion.css';
 const NovedadAlimentacion = () => {
     return (
         <button className='NovAlimentacion1'>
-            <img src="imagenes/RectangleGranate.png" alt="" className="IconoNovedades" />
+            <img src="https://ibb.co/pxmPdzc" alt="" className="IconoNovedades" />
             <div className="InformacionNovedades1">
                 <p>¡Mira estos consejos de alimentación!</p>
                 <p>12/05/2024</p>

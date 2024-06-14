@@ -42,6 +42,7 @@ const FormularioEditarPerfil = ({ cliente }) => {
         throw new Error('Error al actualizar los datos');
       }
       console.log("Datos actualizados con éxito:", patchedData);
+      alert("Cambios guardados");
     } catch (error) {
       console.error("Error al actualizar los datos:", error);
     }
@@ -82,7 +83,7 @@ const FormularioEditarPerfil = ({ cliente }) => {
 
   return (
     <div className="formulario">
-      <form onSubmit={formik.handleSubmit}>
+      <form className="form-editar" onSubmit={formik.handleSubmit}>
         <div className="general">
           <label htmlFor="imagen">Foto de Perfil:</label>
           {imageUrl && <img className="foto-perfil" src={imageUrl} alt="Imagen de perfil" />}
@@ -97,7 +98,7 @@ const FormularioEditarPerfil = ({ cliente }) => {
           {uploadError && <p>{uploadError}</p>}
 
           <label htmlFor="name">Nombre:</label>
-          <input
+          <input 
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}

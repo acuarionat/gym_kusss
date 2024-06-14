@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const BotonCopiarVinculo = () => {
     return (
         <>
-        <img src="/imagenes/cadena.png" alt="" className='cadenalogo' />
+        <img src="https://ibb.co/TKtkm77" alt="" className='cadenalogo' />
         <button className='Vinculo'>Copiar Vinculo</button>
         </>
     );

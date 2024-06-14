@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import VistaFormularioIngresar from "../componentes/formularios/formulario ingresar/VistaFormularioIngresar";
-import VistaFormularioRegistro from "../componentes/formularios/formulario registrar/VistaFormularioRegistro";
+import CardLogin from "../componentes/formularios/formulario ingresar/CardLogin";
+import CardRegistro from "../componentes/formularios/formulario registrar/CardRegistro";
 import VistaGeneralHome from "../componentes/pagina/home/VistaGeneralHome";
 import VistaNosotros from "../componentes/pagina/nosotros/VistaNosotros";
 import VistaContactanos from "../componentes/pagina/contactanos/VistaContactanos";
@@ -42,8 +42,8 @@ const Navigation = () => {
           <Route path="/perdida-de-grasa" element= {<VistaPerdidaDeGrasa/>} />
           <Route path="/nutricion" element= {<VistaNutricion/>} />
           <Route path="/saludmental" element= {<VistaSaludMental/>} />
-          <Route path="/login" element= {<VistaFormularioIngresar/>} />
-          <Route path="/registro" element= {<VistaFormularioRegistro/>} />
+          <Route path="/login" element= {<CardLogin/>} />
+          <Route path="/registro" element= {<CardRegistro/>} />
         <Route path="/perfil_cliente" element= {<VistaPerfilCliente/>} />
         <Route path="/progreso" element= {<VistaProgreso/>} />
         <Route path="/ejercicios" element= {<Lista_Ejercicios/>} />

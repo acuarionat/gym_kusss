@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const MoleculaGmail = () => {
     return (
         <>
-          <img src="/imagenes/gmail.png" alt="" className='gmaillogo' />
+          <img src="https://ibb.co/VM6ChCC" alt="" className='gmaillogo' />
           <p className='recursostext'>Gmail</p>
         
         </>

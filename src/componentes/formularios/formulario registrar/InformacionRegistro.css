@@ -1,4 +1,4 @@
-.contenedorLogin-informacion {
+.contenedorRegistro-informacion {
   height: 45%;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,6 @@
 .parrafo-informacion {
   font-family: var(--Parrafo);
   font-weight: 400;
-  width: 100%;
   color: var(--Blanco);
   text-align: left;
 }

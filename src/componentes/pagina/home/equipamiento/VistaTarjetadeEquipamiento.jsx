@@ -6,12 +6,12 @@ import './VistaTarjetadeEquipamiento.css';
 const TarjetadeEquipamiento = () => (
     <div className="tarjetas-container">
         <CarouselContainerE>
-            <CardE iconSrc={"/imagenes/CintaCorrer.png"} iconAlt="Cinta de correr" title="Cardio" subTitle="Cinta de correr" />
-            <CardE iconSrc={"/imagenes/BicicletaE.png"} iconAlt="Bicicleta estática" title="Cardio" subTitle="Bicicleta estática" />
-            <CardE iconSrc={"/imagenes/MaquinaE.png"} iconAlt="Máquina elíptica" title="Cardio" subTitle="Máquina elíptica" />
-            <CardE iconSrc={"/imagenes/BancoP.png"} iconAlt="Banco de pesas" title="Fuerza" subTitle="Banco de pesas" />
-            <CardE iconSrc={"/imagenes/MaquinaP.png"} iconAlt="Máquina de polea" title="Fuerza" subTitle="Máquina de polea" />
-            <CardE iconSrc={"/imagenes/Mancuerda.png"} iconAlt="Mancuerda" title="Fuerza" subTitle="Mancuerda" />
+            <CardE iconSrc={"https://ibb.co/89XSmNP"} iconAlt="Cinta de correr" title="Cardio" subTitle="Cinta de correr" />
+            <CardE iconSrc={"https://ibb.co/VtfDr2v"} iconAlt="Bicicleta estática" title="Cardio" subTitle="Bicicleta estática" />
+            <CardE iconSrc={"https://ibb.co/Wk64kPQ"} iconAlt="Máquina elíptica" title="Cardio" subTitle="Máquina elíptica" />
+            <CardE iconSrc={"https://ibb.co/NVsk1Hd"} iconAlt="Banco de pesas" title="Fuerza" subTitle="Banco de pesas" />
+            <CardE iconSrc={"https://ibb.co/ZgcS2dn"} iconAlt="Máquina de polea" title="Fuerza" subTitle="Máquina de polea" />
+            <CardE iconSrc={"https://ibb.co/7zmMNk5"} iconAlt="Mancuerda" title="Fuerza" subTitle="Mancuerda" />
         </CarouselContainerE>
     </div>
 );

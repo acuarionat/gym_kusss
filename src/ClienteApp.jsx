@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
 import { ThreeDots } from 'react-loader-spinner';
 import TarjetaCliente from './componentes/perfil entrenador/clientes asignados/TarjetaCliente';
 
@@ -7,7 +6,7 @@ function ClienteApp() {
   const [clientes, setClientes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  let [searchParams, setSearchParams] = useSearchParams();
+  const [user, setUser] = useState(null);
 
   const fetchDataWithRetry = async (url, options = {}, retries = 3, backoff = 3000) => {
     try {
@@ -28,11 +27,26 @@ function ClienteApp() {
   };
 
   useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      const parsedUser = JSON.parse(storedUser);
+      setUser(parsedUser);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!user) {
+      setLoading(false);
+      setError("No user found in localStorage");
+      return;
+    }
+
     const fetchClientes = async () => {
       try {
-        const entrenador = await fetchDataWithRetry('https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores/1');
+        const entrenadorId = user.id;
+        const entrenador = await fetchDataWithRetry(`https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores/${entrenadorId}`);
 
-        const clienteIds = entrenador.clientes; 
+        const clienteIds = entrenador.clientes;
 
         console.log('Client IDs:', clienteIds);
 
@@ -52,7 +66,7 @@ function ClienteApp() {
     };
 
     fetchClientes();
-  }, []);
+  }, [user]);
 
   if (loading) return <ThreeDots color="#920525" height={80} width={80} />;
   if (error) return <div>Error: {error}</div>;

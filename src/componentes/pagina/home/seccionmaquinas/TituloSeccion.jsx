@@ -8,7 +8,7 @@ const TituloSeccion = () => {
             <p className='PorEscoger'>POR QUE ESCOGERNOS</p>
             <p className='TieneTodo'>UN GIMNASIO QUE LO TIENE TODO</p>
             <div className='ImageEquip'>
-                <img src="/imagenes/equipamiento.png" />
+                <img src="https://ibb.co/sHLg4Dd" />
             </div>
 
         </>

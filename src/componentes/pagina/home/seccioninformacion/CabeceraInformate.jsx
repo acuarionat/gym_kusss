@@ -7,7 +7,7 @@ const CabeceraInformate = () => (
         <div className="ContainerTitulo">
             <hr className='linea'></hr>
             <p className="TituloInformacion">INFORMATE DE VARIOS TEMAS</p>
-            <img src="/imagenes/IconoInformacion.png" alt="TituloVideos" className='IconAdm'/>
+            <img src="https://ibb.co/SvxDZnJ" alt="TituloVideos" className='IconAdm'/>
         </div>
 
     </>

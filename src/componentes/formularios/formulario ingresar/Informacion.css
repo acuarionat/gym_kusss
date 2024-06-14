@@ -1,55 +1,37 @@
 .contenedorLogin-informacion {
-  height: 100%;
-  width: 100%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 10px;
 }
 
-.contenedor-formulario
-{
-  width: 90%;
-  height: 100%;
-}
-
-.contenedorLogin-informacion .input-text {
-  border: none;
-  padding: 5px;
-  background: linear-gradient(to right, rgba(221, 64, 64, 0.5), rgba(255, 218, 218, 0.2));
-  color: black;
-  font-size: 18px;
-  outline: none;
+.input-text-informacion1 {
   padding: 12px 16px;
   border-radius: 12px;
-  width: 100%;
+  width: 90%;
   font-size: 1.2em;
   height: 31px;
 }
 
-.parrafo-informacion {
-  font-family: var(--Parrafo);
-  font-weight: 400;
-  color: var(--Blanco);
-  text-align: left;
+.input-informacion1 {
+  border: none;
+  padding: 15px;
+  background: linear-gradient(to right, rgba(221, 64, 64, 0.5), rgba(255, 218, 218, 0.2));
+  color: black;
+  font-size: 18px;
+  outline: none;
 }
 
-.titulo1-informacion {
-  font-family: var(--Titulo);
-  font-weight: 400;
-  font-size: 30px;
-  color: var(--Blanco);
-  text-align: left;
+.button-container-informacion1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.titulob-informacion {
-  font-family: var(--Titulo);
-  font-weight: 400;
-  color: var(--Blanco);
-}
-.aceptar
-{
+.button-informacion1 {
   border-radius: 8px;
   width: 70%;
   border: 1px solid transparent;
@@ -61,9 +43,28 @@
   color: var(--Blanco);
   cursor: pointer;
   transition: border-color 0.25s;
-  align-self: center;
 }
-.aceptar:hover
-{
+
+.button-informacion1:hover {
   border-color: var(--Blanco);
+}
+
+.parrafo-informacion1 {
+  font-family: var(--Parrafo);
+  font-weight: 400;
+  color: var(--Blanco);
+  text-align: left;
+}
+
+.titulo1-informacion1 {
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Blanco);
+  text-align: left;
+}
+
+.titulob-informacion1 {
+  font-family: var(--Titulo);
+  font-weight: 400;
+  color: var(--Blanco);
 }

@@ -1,13 +1,13 @@
 import React from 'react';
-import "./VistaFormularioRegistro.css";
+import "./CardRegistro.css";
 import Informacion from './InformacionRegistro';
 import BarraTransparente from '../BarraTransparente';
 
-const VistaFormularioRegistro = () => {
+const CardRegistro = () => {
   return (
-    <div className="card-container1">
+    <div className="card-containerRegistro">
       <BarraTransparente />
-      <h1 className="teko-titulo1">Registrar</h1>
+      <h1 className="teko-tituloRegistro">Registrar</h1>
       <div>
         <Informacion />
       </div>
@@ -15,4 +15,4 @@ const VistaFormularioRegistro = () => {
   );
 }
 
-export default VistaFormularioRegistro;
+export default CardRegistro;

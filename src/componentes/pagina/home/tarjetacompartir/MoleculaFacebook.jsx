@@ -4,7 +4,7 @@ import './VistaTarjetaCompartir.css'
 const MoleculaFacebook = () => {
     return (
         <>
-        <img src="/imagenes/faceboock.png" alt="" className='facebooklogo' />
+        <img src="https://ibb.co/Sr0vDqb" alt="" className='facebooklogo' />
         <p className='logox'>Facebook</p>
         </>
     );

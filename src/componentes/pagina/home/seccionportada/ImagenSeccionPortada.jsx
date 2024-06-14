@@ -3,7 +3,7 @@ import './ImagenSeccionPortada.css';
 
 const ImagenSeccionPortada = () => {
     return (
-        <img src="imagenes/GymHome.png" alt="Gym Home" className='GimCasa' />
+        <img src="https://ibb.co/wy9xnVF" alt="Gym Home" className='GimCasa' />
     );
 };
 

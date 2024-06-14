@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ImagenComb.css';
-import horario from '/imagenes/horario.png';
 
 const ImagenComb = () => {
   const [fileType, setFileType] = useState('jpeg');
@@ -24,7 +23,7 @@ const ImagenComb = () => {
        <p className="parrafo-horario">
           Descubre nuestros horarios y encuentra la clase perfecta para ti
         </p>
-      <img src={horario} alt="Horario" className="responsive-image" />
+      <img src={'https://ibb.co/yPg6K8r'} alt="Horario" className="responsive-image" />
       <p className='parrafo-horario'>Descargar Horario</p>
       <select className="combo-boxHorario" value={fileType} onChange={handleChange}>
         <option value="jpeg">JPEG</option>

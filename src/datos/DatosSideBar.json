@@ -1,27 +1,27 @@
 [
     {
         "SideBar": "Home",
-        "imagen": "/imagenes/Novedades.png",
+        "imagen": "https://ibb.co/ct9FhbS",
         "link": "/"
     },
     {
         "SideBar": "Sobre Nosotros",
-        "imagen": "/imagenes/SobreNosotros.png",
+        "imagen": "https://ibb.co/SXx5hqF",
         "link": "/nosotros"
     },
     {
         "SideBar": "Ingresar",
-        "imagen": "/imagenes/Ingresar.png",
+        "imagen": "https://ibb.co/x619c8m",
         "link": "/login"
     },
     {
         "SideBar": "Regístrate",
-        "imagen": "/imagenes/Registrate.png",
+        "imagen": "https://ibb.co/wL1sVdC",
         "link": "/registro"
     },
     {
         "SideBar": "Contactanos",
-        "imagen": "/imagenes/Contactanos.png",
+        "imagen": "https://ibb.co/jLC3szW",
         "link": "/contactanos"
     }
 ]

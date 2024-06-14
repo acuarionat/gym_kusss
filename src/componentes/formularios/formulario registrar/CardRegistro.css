@@ -1,4 +1,4 @@
-.card-container1 {
+.card-containerRegistro {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,10 +8,11 @@
   background-size: cover;
   background-position: center;
   padding: 2rem;
+  border-radius: 0.5rem;
   box-sizing: border-box;
 }
 
-.teko-titulo1 {
+.teko-tituloRegistro {
   font-family: "Teko", sans-serif;
   font-weight: 400;
   font-size: 80px;
@@ -19,14 +20,14 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .card-container {
+  .card-containerRegistro {
     padding: 3.5rem;
     border-radius: 1rem;
   }
 }
 
 @media screen and (min-width: 375px) {
-  .card-container {
+  .card-containerRegistro {
     padding: 2.5rem;
     border-radius: 1rem;
   }

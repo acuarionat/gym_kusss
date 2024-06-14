@@ -2,7 +2,7 @@ import React from "react";
 import "./PerfilDetalle.css";
 import { NavLink } from "react-router-dom";
 
-const PerfilDetalle = () => {
+const PerfilDetalle = ({perfil}) => {
   return (
     <div className="tarjeta-detalle">
       <div className="imagenes">
@@ -11,16 +11,20 @@ const PerfilDetalle = () => {
             <img src={"/imagenes/editar.png"} alt="editar" />
           </button>
         </NavLink>
-        <button className="perfil">
-          <img src={"/imagenes/foto-perfil.png"} alt="foto-perfil" />
-        </button>
+        <img
+            className="perfil"
+            src={perfil.foto}
+            alt={`avatar de ${perfil.name}`}
+          />
+          <NavLink to='./'>
         <button className="cerrar">
           <img src={"/imagenes/cerrar.png"} alt="cerrar" />
         </button>
+        </NavLink>
       </div>
       <div className="detalle">
-        <h2>JuanDeLaCruz</h2>
-        <p>juan.delacruz@gmail.com</p>
+      <h2>{perfil.name}</h2>
+          <p> {perfil.email} </p>
       </div>
     </div>
   );
