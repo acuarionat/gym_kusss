@@ -3,7 +3,6 @@ import "./VistaProgreso.css";
 import Dropdown from "./Dropdown";
 import Tabla from "./Tabla";
 import Grafica from "./Grafica";
-import BotonCompartir from "./BotonCompartir";
 import NavBarPerfil from "../../general/NavBarPerfil";
 import CabezaCargarProgreso from "./CabezaCargarProgreso";
 
@@ -60,7 +59,6 @@ const VistaProgreso = ({ idCliente = 1 }) => {
 						/>
 					</>
 				)}
-				<BotonCompartir url={url} title={title} />
 			</div>
 			<NavBarPerfil />
 		</div>
