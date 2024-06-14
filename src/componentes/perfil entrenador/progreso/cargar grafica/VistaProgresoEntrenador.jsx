@@ -4,11 +4,23 @@ import Dropdown from "./Dropdown";
 import Tabla from "./Tabla";
 import Grafica from "./Grafica";
 import OpcionAgregarValor from "./OpcionAgregarValor";
-import TextoCliente from "./TextoCliente";
 import NavBarPerfilEntrenador from "../../../general/NavBarPerfilEntrenador";
 import CabezaCargarProgreso from "../../../perfil cliente/progreso/CabezaCargarProgreso";
 
 const VistaProgresoEntrenador = ({ idCliente = 1 }) => {
+	const [selectedProgreso, setSelectedProgreso] = useState("");
+	const [selectedOption, setSelectedOption] = useState("");
+
+	const handleProgresoSelect = (progreso) => {
+		setSelectedProgreso(progreso);
+		setSelectedOption("");
+	};
+
+	const handleOptionSelect = (option) => {
+		setSelectedOption(option);
+	};
+
+	//Para simular que por props llego el data del cliente 1
 	const [clientes, setClientes] = useState([]);
 	const [selectedClient, setSelectedClient] = useState(null);
 
@@ -26,11 +38,48 @@ const VistaProgresoEntrenador = ({ idCliente = 1 }) => {
 		<div className="vista-cargar-progreso">
 			<CabezaCargarProgreso />
 			<div className="superior-cargar-progreso">
-				<TextoCliente cliente={selectedClient} />
-				<Dropdown />
-				<Grafica idCliente={idCliente} />
-				<Tabla idCliente={idCliente} />
-				<OpcionAgregarValor />
+				<div className="title">
+					<h2>
+						Cliente: <span>{idCliente ? idCliente.name : "Cargando..."}</span>
+					</h2>
+				</div>
+				<Dropdown
+					onProgresoSelect={handleProgresoSelect}
+					onOptionSelect={handleOptionSelect}
+				/>
+				{selectedProgreso && (
+					<Grafica
+						idCliente={idCliente}
+						selectedProgreso={selectedProgreso}
+						selectedOption={selectedOption}
+					/>
+				)}
+				{selectedProgreso && (
+					<Tabla
+						idCliente={idCliente}
+						selectedProgreso={selectedProgreso}
+						selectedOption={selectedOption}
+					/>
+				)}
+				{!selectedProgreso && (
+					<>
+						<Grafica
+							idCliente={idCliente}
+							selectedProgreso="perdida_peso"
+							selectedOption=""
+						/>
+						<Tabla
+							idCliente={idCliente}
+							selectedProgreso="perdida_peso"
+							selectedOption=""
+						/>
+					</>
+				)}
+				<OpcionAgregarValor
+					idCliente={idCliente}
+					selectedProgreso={selectedProgreso}
+					selectedOption={selectedOption}
+				/>
 			</div>
 			<NavBarPerfilEntrenador />
 		</div>

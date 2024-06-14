@@ -12,3 +12,12 @@
     flex-direction: column;
     align-items: center;
 }
+.title h2 {
+    font-size: 25px;
+    font-family: var(--Titulo);
+    font-weight: normal;
+    margin-left: 16px; 
+}
+span{
+    color: var(--Granate);
+}  

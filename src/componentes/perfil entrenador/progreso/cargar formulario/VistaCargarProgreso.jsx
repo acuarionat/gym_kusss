@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import TextoCliente from "../cargar grafica/TextoCliente";
-import Formulario from "./Formulario";
-import BotonGuardar from "./BotonGuardar";
+import FormularioCargarProgreso from "./FormularioCargarProgreso";
 import NavBarPerfilEntrenador from "../../../general/NavBarPerfilEntrenador";
 import CabezaCargarProgreso from "../../../perfil cliente/progreso/CabezaCargarProgreso";
+import { useLocation } from "react-router-dom";
 
-const VistaCargarProgreso = () => {
+const VistaCargarProgreso = ({idCliente=1}) => {
+	const location = useLocation();
+	const { idCliente, selectedProgreso, selectedOption } = location.state || {};
 	const [clientes, setClientes] = useState([]);
 	const [selectedClient, setSelectedClient] = useState(null);
 
@@ -22,9 +23,16 @@ const VistaCargarProgreso = () => {
 	return (
 		<div className="vista-cargar-progreso">
 			<CabezaCargarProgreso />
-			<TextoCliente cliente={selectedClient} />
-			<Formulario />
-			<BotonGuardar />
+			<div className="title">
+				<h2>
+					Cliente: <span>{idCliente ? idCliente.name : "Cargando..."}</span>
+				</h2>
+			</div>
+			<FormularioCargarProgreso
+				idCliente={idCliente}
+				selectedProgreso={selectedProgreso}
+				selectedOption={selectedOption}
+			/>
 			<NavBarPerfilEntrenador />
 		</div>
 	);

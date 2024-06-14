@@ -1,23 +1,29 @@
-.headDetalle {
+.headRutinas {
     width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: var(--Granate);
+    margin: 0px;
 }
 
-.icoDetalle {
+.icoRutinas {
     width: 30px;
     height: 30px;
 }
 
-.tituloDetalles {
+.tituloRutinas {
     display: flex;
     align-items: center;
     font-family: "Teko", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     height: 40px;
     margin: 10px;
     color: var(--Blanco);
+}
+
+.goback {
+    background-color: var(--Granate);
+    border: none;
 }

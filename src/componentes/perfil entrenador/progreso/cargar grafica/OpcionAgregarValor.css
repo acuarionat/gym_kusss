@@ -4,3 +4,11 @@
     margin-top: 12px; 
     margin-left: 16px;
 }
+
+.texto {
+    font-family: var(--Titulo);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Negro);
+    margin-right: 10px;
+}

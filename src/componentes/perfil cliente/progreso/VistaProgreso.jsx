@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./VistaProgreso.css";
 import Dropdown from "./Dropdown";
 import Tabla from "./Tabla";
@@ -8,18 +8,59 @@ import CabezaCargarProgreso from "./CabezaCargarProgreso";
 import NavBarPerfil from "../../general/NavBarPerfil";
 
 const VistaProgreso = ({ idCliente = 1 }) => {
-  return (
-    <div className="vista-progreso">
-      <CabezaCargarProgreso />
-      <div className="superior-progreso">
-        <Dropdown />
-        <Grafica idCliente={idCliente} />
-        <Tabla idCliente={idCliente} />
-        <BotonCompartir />
-      </div>
-      <NavBarPerfil />
-    </div>
-  );
+	const [selectedProgreso, setSelectedProgreso] = useState("");
+	const [selectedOption, setSelectedOption] = useState("");
+
+	const handleProgresoSelect = (progreso) => {
+		setSelectedProgreso(progreso);
+		setSelectedOption("");
+	};
+
+	const handleOptionSelect = (option) => {
+		setSelectedOption(option);
+	};
+
+	return (
+		<div className="vista-progreso">
+			<CabezaCargarProgreso />
+			<div className="superior-progreso">
+				<Dropdown
+					onProgresoSelect={handleProgresoSelect}
+					onOptionSelect={handleOptionSelect}
+				/>
+				{selectedProgreso && (
+					<Grafica
+						idCliente={idCliente}
+						selectedProgreso={selectedProgreso}
+						selectedOption={selectedOption}
+					/>
+				)}
+				{selectedProgreso && (
+					<Tabla
+						idCliente={idCliente}
+						selectedProgreso={selectedProgreso}
+						selectedOption={selectedOption}
+					/>
+				)}
+				{!selectedProgreso && (
+					<>
+						<Grafica
+							idCliente={idCliente}
+							selectedProgreso="perdida_peso"
+							selectedOption=""
+						/>
+						<Tabla
+							idCliente={idCliente}
+							selectedProgreso="perdida_peso"
+							selectedOption=""
+						/>
+					</>
+				)}
+				<BotonCompartir />
+			</div>
+			<NavBarPerfil />
+		</div>
+	);
 };
 
 export default VistaProgreso;
