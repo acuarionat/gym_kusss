@@ -1,15 +1,24 @@
-import './CabezaListaEjercicios.css'
-import FlechaIzquierda from '/imagenes/FlechaIzquierda.png'
-import ImagenUsuario from '/imagenes/ImagenUsuario.png'
-
+import "./CabezaListaEjercicios.css";
+import FlechaIzquierda from "/imagenes/FlechaIzquierda.png";
+import { useNavigate } from "react-router-dom";
 function CabezaListaEjercicios() {
-    return (
-        <div className='headLista'>
-            <img className='icoLista' src={FlechaIzquierda} alt="Flecha Atras" />
-            <p className='tituloEjercicios'>EJERCICIOS</p>
-            <div className='icoLista' />
-        </div>
-    )
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+  return (
+    <div className="headLista">
+      <button className="goback" onClick={handleGoBack}>
+        <img
+          className="icoDetalle"
+          src={"imagenes/FlechaIzquierda.png"}
+          alt="Flecha Atras"
+        />
+      </button>
+      <p className="tituloEjercicios">EJERCICIOS</p>
+    </div>
+  );
 }
 
-export default CabezaListaEjercicios
+export default CabezaListaEjercicios;

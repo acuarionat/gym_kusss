@@ -4,7 +4,7 @@ function CabezaZumba() {
     const navigate = useNavigate();
     return (
         <div className='headDetalle'>
-            <img className='icoDetalle' onClick={() => navigate('/')} src={"https://ibb.co/rmg1SV1"} alt="Flecha Atras" />
+            <img className='icoDetalle' onClick={() => navigate('/')} src={"imagenes/FlechaIzquierda.png"} alt="Flecha Atras" />
             <p className='tituloDetalles'>ZUMBA</p>
         </div>
     )

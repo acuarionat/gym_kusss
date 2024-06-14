@@ -27,39 +27,54 @@ import EditarRutinaEntrenador from "../componentes/perfil entrenador/editar ruti
 import VistaCargarProgreso from "../componentes/perfil entrenador/progreso/cargar formulario/VistaCargarProgreso";
 import VistaVariedadEjercicios from "../componentes/perfil entrenador/ejercicios/VistaVariedadEjercicios";
 import SeriesRepeticiones from "../componentes/perfil entrenador/enlistar ejercicios/VistaSeriesRepeticiones";
+import VistaRutinas from "../componentes/perfil cliente/rutina semanal/VistaRutinas";
+
 const Navigation = () => {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/" element= {<VistaGeneralHome/>} />
-          <Route path="/nosotros" element= {<VistaNosotros/>} />
-          <Route path="/contactanos" element= {<VistaContactanos/>} />
-          <Route path="/videoszumba" element= {<VistaVideos/>} />
-          <Route path="/videosyoga" element= {<VistaYoga/>} />
-          <Route path="/horario" element= {<VistaHorario/>} />
-          <Route path="/equipamiento" element= {<VistaEquipamiento/>} />
-          <Route path="/sugerencias" element= {<VistaSugerencias/>} />
-          <Route path="/perdida-de-grasa" element= {<VistaPerdidaDeGrasa/>} />
-          <Route path="/nutricion" element= {<VistaNutricion/>} />
-          <Route path="/saludmental" element= {<VistaSaludMental/>} />
-          <Route path="/login" element= {<CardLogin/>} />
-          <Route path="/registro" element= {<CardRegistro/>} />
-        <Route path="/perfil_cliente" element= {<VistaPerfilCliente/>} />
-        <Route path="/progreso" element= {<VistaProgreso/>} />
-        <Route path="/ejercicios" element= {<Lista_Ejercicios/>} />
-        <Route path="/detalle_ejercicios" element= {<Detalle_Ejercicios/>} />
-        <Route path="/editar_perfil" element= {<VistaEditarPerfil/>} />
-        <Route path="/perfil_entrenador" element= {<VistaPerfilEntrenador/>} />
-        <Route path="/perfil_cliente_entrenador" element= {<VistaPerfilClienteEntrenador/>} />
-        <Route path="/clientes_asignados" element= {<VistaClientesAsignados/>} />
-        <Route path="/rutina_cliente" element= {<RutinaSemanalEntrenador/>} />
-        <Route path="/progreso_cliente" element= {<VistaProgresoEntrenador/>} />
-        <Route path="/editar_rutina" element= {<EditarRutinaEntrenador/>} />
-        <Route path="/cargar_progreso" element= {<VistaCargarProgreso/>} />
-        <Route path="/variedad_ejercicios" element= {<VistaVariedadEjercicios/>} />
-        <Route path="/editar_perfil" element={<VistaEditarPerfil/>}/>
-        <Route path="/editar_ejercicio_rutina" element={<SeriesRepeticiones/>}/>
-        </Routes>
+        <Route path="/" element={<VistaGeneralHome />} />
+        <Route path="/nosotros" element={<VistaNosotros />} />
+        <Route path="/contactanos" element={<VistaContactanos />} />
+        <Route path="/videoszumba" element={<VistaVideos />} />
+        <Route path="/videosyoga" element={<VistaYoga />} />
+        <Route path="/horario" element={<VistaHorario />} />
+        <Route path="/equipamiento" element={<VistaEquipamiento />} />
+        <Route path="/sugerencias" element={<VistaSugerencias />} />
+        <Route path="/perdida-de-grasa" element={<VistaPerdidaDeGrasa />} />
+        <Route path="/nutricion" element={<VistaNutricion />} />
+        <Route path="/saludmental" element={<VistaSaludMental />} />
+        <Route path="/login" element={<CardLogin />} />
+        <Route path="/registro" element={<CardRegistro />} />
+        <Route path="/perfil_cliente" element={<VistaPerfilCliente />} />
+        <Route path="/progreso" element={<VistaProgreso />} />
+        <Route path="/ejercicios" element={<Lista_Ejercicios />} />
+        <Route path="/detalle_ejercicios" element={<Detalle_Ejercicios />} />
+        <Route path="/editar_perfil" element={<VistaEditarPerfil />} />
+        <Route path="/perfil_entrenador" element={<VistaPerfilEntrenador />} />
+        <Route path="/rutina" element={<VistaRutinas />} />
+        <Route
+          path="/perfil_cliente_entrenador"
+          element={<VistaPerfilClienteEntrenador />}
+        />
+        <Route
+          path="/clientes_asignados"
+          element={<VistaClientesAsignados />}
+        />
+        <Route path="/rutina_cliente" element={<RutinaSemanalEntrenador />} />
+        <Route path="/progreso_cliente" element={<VistaProgresoEntrenador />} />
+        <Route path="/editar_rutina" element={<EditarRutinaEntrenador />} />
+        <Route path="/cargar_progreso" element={<VistaCargarProgreso />} />
+        <Route
+          path="/variedad_ejercicios"
+          element={<VistaVariedadEjercicios />}
+        />
+        <Route path="/editar_perfil" element={<VistaEditarPerfil />} />
+        <Route
+          path="/editar_ejercicio_rutina"
+          element={<SeriesRepeticiones />}
+        />
+      </Routes>
     </BrowserRouter>
   );
 };

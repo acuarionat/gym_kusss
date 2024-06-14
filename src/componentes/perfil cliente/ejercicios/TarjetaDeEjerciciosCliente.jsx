@@ -1,50 +1,21 @@
-import './TarjetaDeEjerciciosCliente.css'
+import React from 'react';
+import './TarjetaDeEjerciciosCliente.css';
 
-function TarjetaDeEjercicios() {
+function TarjetaDeEjerciciosCliente({ ejercicios }) {
     return (
         <div className='listaEjer'>
-            <div className='barraEjer1'>
-                <div className='tipoEjer'>
-                    <p className='textoListaEjerTar'>Flexiones</p>
+            {ejercicios.map((ejercicio, index) => (
+                <div key={ejercicio.id} className={index % 2 === 0 ? 'barraEjer1' : 'barraEjer2'}>
+                    <div className='tipoEjer'>
+                        <p className='textoListaEjerTar'>{ejercicio.nombre}</p>
+                    </div>
+                    <div className='repeticiones'>
+                        <p className='textoListaEjerTar'>{ejercicio.series} series x {ejercicio.repeticiones} repeticiones</p>
+                    </div>
                 </div>
-                <div className='repeticiones'>
-                    <p className='textoListaEjerTar'>3 series x 10 repeticiones</p>
-                </div>
-            </div>
-            <div className='barraEjer2'>
-                <div className='tipoEjer'>
-                    <p className='textoListaEjerTar'>Curl con Pesos</p>
-                </div>
-                <div className='repeticiones'>
-                    <p className='textoListaEjerTar'>3 series x 10 repeticiones</p>
-                </div>
-            </div>
-            <div className='barraEjer1'>
-                <div className='tipoEjer'>
-                    <p className='textoListaEjerTar'>Press de Empuje</p>
-                </div>
-                <div className='repeticiones'>
-                    <p className='textoListaEjerTar'>3 series x 10 repeticiones</p>
-                </div>
-            </div>
-            <div className='barraEjer2'>
-                <div className='tipoEjer'>
-                    <p className='textoListaEjerTar'>Press de Banco</p>
-                </div>
-                <div className='repeticiones'>
-                    <p className='textoListaEjerTar'>3 series x 10 repeticiones</p>
-                </div>
-            </div>
-            <div className='barraEjer1'>
-                <div className='tipoEjer'>
-                    <p className='textoListaEjerTar'>Curl con Barra</p>
-                </div>
-                <div className='repeticiones'>
-                    <p className='textoListaEjerTar'>3 series x 10 repeticiones</p>
-                </div>
-            </div>
+            ))}
         </div>
-    )
+    );
 }
 
-export default TarjetaDeEjercicios
+export default TarjetaDeEjerciciosCliente;

@@ -15,7 +15,7 @@
 {
     width: 70px;
     height: 70px;
-    border: solid 5px var(--Granate);
+    background-color: var(--Granate);
     border-radius: 3px;
     border-bottom-right-radius: 20px;
 }

@@ -4,7 +4,7 @@ import TarjetaConsejoExperto from "./TarjetaConsejoExperto";
 import TarjetaDetalleEjercicio from "./TarjetaDetalleEjercicio";
 import NavBarPerfil from "../../general/NavBarPerfil";
 
-function Detalle_Ejercicios() {
+function VistaDetalleEjercicios() {
   return (
     <div className="principalDetalle">
       <div className="superior-detalle-ejer">
@@ -17,4 +17,4 @@ function Detalle_Ejercicios() {
   );
 }
 
-export default Detalle_Ejercicios;
+export default VistaDetalleEjercicios;

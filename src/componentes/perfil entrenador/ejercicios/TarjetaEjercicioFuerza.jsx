@@ -8,11 +8,7 @@ const TarjetaEjercicioFuerza = ({ ejerciciof, onCardClick }) => {
   return (
       <NavLink to='/editar_ejercicio_rutina'>
       <div className="ejercicio" onClick={handleClick}>
-        <img
-          className="imagen-ejer"
-          src={ejerciciof.imagen}
-          alt={`avatar de ${ejerciciof.nombre}`}
-        />
+      <div className="imagen-ejer"></div>
         <div className="descripcion-ejer">
           <h4>{ejerciciof.nombre}</h4>
           <p className="musculo">

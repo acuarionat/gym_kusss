@@ -3,8 +3,8 @@ import "./VistaPerfilClienteEntrenador.css";
 import ClienteEntrenadorApp from "../../../ClienteEntrenadorApp";
 import InformacionGeneralClienteEntrenador from "./InformacionGeneralClienteEntrenador";
 import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
-/* import BotonProgreso from "./BotonProgreso";
- *//* import BotonRutina from "./BotonRutina";
+import BotonEjercicios from "./BotonEjercicios";
+/* import BotonRutina from "./BotonRutina";
  */
 const VistaPerfilClienteEntrenador = () => {
   return (
@@ -12,9 +12,8 @@ const VistaPerfilClienteEntrenador = () => {
       <div className="superior-cliente-entrenador">
         <ClienteEntrenadorApp  />
         <InformacionGeneralClienteEntrenador />
-      {/*   <BotonProgreso /> */}
-{/*           <BotonRutina/>
- */}      </div>
+        <BotonEjercicios/>
+   </div>
       <NavBarPerfilEntrenador />
     </div>
   );

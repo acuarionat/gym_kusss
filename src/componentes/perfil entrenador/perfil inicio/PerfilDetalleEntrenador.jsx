@@ -1,5 +1,6 @@
 import React from "react";
 import "./PerfilDetalleEntrenador.css";
+import { NavLink } from "react-router-dom";
 
 const PerfilDetalleEntrenador = ({ entrenador }) => {
   return (
@@ -11,7 +12,7 @@ const PerfilDetalleEntrenador = ({ entrenador }) => {
           src={entrenador.foto}
           alt={`avatar de ${entrenador.nombre}`}
         />
-         <NavLink to='./'>
+         <NavLink to='/'>
         <button className="cerrar">
           <img src={"/imagenes/cerrar.png"} alt="cerrar" />
         </button>
