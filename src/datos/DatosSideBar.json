@@ -1,7 +1,7 @@
 [
     {
-        "SideBar": "Home",
-        "imagen": "/imagenes/Novedades.png",
+        "SideBar": "Inicio",
+        "imagen": "/imagenes/Vector.png",
         "link": "/"
     },
     {
