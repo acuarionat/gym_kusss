@@ -5,7 +5,7 @@ const TextoDisciplina = () => {
     return (
         <>
             <div className="ContenienerDisciplina">
-                <img src="https://ibb.co/pxmPdzc" alt="iconogranate" className='IconoGranate'/>
+                <img src="/imagenes/RectangleGranate.png" alt="iconogranate" className='IconoGranate'/>
                 <p className='TituloTarjeta2'>Diversas Disciplinas</p>
                 <p className='TextoDisciplina5'>El ejercicio aeróbico emplea los músculos grandes y puede realizarse durante largo tiempo.</p>
             </div>

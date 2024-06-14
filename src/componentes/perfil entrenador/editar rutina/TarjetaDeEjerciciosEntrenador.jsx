@@ -3,6 +3,7 @@ import './TarjetaDeEjerciciosEntrenador.css'
 function TarjetaDeEjercicios() {
     return (
         <div className='listaEjer'>
+            
             <div className='barraEjer1'>
                 <div className='tipoEjer'>
                     <p className='textoListaEjer'>Flexiones</p>

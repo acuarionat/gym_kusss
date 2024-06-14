@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideBar.css';
 import OrgSobre from './OrgSobre';
+import Close from '/imagenes/Close.png';
 import SlideDatos from '../../../datos/DatosSideBar.json';
 
 function SideBar() {
@@ -10,7 +11,7 @@ function SideBar() {
                 <div className='primeraParte'>
                     <div className='close'>
                         <label htmlFor='btnMenu' className='CloseButon'>
-                            <img src={'https://ibb.co/kQVjkk7'} alt="Equisxd" />
+                            <img src={'Close'} alt="Equisxd" />
                         </label>
                     </div>
                     <div className='menu'>
