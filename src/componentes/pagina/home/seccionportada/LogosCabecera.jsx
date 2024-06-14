@@ -6,7 +6,7 @@ const LogosCabecera = () => {
     const navigate = useNavigate();
     return (
         <div className='LogosContainer'>
-            <img src="/imagenes/logo.png" alt="Logo Kuss" className='LogoKussCabecera1' onClick={() => navigate('/')}/>
+            <img src="/imagenes/KussLogo.png" alt="Logo Kuss" className='LogoKussCabecera1' onClick={() => navigate('/')}/>
             <input className='icoDetalleGris' type="checkbox" id='btnMenu' />
             <label htmlFor='btnMenu'>
                 <img 

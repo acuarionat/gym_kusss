@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './VistaEquipamiento.css';
-import CabezaEquipamiento from './CabeceraEquipamiento/CabezaEquipamiento';
-import TarjetadeEquipamiento from './tarjetadeequipamiento/VistaTarjetadeEquipamiento';
-
+import CabezaEquipamiento from './CabezaEquipamiento';
+import TarjetadeEquipamiento from './VistaTarjetadeEquipamiento';
 const VistaEquipamiento = () => {
   return (
     <div className='vista-equipamiento'>

@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
 import "./Informacion.css";
 
 const Informacion = () => {
   return (
     <div>
-      <div className='contenedorLogin-informacion'>
+      <div className="contenedorLogin-informacion">
         <h2 className="titulo1-informacion">Ingresar</h2>
-        
-        <h3 className="parrafo-informacion">Correo</h3>
-        <input type="text" className='input-text-informacion input-informacion' />
-        <h3 className="parrafo-informacion">Contraseña</h3>
-        <input type="text" className='input-text-informacion input-informacion'/>
-        
-        <div className='button-container-informacion'>
-          <button className='button-informacion'><h2 className="titulob-informacion">ACEPTAR</h2></button>
-        </div>
+        <form>
+          <div className="contenedor-formulario">
+            <label className="parrafo-informacion">Correo</label>
+            <input className="input-text"
+              type="email"
+            />
+            <label className="parrafo-informacion">Contraseña</label>
+            <input className="input-text"
+              type="password"
+            />
+            <input className="aceptar" type="submit" value="ACEPTAR" />
+          </div>
+        </form>
       </div>
     </div>
   );
-}
+};
 
 export default Informacion;

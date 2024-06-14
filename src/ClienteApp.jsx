@@ -8,7 +8,6 @@ function ClienteApp() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   let [searchParams, setSearchParams] = useSearchParams();
-  const id = searchParams.get("id");
 
   const fetchDataWithRetry = async (url, options = {}, retries = 3, backoff = 3000) => {
     try {
@@ -35,11 +34,13 @@ function ClienteApp() {
 
         const clienteIds = entrenador.clientes; 
 
+        console.log('Client IDs:', clienteIds);
+
         const clientePromises = clienteIds.map(id =>
           fetchDataWithRetry(`https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/${id}`)
         );
-        
         const clientesData = await Promise.all(clientePromises);
+
         console.log('Clientes Data:', clientesData);
 
         setClientes(clientesData);

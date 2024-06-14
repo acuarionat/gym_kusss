@@ -1,9 +1,9 @@
 import React from 'react';
-import "./CardRegistro.css";
+import "./VistaFormularioRegistro.css";
 import Informacion from './InformacionRegistro';
 import BarraTransparente from '../BarraTransparente';
 
-const CardRegistro = () => {
+const VistaFormularioRegistro = () => {
   return (
     <div className="card-container1">
       <BarraTransparente />
@@ -15,4 +15,4 @@ const CardRegistro = () => {
   );
 }
 
-export default CardRegistro;
+export default VistaFormularioRegistro;

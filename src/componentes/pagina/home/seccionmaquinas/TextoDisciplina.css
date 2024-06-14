@@ -17,8 +17,7 @@
 }
 
 .IconoGranate {
-    position: absolute;
-    margin: 10px; 
-    right: 272px;
-    
+    margin-bottom: -75px; 
+    margin-left: -250px;
+    right: 272px;  
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './TarjetaEntrenador.css';
 
 const TarjetaEntrenador = ({ coach, onClick }) => {
-  return (
+  return ( 
     <div className="card" onClick={onClick}>
       <img src={coach.image} alt={coach.name} className="card-images" />
       <div className="card-info">

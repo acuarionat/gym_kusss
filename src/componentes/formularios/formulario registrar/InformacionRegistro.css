@@ -52,6 +52,7 @@
 .parrafo-informacion {
   font-family: var(--Parrafo);
   font-weight: 400;
+  width: 100%;
   color: var(--Blanco);
   text-align: left;
 }

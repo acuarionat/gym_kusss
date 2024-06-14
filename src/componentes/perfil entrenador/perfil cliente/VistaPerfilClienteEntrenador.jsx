@@ -4,8 +4,8 @@ import ClienteEntrenadorApp from "../../../ClienteEntrenadorApp";
 import InformacionGeneralClienteEntrenador from "./InformacionGeneralClienteEntrenador";
 import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
 import BotonProgreso from "./BotonProgreso";
-import BotonRutina from "./BotonRutina";
-
+/* import BotonRutina from "./BotonRutina";
+ */
 const VistaPerfilClienteEntrenador = () => {
   return (
     <div className="vista-cliente-entrenador">

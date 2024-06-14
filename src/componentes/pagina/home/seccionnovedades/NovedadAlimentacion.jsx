@@ -1,5 +1,5 @@
 import React from 'react';
-import './NovedadAlimentacion.css'; // Agrega estilos específicos si es necesario
+import './NovedadAlimentacion.css'; 
 
 const NovedadAlimentacion = () => {
     return (

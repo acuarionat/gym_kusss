@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 25px;
-    margin-top: 60px;
     width: 320px;
     height: 155px;
     border-radius: 20px; 
@@ -16,8 +14,10 @@
     border-left: 0.5px solid var(--PlomoClaro);
     border-right: 5px solid var(--PlomoClaro);
     border-bottom: 5px solid var(--PlomoClaro);
+    color: var(--Negro)
+
 }
 
 .TarEqui1:focus {
-    outline: none; /* Quita el contorno azul al enfocar */
+    outline: none; 
 }

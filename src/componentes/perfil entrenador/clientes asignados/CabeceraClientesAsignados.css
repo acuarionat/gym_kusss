@@ -1,4 +1,4 @@
-.headRutinas {
+.headClientesAdm {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -8,9 +8,10 @@
     margin: 0px;
 }
 
-.icoRutinas {
+.icoDetalleAdm {
     width: 30px;
     height: 30px;
+    align-self: center;
 }
 
 .tituloRutinas {

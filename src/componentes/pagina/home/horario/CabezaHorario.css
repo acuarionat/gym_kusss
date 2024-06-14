@@ -4,8 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     background: var(--Granate);
+    margin: 0px;
 }
 
 .icoDetalle {

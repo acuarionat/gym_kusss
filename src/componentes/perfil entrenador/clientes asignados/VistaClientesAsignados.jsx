@@ -4,12 +4,12 @@ import ClienteApp from "../../../ClienteApp";
 import CabeceraClientesAsignados from "./CabeceraClientesAsignados";
 import NavBarPerfilEntrenador from "../../general/NavBarPerfilEntrenador";
 
-const VistaClientesAsignados = () => {
+const VistaClientesAsignados = ({cliente}) => {
   return (
     <div className="vista-clientes-asignados">
         <CabeceraClientesAsignados />
         <div className="contenerdor-tarjeta-cliente">
-        <ClienteApp/>
+        <ClienteApp cliente={cliente}/>
         </div>
       <NavBarPerfilEntrenador />
     </div>

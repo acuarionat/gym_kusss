@@ -9,14 +9,15 @@
 .TextoEquipo5 {
     position: relative;
     margin: 12px 10px;
-    top:-10px;
+    padding: 2px;
+    top:-7px;
     text-align: center;
     font-size: 17px;
     font-family: var(--Parrafo);
 }
 
 .IconoRosa {
-    position: absolute;
-    margin: 3%; 
-    right: 272px;/
+    margin-bottom: -75px; 
+    margin-left: -250px;
+    right: 272px;  
 }

@@ -58,9 +58,7 @@ function ClienteEntrenadorApp() {
   return (
     <>
       {cliente ? (
-        <>
-          <PerfilDetalleClienteEntrenador key={cliente.id} cliente={cliente} />
-        </>
+        <PerfilDetalleClienteEntrenador key={cliente.id} cliente={cliente} />
       ) : (
         <div>Datos no disponibles.</div>
       )}

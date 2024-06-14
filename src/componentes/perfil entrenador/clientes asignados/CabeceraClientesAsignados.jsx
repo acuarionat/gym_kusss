@@ -9,9 +9,9 @@ const CabeceraClientesAsignados = () => {
   };
 
   return (
-    <div className="headRutinas">
+    <div className="headClientesAdm">
       <button className="goback" onClick={handleGoBack}>
-        <img className="icoDetalle" src={'imagenes/FlechaIzquierda.png'} alt="Flecha Atras" />
+        <img className="icoDetalleAdm" src={'imagenes/FlechaIzquierda.png'} alt="Flecha Atras" />
       </button>
       <p className="tituloRutinas">CLIENTES ASIGNADOS</p>
       <div className="icoRutinas" />

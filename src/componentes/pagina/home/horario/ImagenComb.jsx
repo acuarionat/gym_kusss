@@ -21,6 +21,9 @@ const ImagenComb = () => {
 
   return (
     <div className="containerHorario">
+       <p className="parrafo-horario">
+          Descubre nuestros horarios y encuentra la clase perfecta para ti
+        </p>
       <img src={horario} alt="Horario" className="responsive-image" />
       <p className='parrafo-horario'>Descargar Horario</p>
       <select className="combo-boxHorario" value={fileType} onChange={handleChange}>

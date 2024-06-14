@@ -1,21 +1,18 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import './TarjetaDisciplinas.css'
-import TextoDisciplina from './TextoDisciplina'
+import React from "react";
+import "./TarjetaDisciplinas.css";
+import TextoDisciplina from "./TextoDisciplina";
+import { NavLink } from "react-router-dom";
 
 const TarjetaDisciplinas = () => {
-    const navigate = useNavigate();
-    return (
-        <>
-            <button className='TarDis1' onClick={() => navigate('/horario')}>
-                <TextoDisciplina/>
-            </button>
-        </>
-    );
-  };
-  
-  export default TarjetaDisciplinas;
+  return (
+    <>
+      <NavLink to='/horario'>
+        <div className="TarDis1">
+          <TextoDisciplina />
+        </div>
+      </NavLink>
+    </>
+  );
+};
 
-
-
-
+export default TarjetaDisciplinas;
