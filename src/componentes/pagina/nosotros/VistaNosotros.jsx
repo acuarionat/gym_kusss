@@ -12,9 +12,7 @@ const VistaNosotros = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    console.log('useEffect running');
     const userData = JSON.parse(localStorage.getItem('user'));
-    console.log('userData from localStorage:', userData);
     setUser(userData);
   }, []);
 
