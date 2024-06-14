@@ -1,14 +1,14 @@
 import React from "react";
 import './VistaPerfilCliente.css'
 import PerfilBienvenida from "./PerfilBienvenida";
-import PerfilDetalle from "./PerfilDetalle";
+import PerfilClienteApp from "../../../PerfilClienteApp";
 import InformacionGeneral from "./InformacionGeneral";
 import NavBarPerfil from "../../general/NavBarPerfil";
-const VistaPerfilCliente = () => {
+const VistaPerfilCliente = ({perfil}) => {
   return (
     <div className="vista-perfil">
       <div className="superior-perfil-cliente">
-      <PerfilDetalle />
+      <PerfilClienteApp perfil={perfil} />
       <PerfilBienvenida />
       <InformacionGeneral />
     </div>

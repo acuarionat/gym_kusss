@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavBarPerfil.css";
 import { NavLink } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
 const NavBarPerfil = () => {
   return (

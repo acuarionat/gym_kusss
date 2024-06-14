@@ -37,9 +37,9 @@ const VistaProgresoEntrenador = ({ idCliente = 1 }) => {
     }, [idCliente]);
 
     return (
-        <div className="vista-cargar-progreso">
+        <div className="vista-cargar-grafica">
             <CabezaCargarProgreso contentHeader={contentHeader} />
-            <div className="superior-cargar-progreso">
+            <div className="superior-cargar-grafica">
                 <div className="title">
                     <h2>
                         Cliente: <span>{selectedClient ? selectedClient.name : "Cargando..."}</span>

@@ -7,7 +7,7 @@ function CabezaEquipamiento() {
             <button className='icoDetalle'>
                 <img 
                     className='imagenFlecha' 
-                    src={"https://ibb.co/rmg1SV1"} 
+                    src={"/imagenes/FlechaIzquierda.png"} 
                     alt="Flecha Atras" 
                     onClick={() => navigate('/')}
                 />

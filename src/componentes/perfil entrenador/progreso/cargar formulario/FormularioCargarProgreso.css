@@ -9,6 +9,7 @@
 
 .valor-unidad {
     display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -77,4 +78,10 @@
     border-right: 6px solid transparent;
     border-top: 6px solid var(--Granate);
     pointer-events: none;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    
 }

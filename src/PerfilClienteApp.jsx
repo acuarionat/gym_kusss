@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ThreeDots } from 'react-loader-spinner'; // Asegúrate de tener este paquete instalado
-import PerfilDetalleClienteEntrenador from './PerfilDetalleClienteEntrenador'; // Asegúrate de importar tu componente
-import { useSearchParams } from 'react-router-dom'; // Asumiendo que estás usando react-router-dom
-
+import { ThreeDots } from 'react-loader-spinner'; 
+import PerfilDetalle from './componentes/perfil cliente/perfil inicio/PerfilDetalle';
 const PerfilClienteApp = () => {
-    const [perfil, setPerfil] = useState(null);
+    const [perfiles, setPerfil] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
   
@@ -27,7 +25,7 @@ const PerfilClienteApp = () => {
     };
   
     useEffect(() => {
-      const id = localStorage.getItem('idUsuario'); // Obtener el ID del cliente desde localStorage
+      const id = localStorage.getItem("id"); 
   
       if (id) {
         const fetchPerfil = async () => {
@@ -58,8 +56,8 @@ const PerfilClienteApp = () => {
   
     return (
       <>
-        {perfil ? (
-          <PerfilDetalle key={perfil.id} perfil={perfil} />
+        {perfiles ? (
+          <PerfilDetalle key={perfiles.id} perfiles={perfiles} />
         ) : (
           <div>Datos no disponibles.</div>
         )}

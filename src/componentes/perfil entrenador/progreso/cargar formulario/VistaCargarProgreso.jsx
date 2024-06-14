@@ -3,6 +3,7 @@ import FormularioCargarProgreso from "./FormularioCargarProgreso";
 import NavBarPerfilEntrenador from "../../../general/NavBarPerfilEntrenador";
 import CabezaCargarProgreso from "../../../perfil entrenador/progreso/CabezaCargarProgreso";
 import { useLocation } from "react-router-dom";
+import './VistaCargarProgreso.css'
 
 const VistaCargarProgreso = () => {
     const contentHeader = "CARGAR PROGRESO";
@@ -27,6 +28,7 @@ const VistaCargarProgreso = () => {
     return (
         <div className="vista-cargar-progreso">
             <CabezaCargarProgreso contentHeader={contentHeader} />
+            <div className="superior-cargar-progreso">
             <div className="title">
                 <h2>
                     Cliente: <span>{selectedClient ? selectedClient.name : "Cargando..."}</span>
@@ -37,6 +39,7 @@ const VistaCargarProgreso = () => {
                 selectedProgreso={selectedProgreso}
                 selectedOption={selectedOption}
             />
+            </div>
             <NavBarPerfilEntrenador />
         </div>
     );

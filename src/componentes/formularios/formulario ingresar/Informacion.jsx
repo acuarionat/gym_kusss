@@ -12,45 +12,35 @@ const Informacion = () => {
 
   const handleLogin = async () => {
     if (!email || !password || !role) {
-      setError('Por favor, rellena todos los espacios en blanco.');
+      setError('Por favor rellena todos los espacios en blanco.');
       return;
     }
 
     try {
-      const response = await axios.get('https://666b18167013419182d23dae.mockapi.io/login');
-      const user = response.data.find(user => user.email === email && user.contrasena === password);
+      const clientResponse = await axios.get('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes');
+      const trainerResponse = await axios.get('https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores');
 
-      if (user) {
-        if (role === 'client' && user.rol !== '1') {
-          setError('No existe usuario con ese rol.');
-          navigate('/nosotros');
-          return;
-        } else if (role === 'trainer' && user.rol !== '0') {
-          setError('No existe usuario con ese rol.');
-          navigate('/nosotros');
-          return;
+      let user = null;
+
+      if (role === 'client') {
+        user = clientResponse.data.find(user => user.email === email && user.contrasena === password && user.rol === 1);
+        if (user) {
+          localStorage.setItem("user", JSON.stringify(user));
+          console.log('Login correcto como cliente!');
+          console.log(user);
+          navigate(`/perfil_cliente`);
         }
-
-        localStorage.setItem("user", JSON.stringify(user));
-        
-        let apiURL = '';
-        if (role === 'client') {
-          apiURL = 'https://665fe2675425580055b13673.mockapi.io/api/v1/clientes';
-        } else if (role === 'trainer') {
-          apiURL = 'https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores';
+      } else if (role === 'trainer') {
+        user = trainerResponse.data.find(user => user.email === email && user.contrasena === password && user.rol === 2);
+        if (user) {
+          localStorage.setItem("user", JSON.stringify(user));
+          console.log('Login correcto como entrenador!');
+          console.log(user);
+          navigate(`/perfil_entrenador`);
         }
+      }
 
-        const additionalResponse = await axios.get(apiURL);
-        const additionalData = additionalResponse.data.find(item => item.email === email);
-
-        if (additionalData) {
-          localStorage.setItem("additionalId", additionalData.id);
-        } else {
-          console.log('No se encontró el ID adicional');
-        }
-
-        console.log('Login correcto!');
-      } else {
+      if (!user) {
         console.log('Login failed: incorrect credentials');
         setError('Datos incorrectos.');
       }
@@ -90,7 +80,7 @@ const Informacion = () => {
             />
             Cliente
           </label>
-          <label className="parrafo-informacion1" >
+          <label className="parrafo-informacion1">
             <input
               type="radio"
               value="trainer"

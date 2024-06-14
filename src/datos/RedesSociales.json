@@ -1,7 +1,7 @@
 [
-    { "nombre": "Facebook", "servicio": "Inicio", "img": "https://ibb.co/D77MvZf" },
-    { "nombre": "WhatsApp", "servicio": "Sobre nosotros", "img": "https://ibb.co/WBWmbz7" },
-    { "nombre": "Instagram", "servicio": "Contáctanos", "img": "https://ibb.co/n7SLdbZ" },
-    { "nombre": "X-Twitter", "servicio": "", "img": "https://ibb.co/23WYVTZ" }
+    { "nombre": "Facebook", "servicio": "Inicio", "img": "https://i.ibb.co/K99sfJx/facebook1.png" },
+    { "nombre": "WhatsApp", "servicio": "Sobre nosotros", "img": "/imagenes/whatsapp1.png" },
+    { "nombre": "Instagram", "servicio": "Contáctanos", "img": "/imagenes/instagram1.png" },
+    { "nombre": "X-Twitter", "servicio": "", "img": "/imagenes/twitter1.png" }
   ]
   
