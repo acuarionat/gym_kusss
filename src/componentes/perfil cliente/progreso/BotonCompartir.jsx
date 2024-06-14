@@ -18,7 +18,7 @@ const BotonCompartir = ({ url, title }) => {
 			<button onClick={handleShareClick}>
 				<div className="icono-compartir">
 					<img
-						src="/imagenes/compartir.png"
+						src="/imagenes/compartir.jpg"
 						alt="Icono Compartir"
 					/>
 				</div>

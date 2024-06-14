@@ -17,7 +17,7 @@ const units = {
 	porcentaje_masa_muscular: "%",
 	tiempo_correr: "min",
 	distancia_correr: "km",
-	frecuencia_cardiaca_recuperacion: "bpm",
+	recuperacion: "min",
 };
 
 const Tabla = ({ idCliente, selectedProgreso, selectedOption }) => {
