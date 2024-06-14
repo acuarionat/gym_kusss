@@ -1,0 +1,71 @@
+.formularioEditar {
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaTextoCalorias {
+    width: 75%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textoCalorias {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}
+
+.ingresoDatos {
+    background-color: var(--PlomoClaro);
+    color: black;
+    width: 75%;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-family: "Teko", sans-serif;
+}
+
+.cajaTextoDia {
+    width: 75%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    margin-top: 30px;
+}
+
+.textoDia {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}
+
+.cajaElegirDia {
+    background-color: var(--PlomoClaro);
+    width: 75%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textoElejirDia {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.icoAñadir{
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}

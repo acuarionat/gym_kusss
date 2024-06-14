@@ -1,0 +1,35 @@
+.ContainerTitulo {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.ContainerSubTitulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linea {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--PlomoClaro);
+    margin: 10px 0; 
+}
+
+.TituloInformacion {
+    font-family: var(--Titulo);
+    font-size: 24px;
+    color: var(--Plomo);
+    margin: 10px 0; 
+    text-align: center; 
+}
+
+.IconAdm {
+    width: 40px;
+    height: auto; 
+    margin:10px; 
+}

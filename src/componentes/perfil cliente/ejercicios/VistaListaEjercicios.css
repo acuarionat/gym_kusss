@@ -1,0 +1,13 @@
+.principalLista {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+}
+.superior-lista-ejer
+{
+    height: 90%;
+    margin-bottom: 10%;
+}

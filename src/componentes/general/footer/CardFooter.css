@@ -1,0 +1,27 @@
+.cardfooter 
+{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Negro);
+  width: 100%;
+  max-width: none;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) 
+{
+  .cardfooter {
+    padding: 3.5rem;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 375px) 
+{
+  .cardfooter {
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+.contenedor 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.red-social 
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.red-social h2 
+{
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.parrafo
+{
+  font-family: var(--Parrafo);
+  font-weight: 400;
+  color: var(--Blanco);
+  text-align: left;
+}

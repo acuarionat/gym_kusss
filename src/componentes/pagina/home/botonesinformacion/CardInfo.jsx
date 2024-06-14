@@ -1,12 +1,12 @@
 import React from 'react';
-import Icon from "./IconInfo";
-import Description from "./DescripcionInfo"
-import "./CardInfo.css"
+import IconInfo from "./IconInfo";
+import DescripcionInfo from "./DescripcionInfo";
+import "./CardInfo.css";
 
 const CardInfo = ({ iconSrc, iconAlt, title, description }) => (
     <div className="card-i">
-        <Icon src={iconSrc} alt={iconAlt} />
-        <Description title={title} description={description} />
+        <IconInfo src={iconSrc} alt={iconAlt} />
+        <DescripcionInfo title={title} description={description} />
     </div>
 );
 

@@ -1,0 +1,15 @@
+.vista-contactanos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contacto
+{
+    margin-bottom: 25px;
+}
+html
+{
+  height: 100vw;
+}

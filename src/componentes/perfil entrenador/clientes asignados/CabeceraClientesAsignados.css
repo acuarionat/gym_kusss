@@ -1,0 +1,30 @@
+.headClientesAdm {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--Granate);
+    margin: 0px;
+}
+
+.icoDetalleAdm {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.tituloRutinas {
+    display: flex;
+    align-items: center;
+    font-family: "Teko", sans-serif;
+    font-size: 35px;
+    height: 40px;
+    margin: 10px;
+    color: var(--Blanco);
+}
+.goback
+{
+    border-style: none;
+    background-color: transparent;
+}

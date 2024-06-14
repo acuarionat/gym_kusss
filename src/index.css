@@ -1,22 +1,31 @@
+html
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
 body {
   margin: 0px;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-
-#root {
+a
+{
+  text-decoration: none;
+}
+#root
+{
   margin: 0px;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-self: start;
 }
-
 :root {
   --Negro: rgb(0, 0, 0);
   --Plomo: rgb(48, 45, 60);

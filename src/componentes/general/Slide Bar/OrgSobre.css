@@ -1,0 +1,22 @@
+.textosIma {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Plomo);
+    border: none;
+}
+
+.textos {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    width: 150px;
+    color: var(--Blanco);
+}
+
+.icoMenu {
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,23 @@
+.TituloTarjeta2 {
+    margin: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--Titulo);
+}
+
+.TextoDisciplina5 {
+    position: relative;
+    margin: 12px 10px;
+    padding: 2px;
+    top:-7px;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--Parrafo);
+}
+
+.IconoGranate {
+    margin-bottom: -75px; 
+    margin-left: -250px;
+    right: 272px;  
+}

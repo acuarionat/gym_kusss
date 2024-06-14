@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 
-
-const CarouselContainerInfo = ({ children }) => {
+const CarouselContainerE = ({ children }) => {
     const carouselContainerRef = useRef(null);
 
     const handleTouchStart = (event) => {
@@ -28,12 +27,12 @@ const CarouselContainerInfo = ({ children }) => {
     };
 
     return (
-        <div className="carousel-container" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
-            <div className="carousel" ref={carouselContainerRef}>
+        <div className="carousel-container-e" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
+            <div className="carousel-e" ref={carouselContainerRef}>
                 {children}
             </div>
         </div>
     );
 };
 
-export default CarouselContainerInfo;
+export default CarouselContainerE;

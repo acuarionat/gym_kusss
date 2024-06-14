@@ -1,0 +1,40 @@
+.bienvenida
+{
+    margin: 0px 25px 50px 25px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--Parrafo);
+    box-shadow: #000 2px 2px 10px;
+    border-radius: 12px;
+}
+.bienvenida .texto-bienvenida
+{
+    text-align: left;
+    width: 60%;
+    font-family: var(--Parrafo);
+}
+.bienvenida .texto-bienvenida h3
+{
+    font-weight: 500;
+    font-size: 14px;
+}
+.rojo
+{
+    color: var(--Granate);
+}
+.bienvenida .texto-bienvenida p
+{
+    font-size: 10px;
+    font-weight:400;
+}
+.bienvenida .imagen
+{
+    background-color: var(--Plomo);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

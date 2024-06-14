@@ -1,14 +1,11 @@
-import './App.css';
-import VistaProgreso from './componentes/pagina/perfil cliente/pogreso/VistaProgreso';
-
+import "./App.css";
+import Navigation from "./routes/Navigation";
 function App() {
   return (
     <>
-      <VistaProgreso />
+      <Navigation />
     </>
-  )
+  );
 }
 
 export default App;
-
-

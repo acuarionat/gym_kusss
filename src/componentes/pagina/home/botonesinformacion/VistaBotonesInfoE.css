@@ -1,16 +1,19 @@
-.Tarjeta-containerB{
+.botones-scroll-container {
     display: flex;
-    justify-content: center;
-
-}
-.carousel-container {
-    width: 300px;
     overflow-x: auto;
-    scrollbar-width: none;
+    overflow-y: hidden; 
+    white-space: nowrap; 
+    padding: 10px 0; 
+    margin-left: 10px;
+   
 }
 
-.carousel {
-    display: flex;
-    flex-wrap: nowrap;
+@media (max-width: 375px) {
+    .botones-scroll-container {
+        width: 300px;
+    }
 
+    .card-i {
+        width: 255px; 
+    }
 }

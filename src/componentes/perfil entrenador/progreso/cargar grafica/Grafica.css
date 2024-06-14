@@ -1,0 +1,21 @@
+.grafica-header {
+    width: 100%;
+}
+
+.grafica-header h2 {
+    font-size: 25px;
+    font-family: var(--Titulo);
+    text-align: left;
+    font-weight: normal;
+    color: var(--Granate);
+    padding-left: 16px;
+}
+.grafica-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+}

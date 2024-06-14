@@ -1,0 +1,54 @@
+.formularioRepesSeries {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: scroll;
+    margin-top: 20px;
+}
+label
+{
+    text-align: left;
+}
+input
+{
+    font-family: var(--Parrafo);
+    background-color: var(--PlomoClaro);
+    border-style: none;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+form
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.confirmar
+{
+    width: 300px;
+    height: 55px;
+    margin-top: 40px;
+    background-color: var(--RosaMuyClaro);
+    border-radius: 12px;
+    box-shadow: 0 4px rgb(0, 0, 0, 0.2);
+    border: none;
+    color: var(--Granate);
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.inputs
+{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}

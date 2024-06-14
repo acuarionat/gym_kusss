@@ -1,0 +1,33 @@
+.card-container1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../imagenes/fondo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.teko-titulo1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  color: var(--Blanco);
+}
+
+@media screen and (min-width: 1440px) {
+  .card-container {
+    padding: 3.5rem;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .card-container {
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+}
