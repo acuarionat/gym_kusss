@@ -2,11 +2,11 @@ import React from 'react';
 import CabeceraInformate from './CabeceraInformate'
 import VistaBotonesInfo from '../botonesinformacion/VistaBotonesInfo'
 
-const VistaSeccionEquipamiento = () => (
+const VistaSeccionInformacion = () => (
     <div className='VistaSeccEquipamiento'>
         <CabeceraInformate/>
         <VistaBotonesInfo/>
     </div>
 );
 
-export default VistaSeccionEquipamiento;
+export default VistaSeccionInformacion;

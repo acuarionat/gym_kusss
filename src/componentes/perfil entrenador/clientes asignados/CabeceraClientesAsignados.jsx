@@ -9,12 +9,11 @@ const CabeceraClientesAsignados = () => {
   };
 
   return (
-    <div className="headClientesAdm">
+    <div className="headClientesEn">
       <button className="goback" onClick={handleGoBack}>
-        <img className="icoDetalleAdm" src={'imagenes/FlechaIzquierda.png'} alt="Flecha Atras" />
+        <img className="icoDetalleEn" src={'imagenes/FlechaIzquierda.png'} alt="Flecha Atras" />
       </button>
-      <p className="tituloRutinas">CLIENTES ASIGNADOS</p>
-      <div className="icoRutinas" />
+      <p className="tituloEntrenador">CLIENTES ASIGNADOS</p>
     </div>
   );
 };

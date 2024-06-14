@@ -17,7 +17,6 @@ const CabeceraEditarPerfil = () => {
         />
       </button>
       <p className="tituloRutinas">EDITAR PERFIL</p>
-      <div className="icoRutinas" />
     </div>
   );
 };

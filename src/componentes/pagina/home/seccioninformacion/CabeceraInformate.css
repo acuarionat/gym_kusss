@@ -1,28 +1,35 @@
-.ContainerTitulo{
-    margin: 0;
-    padding: 8px;
-    position: relative;
-    align-items: center;
+.ContainerTitulo {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.ContainerSubTitulo{
+    display: flex;
     justify-content: space-between;
-}
-
-.TituloInformacion {
-    font-family: var(--Titulo);
-    font-size: 31px;
-    margin: 20px 10px; 
-}
-
-.IconAdm {
-    position: absolute;
-    width: 40px;
-    right: 20px; 
-    top: 55%; 
-    transform: translateY(-50%); 
 }
 
 .linea {
     width: 100%;
+    border: none;
     height: 1px;
-    background-color: var(--Negro);
-    margin-top: 10px;
+    background-color: var(--PlomoClaro);
+    margin: 10px 0; 
+}
+
+.TituloInformacion {
+    font-family: var(--Titulo);
+    font-size: 24px;
+    color: var(--Plomo);
+    margin: 10px 0; 
+    text-align: center; 
+}
+
+.IconAdm {
+    width: 40px;
+    height: auto; 
+    margin:10px; 
 }

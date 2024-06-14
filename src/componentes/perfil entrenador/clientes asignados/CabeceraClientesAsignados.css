@@ -1,4 +1,4 @@
-.headClientesAdm {
+.headClientesEn {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -8,13 +8,13 @@
     margin: 0px;
 }
 
-.icoDetalleAdm {
+.icoDetalleEn {
     width: 30px;
     height: 30px;
     align-self: center;
 }
 
-.tituloRutinas {
+.tituloEntrenador {
     display: flex;
     align-items: center;
     font-family: "Teko", sans-serif;
@@ -27,4 +27,6 @@
 {
     border-style: none;
     background-color: transparent;
+    height: fit-content;
+    width: 50px;
 }

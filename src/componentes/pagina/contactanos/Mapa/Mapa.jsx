@@ -12,8 +12,8 @@ const Mapa = () => (
             onClick={() => window.open('https://www.google.com/maps?q=-16.5050517,-68.1312041')}
         />
         <Info
-            locationIcon={"/imagenes/IconUbic.png"}
-            phoneIcon={"/imagenes/IconTelef.png"}
+            locationIcon={"imagenes/IconUbic.png"}
+            phoneIcon={"imagenes/IconTelef.png"}
             locationText="Corneta Mamani 1934, La Paz"
             phoneText="72518463"
         />

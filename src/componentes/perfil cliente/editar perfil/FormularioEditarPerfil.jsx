@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FormularioEditarPerfil.css";
 import { useFormik } from "formik";
 import axios from "axios";
@@ -8,11 +8,31 @@ const FormularioEditarPerfil = ({ cliente }) => {
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState(null);
   const [imageUrl, setImageUrl] = useState(cliente.foto || "");
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    } else {
+      setLoading(false);
+      setError('User not found in localStorage');
+    }
+  }, []);
+
+  useEffect(() => {
+    if (user) {
+      setLoading(false);
+    }
+  }, [user]);
 
   const initialValues = {
     name: cliente.name || '',
     email: cliente.email || '',
-    telefono: cliente.telefono || ''
+    telefono: cliente.telefono || '',
+    id: cliente.id || ''
   };
 
   const validationSchema = Yup.object({
@@ -27,20 +47,27 @@ const FormularioEditarPerfil = ({ cliente }) => {
 
   const onSubmit = async (values) => {
     try {
+      if (!user) {
+        throw new Error('User not loaded');
+      }
+
       const patchedData = {
         ...values,
         foto: imageUrl || cliente.foto,
       };
-      const response = await fetch('https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/3', {
+
+      const response = await fetch(`https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/${user.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(patchedData),
       });
+
       if (!response.ok) {
         throw new Error('Error al actualizar los datos');
       }
+
       console.log("Datos actualizados con éxito:", patchedData);
       alert("Cambios guardados");
     } catch (error) {
@@ -80,6 +107,14 @@ const FormularioEditarPerfil = ({ cliente }) => {
     onSubmit,
     enableReinitialize: true,
   });
+
+  if (loading) {
+    return <div>Cargando...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="formulario">

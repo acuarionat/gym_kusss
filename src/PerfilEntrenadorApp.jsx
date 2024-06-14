@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ThreeDots } from 'react-loader-spinner';
-import PerfilDetalle from './componentes/perfil cliente/perfil inicio/PerfilDetalle';
+import PerfilDetalleEntrenador from "../src/componentes/perfil entrenador/perfil inicio/PerfilDetalleEntrenador"
 
 const PerfilEntrenadorApp = () => {
   const [entrenador, setEntrenador] = useState(null);
@@ -16,7 +16,7 @@ const PerfilEntrenadorApp = () => {
       setLoading(false);
       setError('User not found in localStorage');
     }
-  }, []); // Solo se ejecuta una vez al montar el componente
+  }, []); 
 
   useEffect(() => {
     const fetchEntrenador = async () => {
@@ -38,7 +38,7 @@ const PerfilEntrenadorApp = () => {
     if (user) {
         fetchEntrenador();
     }
-  }, [user]); // Se ejecuta cuando el usuario cambia
+  }, [user]); 
 
   const fetchDataWithRetry = async (url, options = {}, retries = 3, backoff = 3000) => {
     try {
@@ -73,7 +73,7 @@ const PerfilEntrenadorApp = () => {
   return (
     <>
       {entrenador ? (
-        <PerfilDetalle key={entrenador.id} entrenador={entrenador} />
+        <PerfilDetalleEntrenador key={entrenador.id} entrenador={entrenador} />
       ) : (
         <div>Datos no disponibles.</div>
       )}
