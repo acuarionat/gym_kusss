@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ThreeDots } from 'react-loader-spinner';
 import PerfilDetalle from './componentes/perfil cliente/perfil inicio/PerfilDetalle';
 
-const PerfilClienteApp = () => {
-  const [perfil, setPerfil] = useState(null);
+const PerfilEntrenadorApp = () => {
+  const [entrenador, setEntrenador] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [user, setUser] = useState(null);
@@ -19,12 +19,12 @@ const PerfilClienteApp = () => {
   }, []); // Solo se ejecuta una vez al montar el componente
 
   useEffect(() => {
-    const fetchPerfil = async () => {
+    const fetchEntrenador = async () => {
       if (user && user.id) {
-        const url = `https://665fe2675425580055b13673.mockapi.io/api/v1/clientes/${user.id}`;
+        const url = `https://6669267d2e964a6dfed3f9ee.mockapi.io/api/v3/entrenadores/${user.id}`;
         try {
           const data = await fetchDataWithRetry(url);
-          setPerfil(data);
+          setEntrenador(data);
         } catch (error) {
           setError(error.message);
         } finally {
@@ -36,7 +36,7 @@ const PerfilClienteApp = () => {
     };
 
     if (user) {
-      fetchPerfil();
+        fetchEntrenador();
     }
   }, [user]); // Se ejecuta cuando el usuario cambia
 
@@ -72,8 +72,8 @@ const PerfilClienteApp = () => {
 
   return (
     <>
-      {perfil ? (
-        <PerfilDetalle key={perfil.id} perfil={perfil} />
+      {entrenador ? (
+        <PerfilDetalle key={entrenador.id} entrenador={entrenador} />
       ) : (
         <div>Datos no disponibles.</div>
       )}
@@ -81,4 +81,4 @@ const PerfilClienteApp = () => {
   );
 };
 
-export default PerfilClienteApp;
+export default PerfilEntrenadorApp;
