@@ -13,7 +13,7 @@ const VistaGeneralHome = () => (
       <VistaSeccionMaquinas />
       <VistaSeccionInformacion /> 
       <VistaSeccionVideos/>
-      <VistaseccionNovedades />
+{/*       <VistaseccionNovedades /> */}
       <VistaSeccionSugerencia />
       <VistaSeccionFooter/>
   </div>
