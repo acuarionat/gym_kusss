@@ -1,4 +1,5 @@
 html
+html
 {
   width: 100%;
   height: 100%;
@@ -25,6 +26,7 @@ a
   display: flex;
   flex-direction: column;
   align-self: start;
+  align-self: start;
 }
 :root {
   --Negro: rgb(0, 0, 0);
@@ -35,9 +37,13 @@ a
   --Blanco: rgb(255, 255, 255);
   --Granate: rgb(146, 5, 37);
   --GranateClaro: rgb(221, 64, 64);
-  --GranateMedio: rgb(237, 98, 98);
+  --GranateMedio: rgb(221, 98, 98);
   --RosaClaro: rgb(234, 175, 175);
-  --RosaMuyClaro: rgb(255, 218, 218);
+  --RosaMuyClaro: rgb(236, 233, 233);
+  --PlomoMedio: rgb(160, 160, 160);
+  --PlomoNoMedio: rgb(89, 89,89);
   --Titulo: "Teko", sans-serif;
   --Parrafo: "Poppins", sans-serif;
+  --Parrafo: "Poppins", sans-serif;
 }
+
