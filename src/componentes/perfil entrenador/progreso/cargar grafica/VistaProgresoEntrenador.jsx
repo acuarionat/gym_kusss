@@ -1,40 +1,91 @@
 import React, { useState, useEffect } from "react";
-import './VistaProgresoEntrenador.css'
+import "./VistaProgresoEntrenador.css";
 import Dropdown from "./Dropdown";
 import Tabla from "./Tabla";
 import Grafica from "./Grafica";
 import OpcionAgregarValor from "./OpcionAgregarValor";
-import TextoCliente from "./TextoCliente";
 import NavBarPerfilEntrenador from "../../../general/NavBarPerfilEntrenador";
-import CabezaCargarProgreso from "../../../perfil cliente/progreso/CabezaCargarProgreso";
+import CabezaCargarProgreso from "../../../perfil entrenador/progreso/CabezaCargarProgreso";
 
-const VistaProgresoEntrenador = () => {
-  const [clientes, setClientes] = useState([]);
-  const [selectedClient, setSelectedClient] = useState(null);
+const VistaProgresoEntrenador = ({ idCliente = 1 }) => {
+    const contentHeader = "CARGAR PROGRESO";
+    const [selectedProgreso, setSelectedProgreso] = useState("");
+    const [selectedOption, setSelectedOption] = useState("");
 
-  useEffect(() => {
-    fetch("https://6660e68963e6a0189fe7dc30.mockapi.io/api/v1/table")
-      .then((response) => response.json())
-      .then((data) => {
-        setClientes(data);
-        setSelectedClient(data[0]);
-      })
-      .catch((error) => console.error("Error fetching data: ", error));
-  }, []);
+    const handleProgresoSelect = (progreso) => {
+        setSelectedProgreso(progreso);
+        setSelectedOption("");
+    };
 
-  return (
-    <div className="vista-cargar-progreso">
-		 <div className="superior-cargar-progreso">
-      <CabezaCargarProgreso />
-        <TextoCliente cliente={selectedClient} />
-        <Dropdown />
-        <Grafica />
-        <Tabla />
-        <OpcionAgregarValor />
-      </div>
-      <NavBarPerfilEntrenador />
-    </div>
-  );
+    const handleOptionSelect = (option) => {
+        setSelectedOption(option);
+    };
+
+    //Para simular que por props llego el data del cliente 1
+    const [clientes, setClientes] = useState([]);
+    const [selectedClient, setSelectedClient] = useState(null);
+
+    useEffect(() => {
+        fetch("https://665fe2675425580055b13673.mockapi.io/api/v1/clientes")
+            .then((response) => response.json())
+            .then((data) => {
+                setClientes(data);
+                const client = data.find(cliente => cliente.id === idCliente.toString());
+                setSelectedClient(client);
+            })
+            .catch((error) => console.error("Error fetching data: ", error));
+    }, [idCliente]);
+
+    return (
+        <div className="vista-cargar-progreso">
+            <CabezaCargarProgreso contentHeader={contentHeader} />
+            <div className="superior-cargar-progreso">
+                <div className="title">
+                    <h2>
+                        Cliente: <span>{selectedClient ? selectedClient.name : "Cargando..."}</span>
+                    </h2>
+                </div>
+                <Dropdown
+                    onProgresoSelect={handleProgresoSelect}
+                    onOptionSelect={handleOptionSelect}
+                />
+                {selectedProgreso && (
+                    <Grafica
+                        idCliente={idCliente}
+                        selectedProgreso={selectedProgreso}
+                        selectedOption={selectedOption}
+                    />
+                )}
+                {selectedProgreso && (
+                    <Tabla
+                        idCliente={idCliente}
+                        selectedProgreso={selectedProgreso}
+                        selectedOption={selectedOption}
+                    />
+                )}
+                {!selectedProgreso && (
+                    <>
+                        <Grafica
+                            idCliente={idCliente}
+                            selectedProgreso="perdida_peso"
+                            selectedOption=""
+                        />
+                        <Tabla
+                            idCliente={idCliente}
+                            selectedProgreso="perdida_peso"
+                            selectedOption=""
+                        />
+                    </>
+                )}
+                <OpcionAgregarValor
+                    idCliente={idCliente}
+                    selectedProgreso={selectedProgreso}
+                    selectedOption={selectedOption}
+                />
+            </div>
+            <NavBarPerfilEntrenador />
+        </div>
+    );
 };
 
 export default VistaProgresoEntrenador;

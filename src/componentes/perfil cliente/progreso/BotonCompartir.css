@@ -1,10 +1,10 @@
-.boton-container {
+.button-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.boton-container button {
+.button-container button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,4 +17,16 @@
     width: 215px;
     height: 35px;
     font-family: var(--Titulo);
+}
+
+.icono-compartir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.icono-compartir img{
+    width: 24px;
+    height: 24px 
 }

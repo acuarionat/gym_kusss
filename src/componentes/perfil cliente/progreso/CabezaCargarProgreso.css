@@ -1,28 +1,30 @@
-.headDetalle {
+.progress-header {
     width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
     background: var(--Granate);
-}
-
-.icoDetalle {
+    margin: 0;
+  }
+  
+  .progress-header img {
     width: 30px;
     height: 30px;
-}
-
-.tituloDetalles {
-    display: flex;
-    align-items: center;
-    font-family: var(--Titulo);
-    font-size: 35px;
+  }
+  
+  .progress-title {
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
     height: 40px;
     margin: 10px;
-    color: var(--Blanco);
-}
-.goback
-{
-    border-style: none;
-    background-color: transparent;
-}
+  }
+  
+  .goback {
+    position: absolute;
+    left: 10px;
+    background-color: var(--Granate);
+    border: none;
+  }
+  

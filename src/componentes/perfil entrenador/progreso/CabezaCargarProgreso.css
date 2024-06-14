@@ -1,0 +1,30 @@
+.progress-header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--Granate);
+  margin: 0;
+}
+
+.progress-header img {
+  width: 30px;
+  height: 30px;
+}
+
+.progress-title {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  height: 40px;
+  margin: 10px;
+  color: var(--Blanco);
+}
+
+.goback {
+  position: absolute;
+  left: 10px;
+  background-color: var(--Granate);
+  border: none;
+}
