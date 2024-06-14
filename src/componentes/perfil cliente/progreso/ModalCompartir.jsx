@@ -1,10 +1,10 @@
 import React from "react";
-import twitterIcon from '/imagenes/IconTwitter.png';
-import messengerIcon from '/imagenes/IconMessenger.png';
-import whatsappIcon from '/imagenes/IconWhatsapp.png';
-import telegramIcon from '/imagenes/IconTelegram.png';
-import gmailIcon from '/imagenes/IconGmail.png';
-import facebookIcon from '/imagenes/IconFacebook.png';
+import twitterIcon from '/imagenes/IconTwitter.jpg';
+import messengerIcon from '/imagenes/IconMessenger.jpg';
+import whatsappIcon from '/imagenes/IconWhatsapp.jpg';
+import telegramIcon from '/imagenes/IconTelegram.jpg';
+import gmailIcon from '/imagenes/IconGmail.jpg';
+import facebookIcon from '/imagenes/IconFacebook.jpg';
 import './ModalCompartir.css';
 
 const ModalCompartir = ({ url, title, onClose }) => {
