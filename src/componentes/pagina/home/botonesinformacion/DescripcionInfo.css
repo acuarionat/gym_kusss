@@ -1,14 +1,23 @@
 .title {
     font-family: var(--Titulo);
-    font-size: 28px;
-    line-height: 1.1;
-    margin: 10px 0;
+    font-size: 20px; 
     color: var(--Plomo);
+    line-height: 1.2; 
+    margin-bottom: 10px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
 
+
 .description {
-    font-family: var(--Parrafo);
-    font-size: 14px;
-    color: var(--Plomo);
-    line-height: 1.1;
+    flex: 1; 
+    font-family: var(--Parrafo); 
+    font-size: 14px; 
+    margin:10px;
+    color: var(--Plomo); 
+    line-height: 1.4;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
 }
