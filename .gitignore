@@ -24,7 +24,7 @@ routes
 *.sw?
 vite.config.js
 index.html
-routes
-public
+routes/
+public/
 package.json
 package-lock.json

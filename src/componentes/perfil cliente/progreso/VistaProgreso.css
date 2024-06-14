@@ -1,10 +1,10 @@
-.vista-progreso{
-  display:flex;
+.vista-progreso {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
-.superior-progreso
-{
+
+.superior-progreso {
   width: 100%;
   height: 80%;
   margin-bottom: 20%;

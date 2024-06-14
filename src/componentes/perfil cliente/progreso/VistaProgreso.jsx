@@ -4,10 +4,14 @@ import Dropdown from "./Dropdown";
 import Tabla from "./Tabla";
 import Grafica from "./Grafica";
 import BotonCompartir from "./BotonCompartir";
-import CabezaCargarProgreso from "./CabezaCargarProgreso";
 import NavBarPerfil from "../../general/NavBarPerfil";
+import CabezaCargarProgreso from "./CabezaCargarProgreso";
 
 const VistaProgreso = ({ idCliente = 1 }) => {
+	const url = window.location.href;
+	const title = "Mira mi progreso!";
+
+	const contentHeader = "PROGRESO";
 	const [selectedProgreso, setSelectedProgreso] = useState("");
 	const [selectedOption, setSelectedOption] = useState("");
 
@@ -22,7 +26,7 @@ const VistaProgreso = ({ idCliente = 1 }) => {
 
 	return (
 		<div className="vista-progreso">
-			<CabezaCargarProgreso />
+			<CabezaCargarProgreso contentHeader={contentHeader} />
 			<div className="superior-progreso">
 				<Dropdown
 					onProgresoSelect={handleProgresoSelect}
@@ -56,7 +60,7 @@ const VistaProgreso = ({ idCliente = 1 }) => {
 						/>
 					</>
 				)}
-				<BotonCompartir />
+				<BotonCompartir url={url} title={title} />
 			</div>
 			<NavBarPerfil />
 		</div>
