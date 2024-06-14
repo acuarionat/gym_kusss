@@ -1,0 +1,261 @@
+[
+    {
+        "name": "Jan Trantow",
+        "id": "1",
+        "Semana": [
+            {
+                "id": "1",
+                "nombre": "Lunes",
+                "ejercicio": [
+                    "Pecho"
+                ]
+            },
+            {
+                "id": "2",
+                "nombre": "Martes",
+                "ejercicio": [
+                    "Piernas",
+                    "Brazos"
+                ]
+            },
+            {
+                "id": "3",
+                "nombre": "Miercoles",
+                "ejercicio": []
+            },
+            {
+                "id": "4",
+                "nombre": "Jueves",
+                "ejercicio": [
+                    "Abdominales"
+                ]
+            },
+            {
+                "id": "5",
+                "nombre": "Viernes",
+                "ejercicio": [
+                    "Pecho"
+                ]
+            },
+            {
+                "id": "6",
+                "nombre": "Sábado",
+                "ejercicio": []
+            },
+            {
+                "id": "7",
+                "nombre": "Domingo",
+                "ejercicio": [
+                    "Piernas",
+                    "Espalda",
+                    "Brazos"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Lowell Brown",
+        "id": "2",
+        "Semana": [
+            {
+                "id": "1",
+                "nombre": "Lunes",
+                "ejercicio": []
+            },
+            {
+                "id": "2",
+                "nombre": "Martes",
+                "ejercicio": [
+                    "Piernas"
+                ]
+            },
+            {
+                "id": "3",
+                "nombre": "Miercoles",
+                "ejercicio": [
+                    "Piernas",
+                    "Brazos"
+                ]
+            },
+            {
+                "id": "4",
+                "nombre": "Jueves",
+                "ejercicio": [
+                    "Abdominales"
+                ]
+            },
+            {
+                "id": "5",
+                "nombre": "Viernes",
+                "ejercicio": [
+                    "Pecho"
+                ]
+            },
+            {
+                "id": "6",
+                "nombre": "Sábado",
+                "ejercicio": [
+                    "Pecho"
+                ]
+            },
+            {
+                "id": "7",
+                "nombre": "Domingo",
+                "ejercicio": []
+            }
+        ]
+    },
+    {
+        "name": "Hannah Barrows",
+        "id": "3",
+        "Semana": [
+            {
+                "id": "1",
+                "nombre": "Lunes",
+                "ejercicio": [
+                    "Espalda",
+                    "Piernas",
+                    "Resistencia"
+                ]
+            },
+            {
+                "id": "2",
+                "nombre": "Martes",
+                "ejercicio": []
+            },
+            {
+                "id": "3",
+                "nombre": "Miercoles",
+                "ejercicio": []
+            },
+            {
+                "id": "4",
+                "nombre": "Jueves",
+                "ejercicio": [
+                    "Abdominales"
+                ]
+            },
+            {
+                "id": "5",
+                "nombre": "Viernes",
+                "ejercicio": [
+                    "Pecho",
+                    "Brazos",
+                    "Espalda"
+                ]
+            },
+            {
+                "id": "6",
+                "nombre": "Sábado",
+                "ejercicio": []
+            },
+            {
+                "id": "7",
+                "nombre": "Domingo",
+                "ejercicio": []
+            }
+        ]
+    },
+    {
+        "name": "Morris Bayer",
+        "id": "4",
+        "Semana": [
+            {
+                "id": "1",
+                "nombre": "Lunes",
+                "ejercicio": [
+                    "Espalda"
+                ]
+            },
+            {
+                "id": "2",
+                "nombre": "Martes",
+                "ejercicio": [
+                    "Piernas"
+                ]
+            },
+            {
+                "id": "3",
+                "nombre": "Miercoles",
+                "ejercicio": [
+                    "Abdominales"
+                ]
+            },
+            {
+                "id": "4",
+                "nombre": "Jueves",
+                "ejercicio": [
+                    "Brazos"
+                ]
+            },
+            {
+                "id": "5",
+                "nombre": "Viernes",
+                "ejercicio": [
+                    "Espalda"
+                ]
+            },
+            {
+                "id": "6",
+                "nombre": "Sábado",
+                "ejercicio": [
+                    "Resistencia"
+                ]
+            },
+            {
+                "id": "7",
+                "nombre": "Domingo",
+                "ejercicio": [
+                    "Piernas"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tammy Green",
+        "id": "5",
+        "Semana": [
+            {
+                "id": "1",
+                "nombre": "Lunes",
+                "ejercicio": []
+            },
+            {
+                "id": "2",
+                "nombre": "Martes",
+                "ejercicio": [
+                    "Piernas"
+                ]
+            },
+            {
+                "id": "3",
+                "nombre": "Miercoles",
+                "ejercicio": []
+            },
+            {
+                "id": "4",
+                "nombre": "Jueves",
+                "ejercicio": [
+                    "Brazos"
+                ]
+            },
+            {
+                "id": "5",
+                "nombre": "Viernes",
+                "ejercicio": []
+            },
+            {
+                "id": "6",
+                "nombre": "Sábado",
+                "ejercicio": [
+                    "Resistencia"
+                ]
+            },
+            {
+                "id": "7",
+                "nombre": "Domingo",
+                "ejercicio": []
+            }
+        ]
+    }
+]

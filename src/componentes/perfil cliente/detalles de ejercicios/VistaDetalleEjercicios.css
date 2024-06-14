@@ -1,0 +1,17 @@
+.principalDetalle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--PlomoClaro);
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.superior-detalle-ejer
+{
+    width: 100%;
+    height: 80%;
+    margin-bottom:20%;
+    display: flex;
+    flex-direction: column;
+}

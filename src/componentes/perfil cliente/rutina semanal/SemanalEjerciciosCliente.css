@@ -1,0 +1,71 @@
+.semanal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.dias {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PlomoClaro);
+    border-bottom: 1px solid black;
+    color: var(--Blanco);
+    border-radius: 8px;
+}
+
+.nombreDia {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonesEjercicios {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 5px;
+}
+
+.botonEjer {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Granate);
+    font-family: "Teko", sans-serif;
+    font-size: 13px;
+    border: 1px solid black;
+    font-weight: 200;
+}
+
+.textoSemanal {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}
+
+
+.tabla-ejercicios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-ejercicios th, .tabla-ejercicios td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabla-ejercicios th {
+    background-color: #f2f2f2;
+    text-align: left;
+}

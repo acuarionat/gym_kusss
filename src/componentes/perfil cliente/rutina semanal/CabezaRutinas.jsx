@@ -1,8 +1,8 @@
 import React from "react";
-import "./CabezaCargarProgreso.css";
+import "./CabezaRutinas.css";
 import { useNavigate } from "react-router-dom";
 
-const CabezaCargarProgreso = ({ contentHeader }) => {
+const CabezaRutinas = ({ contentHeader }) => {
 	const navigate = useNavigate();
 
 	const handleGoBack = () => {
@@ -10,13 +10,13 @@ const CabezaCargarProgreso = ({ contentHeader }) => {
 	};
 
 	return (
-		<div className="progress-header">
+		<div className="headRutinas">
 			<button className="goback" onClick={handleGoBack}>
 				<img src={"imagenes/FlechaIzquierda.jpg"} alt="Flecha Atras" />
 			</button>
-			<p className="progress-title">{contentHeader}</p>
+            <p className="tituloRutinas">RUTINA</p>
 		</div>
 	);
 };
 
-export default CabezaCargarProgreso;
+export default CabezaRutinas;
