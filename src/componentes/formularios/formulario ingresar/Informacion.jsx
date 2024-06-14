@@ -6,28 +6,41 @@ import "./Informacion.css";
 const Informacion = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [role, setRole] = useState('');
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    console.log('Attempting to log in with', { email, password });
-
+  
+    if (!email || !password || !role) {
+      setError('Porfavor rellena todos los espacios en blanco.');
+      return;
+    }
+  
     try {
       const response = await axios.get('https://666b18167013419182d23dae.mockapi.io/login');
-      console.log('Response from API:', response.data);
-
+  
       const user = response.data.find(user => user.email === email && user.contrasena === password);
-      
+  
       if (user) {
-        console.log('Login successful, navigating to home page');
-        navigate('/');
+        if (role === 'client' && user.rol !== '1') {
+          setError('No existe usuario con ese rol.');
+          navigate('/nosotros');
+          return;
+        } else if (role === 'trainer' && user.rol !== '0') {
+          setError('No existe usuario con ese rol.');
+          navigate('/nosotros');
+          return;
+        }
+        localStorage.setItem("user", JSON.stringify(user));
+        console.log('Login correcto!');
       } else {
         console.log('Login failed: incorrect credentials');
-        setError('Login failed. Please check your credentials.');
+        setError('Datos incorrectos.');
       }
     } catch (error) {
       console.error('An error occurred during login:', error);
-      setError('An error occurred during login.');
+      setError('ERROR.');
     }
   };
 
@@ -35,24 +48,43 @@ const Informacion = () => {
     <div>
       <div className='contenedorLogin-informacion'>
         <h2 className="titulo1-informacion1">Ingresar</h2>
-        
+
         <h3 className="parrafo-informacion1">Correo</h3>
-        <input 
-          type="text" 
-          className='input-text-informacion1 input-informacion1' 
+        <input
+          type="text"
+          className='input-text-informacion1 input-informacion1'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <h3 className="parrafo-informacion1">Contraseña</h3>
-        <input 
-          type="password" 
+        <input
+          type="password"
           className='input-text-informacion1 input-informacion1'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        
-        {error && <div className='error'>{error}</div>}
-        
+        <h3 className="parrafo-informacion1">Rol</h3>
+        <div className="radio-container">
+          <label className="parrafo-informacion1">
+            <input
+              type="radio"
+              value="client"
+              checked={role === 'client'}
+              onChange={(e) => setRole(e.target.value)}
+            />
+            Cliente
+          </label>
+          <label className="parrafo-informacion1" >
+            <input
+              type="radio"
+              value="trainer"
+              checked={role === 'trainer'}
+              onChange={(e) => setRole(e.target.value)}
+            />
+            Entrenador
+          </label>
+        </div>
+        {error && <div className="titulob-informacion1">{error}</div>}
         <div className='button-container-informacion1'>
           <button className='button-informacion1' onClick={handleLogin}>
             <h2 className="titulob-informacion1">ACEPTAR</h2>

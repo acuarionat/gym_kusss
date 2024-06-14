@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BarraGris from './BarraSideBar/BarraGris';
 import CabezaNosotros from './CabeceraNosotros/CabezaNosotros';
 import Vision from './Misiones/Vision';
@@ -9,6 +9,18 @@ import CarruselSalasZonas from './salas y zonas/CarruselSalasZonas';
 import './VistaNosotros.css';
 
 const VistaNosotros = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    console.log('useEffect running');
+    const userData = JSON.parse(localStorage.getItem('user'));
+    console.log('userData from localStorage:', userData);
+    setUser(userData);
+  }, []);
+
+  useEffect(() => {
+    console.log('Current user state:', user);
+  }, [user]);
   return (
     <div className='separacion'>
         <BarraGris />

@@ -7,6 +7,7 @@ import VistaseccionNovedades from "./seccionnovedades/VistaSeccionNovedades";
 import VistaSeccionSugerencia from "./seccionsugerencia/VistaSeccionSugerencia";
 import VistaSeccionFooter from "../../general/footer/CardFooter"
 import './VistaGeneralHome.css';
+
 const VistaGeneralHome = () => (
   <div className="vista-home">
       <VistaSeccionPortada />
