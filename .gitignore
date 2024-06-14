@@ -22,3 +22,9 @@ routes
 *.njsproj
 *.sln
 *.sw?
+vite.config.js
+index.html
+routes
+public
+package.json
+package-lock.json

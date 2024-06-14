@@ -4,7 +4,7 @@ import NavBarPerfilEntrenador from "../../../general/NavBarPerfilEntrenador";
 import CabezaCargarProgreso from "../../../perfil cliente/progreso/CabezaCargarProgreso";
 import { useLocation } from "react-router-dom";
 
-const VistaCargarProgreso = ({idCliente=1}) => {
+const VistaCargarProgreso = () => {
 	const location = useLocation();
 	const { idCliente, selectedProgreso, selectedOption } = location.state || {};
 	const [clientes, setClientes] = useState([]);
